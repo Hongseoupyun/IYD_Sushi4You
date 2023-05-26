@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
-import CircleIcon from "../assets/Circle.png"; // import the image file
+import CircleIcon from "../assets/Circle.png";
 
 export default function Navbar(props) {
   const { defaultMenuItem } = props;
   const [selectedMenuItem, setSelectedMenuItem] = useState(defaultMenuItem);
+  const navigate = useNavigate();
 
   const handleClick = (itemName) => {
     setSelectedMenuItem(itemName);
+    itemName === "Home"
+      ? navigate("/")
+      : navigate(`/${itemName.toLowerCase()}`);
   };
 
   return (
