@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
+import Navbar from "components/Navbar";
+import Mainpage from "components/Mainpage";
 
 export default function Home() {
   return (
-    <div>Home</div>
-  )
+    <div>
+      <Navbar defaultMenuItem={"Home"} />
+      <Mainpage />
+    </div>
+  );
 }

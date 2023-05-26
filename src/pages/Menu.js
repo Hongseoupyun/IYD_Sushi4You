@@ -1,7 +1,10 @@
 import React from 'react'
+import Navbar from 'components/Navbar'
 
 export default function Menu() {
   return (
-    <div>Menu</div>
+    <div>
+      <Navbar defaultMenuItem = {"Menu"} />
+    </div>
   )
 }
