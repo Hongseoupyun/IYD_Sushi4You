@@ -102,11 +102,14 @@ const MenuItem = styled.button`
   background: transparent;
   border: none;
   transition: transform 0.3s;
-  transform: ${(props) => (props.isSelected ? "scale(1.2)" : "scale(1)")};
+  transform: ${(props) => (props.isSelected ? "scale(1.27)" : "scale(1)")};
   position: relative; // to position the SelectedIcon relative to this
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 const SelectedIcon = styled.img`
