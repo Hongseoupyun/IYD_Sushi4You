@@ -123,6 +123,6 @@ const Menu = styled.div`
 `;
 const Arrow = styled.img`
   margin-left: 10px;
-  height: 25px;
-  width: 10%;
+  height: 30px;
+  width: 13%;
 `;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
 import CircleIcon from "../assets/Circle.png";
+import Star from "../assets/Star_Beige.png";
 
 export default function Navbar(props) {
   const { defaultMenuItem } = props;
@@ -55,6 +56,7 @@ export default function Navbar(props) {
           </MenuItem>
         </Menu>
       </Bottom>
+       <StarDeco1 src = {Star}/>
     </Container>
   );
 }
@@ -129,4 +131,14 @@ const Circle = styled.div`
   height: 10px;
   border-radius: 50%;
   background-color: #d0dcd0;
+`;
+
+const StarDeco1 = styled.img`
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  width: 3.5rem;
+  height: 3.5rem;
+  z-index: 0;
+
 `;

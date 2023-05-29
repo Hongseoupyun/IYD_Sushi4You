@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Icon from "../assets/Phone.png";
+import Star from "../assets/Star_Beige.png";
 
 export default function Footer(props) {
   const { handleMenuClick } = props;
@@ -24,6 +25,7 @@ export default function Footer(props) {
           <PhoneNumber href="tel:1-905-858-9412">1-905-858-9412</PhoneNumber>
         </Phone>
       </Bottom>
+      <StarDeco1  src = {Star}/>
     </Container>
   );
 }
@@ -95,4 +97,12 @@ const PhoneIcon = styled.img`
   width: 3rem; // Adjust as necessary
   height: auto;
   margin-right: 10px; // adding some space between icon and number
+`;
+
+const StarDeco1 = styled.img`
+  position: absolute;
+  right: 300px;
+  width: 3rem;
+  height: 3rem;
+  z-index: 0;
 `;
