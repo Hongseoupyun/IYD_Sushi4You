@@ -70,7 +70,7 @@ const Wrapper = styled.div`
 `;
 
 const Heading = styled.h1`
-  font-size: 2.5rem; // updated font size
+  font-size: 2.7rem; // updated font size
   color: #05493c;
   font-weight: 600;
   text-align: center;
@@ -86,7 +86,7 @@ const Text = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 8px; // adds space between paragraphs
-  font-size: 1.5rem; // updated font size
+  font-size: 1.7rem; // updated font size
   color: #05493c;
   text-align: center;
 `;
