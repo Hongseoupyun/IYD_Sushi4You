@@ -3,8 +3,14 @@ import styled from "styled-components";
 import FoodImage from "../assets/Food_LandingPage.jpg";
 import Arrow_Menu from "../assets/Arrow_Menu.png";
 import Underlineimg from "../assets/Underline_Beige.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Mainpage() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/menu");
+  };
   return (
     <Container>
       <Left>
@@ -22,7 +28,7 @@ export default function Mainpage() {
           <RegularParagraph>11:30AM to 9:30PM</RegularParagraph>
         </Hour>
         <Wrapper>
-          <Menu>Menu</Menu>
+          <Menu onClick={handleClick}>Menu</Menu>
           <Arrow src={Arrow_Menu} />
         </Wrapper>
       </Right>
@@ -101,7 +107,7 @@ const Menu = styled.div`
   border-radius: 180px;
   cursor: pointer;
   color: #05493c;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   font-weight: 400;
   transition: all 0.3s ease; // transition effect to all changes
 
@@ -116,7 +122,7 @@ const Menu = styled.div`
   }
 `;
 const Arrow = styled.img`
-margin-left: 10px;
-height: 25px;
-width: 10%;
+  margin-left: 10px;
+  height: 25px;
+  width: 10%;
 `;

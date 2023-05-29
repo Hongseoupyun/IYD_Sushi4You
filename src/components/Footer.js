@@ -2,16 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import Icon from "../assets/Phone.png";
 
-export default function Footer() {
+export default function Footer(props) {
+  const { handleMenuClick } = props;
+
   return (
     <Container>
       <Top>
         <Menu>
-          <MenuItem>Home</MenuItem>
+          <MenuItem onClick={() => handleMenuClick("Home")}>Home</MenuItem>
           <Circle />
-          <MenuItem>Menu</MenuItem>
+          <MenuItem onClick={() => handleMenuClick("Menu")}>Menu</MenuItem>
           <Circle />
-          <MenuItem>Location</MenuItem>
+          <MenuItem onClick={() => handleMenuClick("Location")}>
+            Location
+          </MenuItem>
         </Menu>
       </Top>
       <Bottom>
@@ -46,15 +50,13 @@ const Menu = styled.div`
 `;
 
 const MenuItem = styled.button`
-  font-size: 1rem; // start with 1rem and adjust as necessary
+  font-size: 1rem;
   color: #05493c;
   font-weight: 600;
   cursor: pointer;
   background: transparent;
   border: none;
   transition: transform 0.3s;
-  /* transform: ${(props) =>
-    props.isSelected ? "scale(1.27)" : "scale(1)"}; */
   display: flex;
   align-items: center;
   justify-content: center;
