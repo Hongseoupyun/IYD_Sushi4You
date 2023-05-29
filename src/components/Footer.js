@@ -17,7 +17,7 @@ export default function Footer() {
       <Bottom>
         <Phone>
           <PhoneIcon src={Icon} />
-          <PhoneNumber>1-905-858-9412</PhoneNumber>
+          <PhoneNumber href="tel:1-905-858-9412">1-905-858-9412</PhoneNumber>
         </Phone>
       </Bottom>
     </Container>
@@ -83,12 +83,14 @@ const Phone = styled.div`
   justify-content: center;
   width: 25%; // Adjust this to suit your needs
 `;
-const PhoneNumber = styled.div`
+const PhoneNumber = styled.a`
   color: #05493c;
   font-size: 1.7rem; // Adjust as necessary
+  text-decoration: none; // optional: to remove underline from link
 `;
 
 const PhoneIcon = styled.img`
   width: 3rem; // Adjust as necessary
   height: auto;
+  margin-right: 10px; // adding some space between icon and number
 `;
