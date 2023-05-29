@@ -1,32 +1,48 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import Navbar from "components/Navbar";
 import Mainpage from "components/Mainpage";
 import Signature from "components/Signature";
 import Location from "components/Location";
 import Footer from "components/Footer";
-import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  // Initialize references and hooks
   const locationRef = useRef(null);
   const navigate = useNavigate();
+  const location = useLocation();
 
+  // Function to smoothly scroll to the top of the page
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+  // Function to handle menu click events
   const handleMenuClick = (path) => {
-    if (path === "Home") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else if (path === "Location") {
-      locationRef.current.scrollIntoView({ behavior: "smooth" });
-    } else {
-      navigate(`/${path.toLowerCase()}`);
+    switch(path) {
+      case "Home":
+        scrollToTop();
+        break;
+      case "Location":
+        locationRef.current.scrollIntoView({ behavior: "smooth" });
+        break;
+      default:
+        navigate(`/${path.toLowerCase()}`);
     }
   };
+
+  // Effect to scroll to the Location component on page load if the URL hash is '#location'
+  useEffect(() => {
+    if (location.hash === "#location") {
+      handleMenuClick("Location");
+    }
+  }, [location.hash]);
 
   return (
     <div>
       <Navbar defaultMenuItem={"Home"} />
       <Mainpage />
       <Signature />
-      <Location ref={locationRef} />
-      <Footer handleMenuClick={handleMenuClick} />
+      <Location ref={locationRef} id="location" />
+      <Footer handleMenuClick={handleMenuClick} defaultMenuItem={"Home"} />
     </div>
   );
 }

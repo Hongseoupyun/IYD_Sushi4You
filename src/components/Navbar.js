@@ -11,9 +11,15 @@ export default function Navbar(props) {
 
   const handleClick = (itemName) => {
     setSelectedMenuItem(itemName);
-    itemName === "Home"
-      ? navigate("/")
-      : navigate(`/${itemName.toLowerCase()}`);
+    if (itemName === "Location") {
+      window.location.href = "/#location";
+      return;
+    } else if (itemName === "Home") {
+      navigate("/");
+      return;
+    } else {
+      navigate(`/${itemName.toLowerCase()}`);
+    }
   };
 
   return (
@@ -46,9 +52,6 @@ export default function Navbar(props) {
             onClick={() => handleClick("Location")}
           >
             Location
-            {selectedMenuItem === "Location" && (
-              <SelectedIcon src={CircleIcon} />
-            )}
           </MenuItem>
         </Menu>
       </Bottom>
