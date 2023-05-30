@@ -7,11 +7,16 @@ export default function Signature() {
   return (
     <Container>
       <Heading>Signature Dishes</Heading>
-      {/* <MenuContainer>
-        {signatureFoods.map((dish, index) => (
-          <MenuCard key={index} dish={dish} />
-        ))}
-      </MenuContainer> */}
+      <MenuContainer>
+        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
+        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
+        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
+        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
+        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
+        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
+        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
+        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
+      </MenuContainer>
     </Container>
   );
 }
@@ -26,8 +31,8 @@ const Container = styled.div`
 `;
 
 const Heading = styled.h1`
-font-weight: 600;
-color: #05493c;
+  font-weight: 600;
+  color: #05493c;
   font-size: 3.5rem;
   text-align: center;
   margin-bottom: 20px;
