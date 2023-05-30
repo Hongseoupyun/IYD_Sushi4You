@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Navbar from "components/Navbar";
 import Mainpage from "components/Mainpage";
@@ -11,21 +11,26 @@ export default function Home() {
   const locationRef = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
+  const [selectedMenuItem, setSelectedMenuItem] = useState("Home");
 
   // Function to smoothly scroll to the top of the page
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   // Function to handle menu click events
   const handleMenuClick = (path) => {
-    switch(path) {
+    switch (path) {
       case "Home":
+        setSelectedMenuItem("Home");
         scrollToTop();
+        navigate("/");
         break;
       case "Location":
         locationRef.current.scrollIntoView({ behavior: "smooth" });
+        setSelectedMenuItem("Location");
         break;
       default:
         navigate(`/${path.toLowerCase()}`);
+        setSelectedMenuItem(path);
     }
   };
 
@@ -38,11 +43,17 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar defaultMenuItem={"Home"} />
+      <Navbar
+        selectedMenuItem={selectedMenuItem}
+        handleMenuClick={handleMenuClick}
+      />
       <Mainpage />
       <Signature />
       <Location ref={locationRef} id="location" />
-      <Footer handleMenuClick={handleMenuClick} defaultMenuItem={"Home"} />
+      <Footer
+        handleMenuClick={handleMenuClick}
+        selectedMenuItem={selectedMenuItem}
+      />
     </div>
   );
 }

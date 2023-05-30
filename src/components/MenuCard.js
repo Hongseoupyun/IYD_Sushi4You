@@ -20,11 +20,13 @@ export default MenuCard;
 
 const Card = styled.div`
   position: relative;
-  width: 250px;
+  width: 300px; /* Increased the width */
+  height: 400px; /* Added height to make the card longer */
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 7.5px rgba(0, 0, 0, 0.1);
   margin: 20px;
+  background-color: #fdfaf5;
 `;
 
 const Image = styled.img`
@@ -46,16 +48,18 @@ const Name = styled.h2`
 const Description = styled.p`
   color: grey;
   font-size: 16px;
+  height: 120px; /* Added height to make the description longer */
+  overflow: auto; /* Add scroll bar if text overflows */
 `;
 
 const Price = styled.div`
   position: absolute;
   bottom: 15px;
   left: 15px;
-  background: #fff;
+  background: #f14E23;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  color: #333;
+  color: white;
 `;

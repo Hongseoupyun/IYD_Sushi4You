@@ -18,8 +18,8 @@ export default function Menu() {
 
   return (
     <div>
-      <Navbar defaultMenuItem={"Menu"} />
-      <Footer defaultMenuItem={"Menu"} handleMenuClick={handleMenuClick} />
+      <Navbar selectedMenuItem={"Menu"} handleMenuClick={handleMenuClick} />
+      <Footer selectedMenuItem={"Menu"} handleMenuClick={handleMenuClick} />
     </div>
   );
 }

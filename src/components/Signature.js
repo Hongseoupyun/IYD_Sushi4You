@@ -8,14 +8,46 @@ export default function Signature() {
     <Container>
       <Heading>Signature Dishes</Heading>
       <MenuContainer>
-        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
-        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
-        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
-        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
-        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
-        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
-        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
-        <MenuCard name="name1" description="adaknfaosnfiunar" price="13.99" />
+        <MenuCard
+          name="name1"
+          description="adaknfaosnfiunaradaknfaosnfiunar"
+          price="13.99"
+        />
+        <MenuCard
+          name="name1"
+          description="adaknfaosnfiunaradaknfaosnfiunar"
+          price="13.99"
+        />
+        <MenuCard
+          name="name1"
+          description="adaknfaosnfiunaradaknfaosnfiunar"
+          price="13.99"
+        />
+        <MenuCard
+          name="name1"
+          description="adaknfaosnfiunaradaknfaosnfiunar"
+          price="13.99"
+        />
+        <MenuCard
+          name="name1"
+          description="adaknfaosnfiunaradaknfaosnfiunar"
+          price="13.99"
+        />
+        <MenuCard
+          name="name1"
+          description="adaknfaosnfiunaradaknfaosnfiunar"
+          price="13.99"
+        />
+        <MenuCard
+          name="name1"
+          description="adaknfaosnfiunaradaknfaosnfiunar"
+          price="13.99"
+        />
+        <MenuCard
+          name="name1"
+          description="adaknfaosnfiunaradaknfaosnfiunar"
+          price="13.99"
+        />
       </MenuContainer>
     </Container>
   );

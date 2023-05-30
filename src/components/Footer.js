@@ -61,7 +61,7 @@ const Menu = styled.div`
 `;
 
 const MenuItem = styled.button`
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #05493c;
   font-weight: 600;
   cursor: pointer;

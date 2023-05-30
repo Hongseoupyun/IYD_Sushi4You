@@ -43,14 +43,15 @@ const Container = styled.div`
   padding-top: 15px;
 `;
 const Left = styled.div`
-  height: 80%;
-  width: 48%;
+  height: 75%;
+  width: 45%;
 `;
 const Food = styled.img`
   height: 100%;
   width: 100%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  object-fit: cover;
 `;
 
 const Right = styled.div`
@@ -63,7 +64,7 @@ const Right = styled.div`
 `;
 
 const Address = styled.div`
-  font-weight: 600;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   font-size: 3.5rem; // updated font size

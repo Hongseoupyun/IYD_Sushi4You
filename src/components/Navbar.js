@@ -1,27 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
 import CircleIcon from "../assets/Circle.png";
 import Star from "../assets/Star_Beige.png";
 
 export default function Navbar(props) {
-  const { defaultMenuItem } = props;
-  const [selectedMenuItem, setSelectedMenuItem] = useState(defaultMenuItem);
-  const navigate = useNavigate();
-
-  const handleClick = (itemName) => {
-    setSelectedMenuItem(itemName);
-    if (itemName === "Location") {
-      window.location.href = "/#location";
-      return;
-    } else if (itemName === "Home") {
-      navigate("/");
-      return;
-    } else {
-      navigate(`/${itemName.toLowerCase()}`);
-    }
-  };
+  const { selectedMenuItem, handleMenuClick } = props;
 
   return (
     <Container>
@@ -34,7 +18,7 @@ export default function Navbar(props) {
         <Menu>
           <MenuItem
             isSelected={selectedMenuItem === "Home"}
-            onClick={() => handleClick("Home")}
+            onClick={() => handleMenuClick("Home")}
           >
             Home
             {selectedMenuItem === "Home" && <SelectedIcon src={CircleIcon} />}
@@ -42,7 +26,7 @@ export default function Navbar(props) {
           <Circle />
           <MenuItem
             isSelected={selectedMenuItem === "Menu"}
-            onClick={() => handleClick("Menu")}
+            onClick={() => handleMenuClick("Menu")}
           >
             Menu
             {selectedMenuItem === "Menu" && <SelectedIcon src={CircleIcon} />}
@@ -50,13 +34,16 @@ export default function Navbar(props) {
           <Circle />
           <MenuItem
             isSelected={selectedMenuItem === "Location"}
-            onClick={() => handleClick("Location")}
+            onClick={() => handleMenuClick("Location")}
           >
             Location
+            {selectedMenuItem === "Location" && (
+              <SelectedIcon src={CircleIcon} />
+            )}
           </MenuItem>
         </Menu>
       </Bottom>
-       <StarDeco1 src = {Star}/>
+      <StarDeco1 src={Star} />
     </Container>
   );
 }
@@ -100,7 +87,7 @@ const Menu = styled.div`
 `;
 
 const MenuItem = styled.button`
-  font-size: 1rem; // start with 1rem and adjust as necessary
+  font-size: 1.25rem; // start with 1rem and adjust as necessary
   color: #05493c;
   font-weight: 600;
   cursor: pointer;
@@ -140,5 +127,4 @@ const StarDeco1 = styled.img`
   width: 3.5rem;
   height: 3.5rem;
   z-index: 0;
-
 `;
