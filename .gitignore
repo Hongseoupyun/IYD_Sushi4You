@@ -12,6 +12,8 @@
 .env.test.local
 .env.production.local
 node_modules/
+firebaseConfig.js
+sushi4uAdminSdk.json
 
 # testing
 /coverage
