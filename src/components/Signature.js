@@ -9,45 +9,54 @@ export default function Signature() {
       <Heading>Signature Dishes</Heading>
       <MenuContainer>
         <MenuCard
-          name="name1"
-          description="adaknfaosnfiunaradaknfaosnfiunar"
+          name="Item Name"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
           price="$13.99"
         />
-        <MenuCard
-          name="name1"
-          description="adaknfaosnfiunaradaknfaosnfiunar"
+         <MenuCard
+          name="Item Name"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
           price="$13.99"
         />
-        <MenuCard
-          name="name1"
-          description="adaknfaosnfiunaradaknfaosnfiunar"
+         <MenuCard
+          name="Item Name"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
           price="$13.99"
         />
-        <MenuCard
-          name="name1"
-          description="adaknfaosnfiunaradaknfaosnfiunar"
+         <MenuCard
+         name="Item Name"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
           price="$13.99"
         />
-        <MenuCard
-          name="name1"
-          description="adaknfaosnfiunaradaknfaosnfiunar"
+         <MenuCard
+          name="Item Name"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
           price="$13.99"
         />
-        <MenuCard
-          name="name1"
-          description="adaknfaosnfiunaradaknfaosnfiunar"
+         <MenuCard
+          name="Item Name"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
           price="$13.99"
         />
-        <MenuCard
-          name="name1"
-          description="adaknfaosnfiunaradaknfaosnfiunar"
+         <MenuCard
+          name="Item Name"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
           price="$13.99"
         />
-        <MenuCard
-          name="name1"
-          description="adaknfaosnfiunaradaknfaosnfiunar"
+         <MenuCard
+          name="Item Name"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
           price="$13.99"
         />
+       
       </MenuContainer>
     </Container>
   );

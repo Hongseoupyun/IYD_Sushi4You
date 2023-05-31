@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import testImg from "../assets/signature/Black_Dragon_Roll-removebg-preview.png";
+import testImg from "../assets/signature/SushiMaki-Tray_s___1_-removebg-preview.png";
 
 function MenuCard(props) {
   const { name, description, price } = props;
@@ -20,14 +20,14 @@ export default MenuCard;
 
 const Card = styled.div`
   position: relative;
-  width: 250px;
+  width: 230px;
   height: 370px;
-  border-radius: 10px;
-  overflow: hidden;
+  border-radius: 15px;
+  overflow: unset;
   box-shadow: 0 5px 7.5px rgba(0, 0, 0, 0.1);
   margin: 20px;
   background-color: #fdfaf5;
-  transition: transform 0.2s ease-in-out ; /* Added transition for smooth animation */
+  transition: transform 0.2s ease-in-out; /* Added transition for smooth animation */
   &:hover {
     transform: scale(1.05);
   }
@@ -35,12 +35,12 @@ const Card = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: 150px;
-  object-fit: cover;
+  height: 170px;
+  object-fit: contain;
 `;
 
 const Content = styled.div`
-  padding: 15px;
+  padding: 13px;
 `;
 
 const Name = styled.h2`
@@ -52,9 +52,10 @@ const Name = styled.h2`
 
 const Description = styled.p`
   color: #05493c;
-  font-size: 16px;
-  height: 120px; /* Added height to make the description longer */
-  overflow: auto; /* Add scroll bar if text overflows */
+  font-size: 15px;
+  height: 120px;
+  overflow: auto;
+  word-break: break-word; /* Break words properly */
 `;
 
 const Price = styled.div`
