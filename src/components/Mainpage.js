@@ -20,7 +20,7 @@ export default function Mainpage() {
         <Address>
           <Paragraph>6465 Millcreek</Paragraph>
           <Paragraph>Drive #181</Paragraph>
-          <Paragraph>Mississauga ON</Paragraph>
+          <Paragraph>Mississauga, ON</Paragraph>
         </Address>
         <Underline src={Underlineimg} />
         <Hour>
@@ -67,10 +67,14 @@ const Address = styled.div`
   font-weight: bold;
   display: flex;
   flex-direction: column;
-  font-size: 3.5rem; // updated font size
+  font-size: 2.6rem; // updated font size
   color: #05493c;
+  letter-spacing: 6px; // adjust as necessary
 `;
-const Underline = styled.img``;
+
+const Underline = styled.img`
+  width: 80%;
+`;
 
 const Paragraph = styled.p`
   margin: 0; // removes default margin from paragraphs

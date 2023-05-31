@@ -4,7 +4,7 @@ import ArrowIcon from "../assets/Arrow_Beige.png";
 
 const Location = React.forwardRef((props, ref) => {
   return (
-    <Container ref={ref} id ="location">
+    <Container ref={ref} id="location">
       <StyledIframe
         title="Google Maps Location"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.727026466004!2d-79.74381652412181!3d43.591401871105106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b6a78ee7f812d%3A0x694e630f05648c88!2sSUSHI4U!5e0!3m2!1sen!2sca!4v1685247850902!5m2!1sen!2sca"
@@ -70,7 +70,7 @@ const Wrapper = styled.div`
 `;
 
 const Heading = styled.h1`
-  font-size: 2.7rem; // updated font size
+  font-size: 2.5rem; // updated font size
   color: #05493c;
   font-weight: 600;
   text-align: center;
@@ -89,9 +89,9 @@ const Text = styled.div`
   font-size: 1.7rem; // updated font size
   color: #05493c;
   text-align: center;
+  font-weight: 400;
 `;
 
 const Paragraph = styled.p`
   margin: 0; // removes default margin from paragraphs
-  line-height: 1.4;
 `;

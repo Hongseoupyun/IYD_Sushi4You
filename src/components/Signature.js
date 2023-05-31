@@ -63,17 +63,17 @@ const Container = styled.div`
 `;
 
 const Heading = styled.h1`
-  font-weight: 600;
+  font-weight: bold;
   color: #05493c;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 50px;
 `;
 
 const MenuContainer = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 `;

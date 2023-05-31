@@ -20,8 +20,8 @@ export default MenuCard;
 
 const Card = styled.div`
   position: relative;
-  width: 300px; /* Increased the width */
-  height: 400px; /* Added height to make the card longer */
+  width: 250px; /* Increased the width */
+  height: 370px; /* Added height to make the card longer */
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 7.5px rgba(0, 0, 0, 0.1);
