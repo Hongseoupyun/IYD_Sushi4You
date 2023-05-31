@@ -36,8 +36,12 @@ export default function Mainpage() {
           <RegularParagraph>11:30AM to 9:30PM</RegularParagraph>
         </Hour>
         <Wrapper>
-          <Menu onClick={handleMenuClick}>Menu</Menu>
-          <UberButton onClick={handleUberClick}>Order Online</UberButton>
+          <Menu onClick={handleMenuClick}>
+            <MenuText>Menu</MenuText>
+          </Menu>
+          <UberButton onClick={handleUberClick}>
+            <MenuText>Order Online</MenuText>
+          </UberButton>
           <Arrow src={Arrow_Menu} />
         </Wrapper>
       </Right>
@@ -107,7 +111,13 @@ const Wrapper = styled.div`
   justify-content: flex-start;
 `;
 
+const MenuText = styled.div`
+  position: relative;
+  z-index: 2; // this will ensure the text stays above the ::before pseudo-element
+`;
+
 const Menu = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,35 +128,56 @@ const Menu = styled.div`
   border: 3px solid #05493c;
   border-radius: 180px;
   cursor: pointer;
-  color: #05493c;
   font-size: 1.5rem;
   font-weight: 400;
-  transition: all 0.3s ease; // transition effect to all changes
+  overflow: hidden;
+  transition: all 0.3s ease, color 0.3s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #05493c;
+    transition: width 0.4s ease;
+    z-index: 1; // this will ensure the ::before pseudo-element stays below the text
+  }
 
   &:hover {
-    background-color: #05493c; // change the background color on hover
-    color: #fdfaf5; // change the text color on hover
-    transform: scale(1.1); // scales the button 10% larger on hover
-    font-weight: 600; // change the font weight on hover
+    transform: scale(1.1);
+    &::before {
+      width: 100%;
+    }
+    ${MenuText} {
+      color: white;
+      font-weight: 600;
+    }
   }
 
   &:active {
-    transform: scale(0.9); // scales the button 10% smaller on click
-    font-weight: 600; // change the font weight on hover
+    transform: scale(0.9);
+    font-weight: 600;
   }
 `;
 
 const UberButton = styled(Menu)`
-  // inherit the styles from the Menu component
-  font-size: 1.25rem; // make the font size slightly smaller
-  margin-left: 20px; // add some space between the Menu and UberButton
-  border-color: #eb1c23; // make the border color Uber's red
-  color: #eb1c23; // make the text color Uber's red
-
+  font-size: 1.25rem;
+  margin-left: 20px;
+  border-color: #eb1c23;
+  color: #eb1c23;
   &:hover {
-    background-color: #eb1c23; // make the background color Uber's red on hover
+    ${MenuText} {
+      color: white;
+    }
+  }
+
+  &::before {
+    background-color: #eb1c23;
   }
 `;
+
 const Arrow = styled.img`
   margin-left: 10px;
   height: 30px;
