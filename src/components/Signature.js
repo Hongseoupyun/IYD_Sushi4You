@@ -1,62 +1,38 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import db from "firebaseConfig";
 import styled from "styled-components";
 import MenuCard from "components/MenuCard";
-import { signatureFoods } from "SignatureData.js";
 
 export default function Signature() {
+  const [menuData, setMenuData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const menuRef = collection(db, "signaturemenu");
+      const snapshot = await getDocs(menuRef);
+      const data = snapshot.docs.map((doc) => doc.data());
+      console.log("Firebase data:", data);
+      setMenuData(data);
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <Container>
       <Heading>Signature Dishes</Heading>
       <MenuContainer>
-        <MenuCard
-          name="Item Name"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-          price="$13.99"
-        />
-         <MenuCard
-          name="Item Name"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-          price="$13.99"
-        />
-         <MenuCard
-          name="Item Name"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-          price="$13.99"
-        />
-         <MenuCard
-         name="Item Name"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-          price="$13.99"
-        />
-         <MenuCard
-          name="Item Name"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-          price="$13.99"
-        />
-         <MenuCard
-          name="Item Name"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-          price="$13.99"
-        />
-         <MenuCard
-          name="Item Name"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-          price="$13.99"
-        />
-         <MenuCard
-          name="Item Name"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-          price="$13.99"
-        />
-       
+        {menuData.length === 0 && <p>No menu items found...</p>}
+        {menuData.map((item, index) => (
+          <MenuCard
+            key={item.id || index} // Use index as a fallback key
+            name={item.name}
+            description={item.desc}
+            price={item.price}
+            img={item.img}
+          />
+        ))}
       </MenuContainer>
     </Container>
   );

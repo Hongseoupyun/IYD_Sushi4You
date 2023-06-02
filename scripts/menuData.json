@@ -1,0 +1,1018 @@
+[
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "DS01",
+    "name": "CHICKEN TERIYAKI BENTO",
+    "price": "$11.99",
+    "desc": "served with miso soup, salad & rice",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "DS02",
+    "name": "SALMON TERIYAKI BENTO",
+    "price": "$11.99",
+    "desc": "served with miso soup, salad & rice",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "DS03",
+    "name": "BEEF TERIYAKI BENTO",
+    "price": "$11.99",
+    "desc": "served with miso soup, salad & rice",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "DS04",
+    "name": "TEMPURA BENTO",
+    "price": "$11.99",
+    "desc": "served with miso soup, salad & rice",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "DS05",
+    "name": "BULGOGI BENTO",
+    "price": "$11.99",
+    "desc": "served with miso soup, salad & rice",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "LS01",
+    "name": "DYNAMITE BENTO (roll, 6 pcs)",
+    "price": "$15.99",
+    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "LS02",
+    "name": "SPICY SALMON BENTO (roll, 6 pcs)",
+    "price": "$15.99",
+    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "LS03",
+    "name": "SPICY TUNA BENTO (roll, 6 pcs)",
+    "price": "$15.99",
+    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "LS04",
+    "name": "SPICY LOVER BENTO (roll, 5 pcs)",
+    "price": "$15.99",
+    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "LS05",
+    "name": "SALMON LOVER BENTO (roll, 5 pcs)",
+    "price": "$15.99",
+    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "LS06",
+    "name": "RAINBOW BENTO (roll, 5 pcs)",
+    "price": "$15.99",
+    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "LS07",
+    "name": "PHILADELPHIA BENTO (roll, 5 pcs)",
+    "price": "$15.99",
+    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "LS08",
+    "name": "GREEN DRAGON BENTO (roll, 5 pcs)",
+    "price": "$15.99",
+    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "LS09",
+    "name": "RED DRAGON BENTO (roll, 5 pcs)",
+    "price": "$15.99",
+    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "LS10",
+    "name": "GOLDEN DRAGON BENTO (roll, 5 pcs)",
+    "price": "$15.99",
+    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "LS11",
+    "name": "YAM BENTO (roll, 6 pcs)",
+    "price": "$14.99",
+    "desc": "served with miso soup, salad, 5 pcs assorted vegetable tempura, 6 pcs Avo&Cu roll and 1 spring roll",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "LUNCH SPECIAL (Bento Box)",
+    "code": "LS12",
+    "name": "SWEET POTATO BENTO (roll, 5 pcs)",
+    "price": "$14.99",
+    "desc": "served with miso soup, salad, 5 pcs assorted vegetable tempura, 6 pcs Avo&Cu roll and 1 spring roll",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD01",
+    "name": "SUSHI(A)",
+    "price": "$14.99",
+    "desc": "served with miso soup & salad, 8 pcs sushi & 6 pcs maki",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD02",
+    "name": "SUSHI(B)",
+    "price": "$19.99",
+    "desc": "served with miso soup & salad, 14 pcs sushi & 6 pcs maki",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD03",
+    "name": "SASHIMI BENTO",
+    "price": "$14.99",
+    "desc": "served with miso soup & salad, 9 pcs sashimi & 3 pcs California",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD04",
+    "name": "UNAGI DONBURI",
+    "price": "$18.99",
+    "desc": "served with miso soup & salad",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD05",
+    "name": "CHIRASHI",
+    "price": "$18.99",
+    "desc": "served with miso soup & salad, Assorted raw fish, crab meat, cooked shrimp and fish egg",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD07",
+    "name": "MAKI SET",
+    "price": "$16.99",
+    "desc": "served with miso soup & salad, California roll, salmon roll & shrimp tempura roll",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD08",
+    "name": "SUSHI & TEMPURA",
+    "price": "$17.99",
+    "desc": "served with miso soup & salad",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD09",
+    "name": "CALIFORNIA ROLL & TEMPURA",
+    "price": "$16.99",
+    "desc": "served with miso soup & salad",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD10",
+    "name": "SASHIMI & TEMPURA",
+    "price": "$18.99",
+    "desc": "served with miso soup & salad",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD11",
+    "name": "SUSHI & SASHIMI DINNER",
+    "price": "$21.99",
+    "desc": "served with miso soup & salad",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD12",
+    "name": "BBQ KALBI BOX",
+    "price": "$19.99",
+    "desc": "served with miso soup & salad, BBQ beef short ribs marinated with special Korean sauce and 3 pcs California roll",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD13",
+    "name": "BULGOGI & TEMPURA BOX",
+    "price": "$17.99",
+    "desc": "served with miso soup & salad, Sliced beef sirloin marinated, 3 pcs California roll and tempura (2 pcs shrimp & 3 pcs vegetable)",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD14",
+    "name": "TERIYAKI & TEMPURA BOX",
+    "price": "$17.99",
+    "desc": "served with miso soup & salad, Your choice of chicken/beef/salmon, 3 pcs California roll and tempura (2 pcs shrimp & 3 pcs vegetable)",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD15",
+    "name": "TERIYAKI & SASHIMI BOX",
+    "price": "$19.99",
+    "desc": "served with miso soup & salad, Your choice of chicken/beef/salmon, 9 pcs sashimi and 3 pcs California roll",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD16",
+    "name": "SASHIMI, SUSHI & TEMPURA BOX",
+    "price": "$19.99",
+    "desc": "served with miso soup & salad, 6 pcs sashimi, 5 pcs sushi and 4 pcs shrimp tempura",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD17",
+    "name": "CALIFORNIA MAKI SET",
+    "price": "$14.99",
+    "desc": "served with miso soup & salad, 12 pcs California roll",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD18",
+    "name": "VEGETARIAN MAKI SET",
+    "price": "$12.99",
+    "desc": "served with miso soup & salad, 6 pcs Yam Tempura roll, 6 pcs Avocado roll",
+    "spicy": false,
+    "veg": true
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD19",
+    "name": "SPICY MAKI SET",
+    "price": "$15.99",
+    "desc": "served with miso soup & salad, 6 pcs Spicy Salmon roll, 6 pcs Spicy Tuna roll",
+    "spicy": true,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD20",
+    "name": "SUSHI MORIWASE",
+    "price": "$19.99",
+    "desc": "served with miso soup & salad, 15 pcs of assorted fresh fish",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD21",
+    "name": "SASHIMI & SUSHI",
+    "price": "$18.99",
+    "desc": "served with miso soup & salad, 10 pcs sashimi, 4 pcs sushi with rice",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD22",
+    "name": "SASHIMI MORIWASE",
+    "price": "$22.99",
+    "desc": "served with miso soup & salad, 20 pcs of assorted fresh fish with rice",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD23",
+    "name": "MIXED FISH POKE",
+    "price": "$15.99",
+    "desc": "served with miso soup & salad",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD24",
+    "name": "SALMON POKE",
+    "price": "$17.99",
+    "desc": "served with miso soup & salad",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD25",
+    "name": "SALMON COMBO A",
+    "price": "$16.99",
+    "desc": "served with miso soup & salad",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "code": "MD26",
+    "name": "SALMON COMBO B",
+    "price": "$17.99",
+    "desc": "",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SPECIAL COURSES",
+    "code": "MD31",
+    "name": "LOVE COURSE for 2 people",
+    "price": "$49.99",
+    "desc": "2 miso soup, 2 salad (green or wakame), 4 pcs shrimp tempura, 9 pcs sashimi, 8 pcs sushi, 6 pcs maki, 1 Teriyaki (chicken/beef/salmon) & 2 steamed rice",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SPECIAL COURSES",
+    "code": "MD32",
+    "name": "FAMILY COURSE for 4 people",
+    "price": "$89.99",
+    "desc": "4 miso soup, 4 salad (green or wakame), 8 pcs shrimp tempura, 16 pcs sashimi, 12 pcs sushi, 12 pcs maki, 2 Teriyaki (chicken/beef/salmon) & 4 steamed rice",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SASHIMI PARTY TRAY",
+    "code": "SPT01",
+    "name": "SMALL SASHIMI PARTY TRAY",
+    "desc": "30 pcs",
+    "price": "$33.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SASHIMI PARTY TRAY",
+    "code": "SPT02",
+    "name": "MEDIUM SASHIMI PARTY TRAY",
+    "desc": "50 pcs",
+    "price": "$54.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SASHIMI PARTY TRAY",
+    "code": "SPT03",
+    "name": "LARGE SASHIMI PARTY TRAY",
+    "desc": "70 pcs",
+    "price": "$76.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAKI TRAY",
+    "code": "MT01",
+    "name": "SMALL MAKI TRAY",
+    "desc": "52 pcs",
+    "price": "$55.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAKI TRAY",
+    "code": "MT02",
+    "name": "MEDIUM MAKI TRAY",
+    "desc": "72 pcs",
+    "price": "$75.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & MAKI TRAY",
+    "code": "SMT01",
+    "name": "SMALL SUSHI & MAKI TRAY",
+    "desc": "18 pcs sushi & 22 pcs maki",
+    "price": "$46.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & MAKI TRAY",
+    "code": "SMT02",
+    "name": "MEDIUM SUSHI & MAKI TRAY",
+    "desc": "24 pcs sushi & 34 pcs maki",
+    "price": "$68.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & MAKI TRAY",
+    "code": "SMT03",
+    "name": "LARGE SUSHI & MAKI TRAY",
+    "desc": "30 pcs sushi & 45 pcs maki",
+    "price": "$85.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI, SASHIMI & MAKI COMBO",
+    "code": "SSMC01",
+    "name": "SMALL SUSHI, SASHIMI & MAKI COMBO",
+    "desc": "9 pcs sushi, 9 pcs sashimi & 22 pcs maki",
+    "price": "$52.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI, SASHIMI & MAKI COMBO",
+    "code": "SSMC02",
+    "name": "MEDIUM SUSHI, SASHIMI & MAKI COMBO",
+    "desc": "12 pcs sushi, 12 pcs sashimi & 34 pcs maki",
+    "price": "$73.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI, SASHIMI & MAKI COMBO",
+    "code": "SSMC03",
+    "name": "LARGE SUSHI, SASHIMI & MAKI COMBO",
+    "desc": "24 pcs sushi, 24 pcs sashimi & 39 pcs maki",
+    "price": "$93.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SOUP",
+    "code": "SP01",
+    "name": "MISO SOUP",
+    "desc": "Soy bean served with seaweed and green onion",
+    "price": "$1.99",
+    "spicy": false,
+    "veg": true
+  },
+  {
+    "category": "SOUP",
+    "code": "SP02",
+    "name": "USHO SOUP",
+    "desc": "Seafood, seaweed with clear soup",
+    "price": "$5.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SOUP",
+    "code": "SP03",
+    "name": "GYO ZA SOUP",
+    "desc": "Dumplings, egg & vegetables",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SOUP",
+    "code": "SP04",
+    "name": "SPICY MAYO",
+    "desc": "",
+    "price": "$0.50",
+    "spicy": true,
+    "veg": false
+  },
+  {
+    "category": "SALAD",
+    "code": "SD01",
+    "name": "GREEN SALAD",
+    "desc": "Crispy garden greens delightfully arranged with special house dressing",
+    "price": "$3.99",
+    "spicy": false,
+    "veg": true
+  },
+  {
+    "category": "SALAD",
+    "code": "SD02",
+    "name": "WAKAME SALAD",
+    "desc": "Seaweed salad",
+    "price": "$5.99",
+    "spicy": false,
+    "veg": true
+  },
+  {
+    "category": "SALAD",
+    "code": "SD03",
+    "name": "SUNO MONO SALAD",
+    "desc": "Sliced cucumber, seaweed, shrimp and crab meat with vinegar dressing",
+    "price": "$6.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SALAD",
+    "code": "SD04",
+    "name": "KIMCHI",
+    "desc": "Korean cabbage pickled with chili pepper, garlic, onion",
+    "price": "$3.99",
+    "spicy": true,
+    "veg": false
+  },
+  {
+    "category": "SALAD",
+    "code": "SD05",
+    "name": "AVOCADO SALAD",
+    "desc": "",
+    "price": "$6.99",
+    "spicy": false,
+    "veg": true
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP01",
+    "name": "TEMPURA",
+    "desc": "Deep fried choice of shrimp or chicken with vegetable",
+    "price": "$7.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP02",
+    "name": "VEGETABLE or YAM TEMPURA",
+    "desc": "Deep fried vegetable or yams only",
+    "price": "$6.99",
+    "spicy": false,
+    "veg": true
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP03",
+    "name": "SHRIMPS TEMPURA",
+    "desc": "",
+    "price": "$7.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP04",
+    "name": "CALIMARI TEMPURA",
+    "desc": "",
+    "price": "$8.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP05",
+    "name": "SOFT SHELL CRAB",
+    "desc": "Deep fried soft shell crab with house sauce",
+    "price": "$12.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP06",
+    "name": "SCALLOPS TEMPURA",
+    "desc": "",
+    "price": "$8.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP07",
+    "name": "GYOZA",
+    "desc": "Deep fried Dumpling",
+    "price": "$6.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP08",
+    "name": "AGE DASHI TOFU",
+    "desc": "Deep fried tofu 4 pcs with bonito fish flake and tempura sauce",
+    "price": "$5.99",
+    "spicy": false,
+    "veg": true
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP09",
+    "name": "EDAMAME",
+    "desc": "Boiled soy bean",
+    "price": "$5.99",
+    "spicy": false,
+    "veg": true
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP10",
+    "name": "SPRING ROLL",
+    "desc": "",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": true
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP11",
+    "name": "SALMON SASHIMI",
+    "desc": "",
+    "price": "$10.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP12",
+    "name": "SALMON SUSHI",
+    "desc": "",
+    "price": "$10.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP13",
+    "name": "TUNA SASHIMI",
+    "desc": "",
+    "price": "$13.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP14",
+    "name": "TUNA SUSHI",
+    "desc": "",
+    "price": "$13.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP16",
+    "name": "SALMON SUSHI PIZZA",
+    "desc": "",
+    "price": "$12.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP17",
+    "name": "TUNA SUSHI PIZZA",
+    "desc": "",
+    "price": "$14.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "APPETIZERS",
+    "code": "AP18",
+    "name": "AVOCADO SUSHI PIZZA",
+    "desc": "",
+    "price": "$10.99",
+    "spicy": false,
+    "veg": true
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "SAKE Salmon",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "TAI Red Snapper",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "EBI Shrimp",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "KANI Crab Meat",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "TAKO Octopus",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "MASAGO Flying Fish Egg",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "TAMAGO Egg",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": true
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "MAGURO Tuna",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "HAMACHI Yellow Tail",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "KAIBASHIRA Scallop",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "AMAEBI Sweet Shrimp",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "IKA Squid",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "UNAGI B.B.Q. Eel",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "HOKKIGAI Surf Clam",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & SASHIMI A LA CARTE",
+    "code": "",
+    "name": "SABA Mackerel",
+    "desc": "1 order 2pcs",
+    "price": "$4.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "RED DRAGON MAKI",
+    "desc": "Shrimp tempura, avocado and cucumber with tuna on top",
+    "price": "",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "GREEN DRAGON MAKI",
+    "desc": "Shrimp tempura, avocado and cucumber with avocado on top",
+    "price": "",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "GOLDEN DRAGON MAKI",
+    "desc": "Shrimp tempura, avocado and cucumber with salmon on top",
+    "price": "",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "DOUBLE SALMON (OR TUNA) MAKI",
+    "desc": "Salmon (or Tuna), avocado, cucumber and flying fish roe with salmon (or Tuna) on top",
+    "price": "",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "PHILADELPHIA MAKI",
+    "desc": "Salmon, Shrimps Tempura, avocado, cucumber and cream cheese",
+    "price": "",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "SPECIAL FRIED CHICKEN MAKI",
+    "desc": "Fried Chicken with avocado, cucumber, asparagus and",
+    "price": "",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "WESTEND MAKI",
+    "desc": "Shrimp tempura, crab and cream cheese topped crab",
+    "price": "",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "PINK LADY MAKI",
+    "desc": "Tuna, Salmon and avocado wrapped in pink soy paper",
+    "price": "",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "DIABLO MAKI",
+    "desc": "Shrimp Tempura and cucumber, asparagus with spicy scallop on top",
+    "price": "",
+    "spicy": true,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "SPICY LOVER MAKI",
+    "desc": "Shrimp tempura, crab meat, avocado and cucumber topped spicy salmon with crispy crunch",
+    "price": "",
+    "spicy": true,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "SALMON LOVER MAKI",
+    "desc": "Salmon, crab meat, avocado and cucumber topped spicy salmon with crispy crunch",
+    "price": "",
+    "spicy": true,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "SPICY MUSKOKA MAKI",
+    "desc": "Shrimp tempura, crab meat, avocado, cucumber and spicy salmon with rice paper",
+    "price": "",
+    "spicy": true,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "MUSKOKA MAKI",
+    "desc": "Shrimp tempura, crab meat, avocado and cucumber with rice paper",
+    "price": "",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "ALASKA MAKI",
+    "desc": "Shrimp tempura and crab meat topped with spicy tuna and spicy sauce",
+    "price": "",
+    "spicy": true,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "CN TOWER MAKI",
+    "desc": "Spicy tuna, cucumber, tempura bits with tuna, crab meat on top",
+    "price": "",
+    "spicy": true,
+    "veg": false
+  },
+  {
+    "category": "SIGNATURE MAKI(ROLL)",
+    "code": "",
+    "name": "KARA MAKI",
+    "desc": "California roll topped with spicy salmon and shredded crunch potatoes",
+    "price": "",
+    "spicy": true,
+    "veg": false
+  }
+
+
+
+
+
+
+
+
+]

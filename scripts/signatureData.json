@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Yam Lover Maki (10pcs)",
+    "desc": "Yam tempura and avocado inside topped with yam tempura and shredded crunch potatoes.",
+    "price": "$XX.XX",
+    "spicy": false,
+    "veg": true,
+    "img": "https://i.imgur.com/NsOiGNr.png"
+  },
+  {
+    "id": 2,
+    "name": "SMALL SUSHI & MAKI TRAY",
+    "desc": "18 pcs sushi & 22 pcs maki",
+    "price": "$46.99",
+    "spicy": false,
+    "veg": false,
+    "img": "https://i.imgur.com/Ti4Azmi.png"
+  },
+  {
+    "id": 3,
+    "name": "BLACK DRAGON MAKI (8 pcs)",
+    "desc": "BBQ eel, cucumber, avocado and fish egg roll topped with BBQ eel and house sauce",
+    "price": "$15.99",
+    "spicy": false,
+    "veg": false,
+    "img": "https://i.imgur.com/NsOiGNr.png"
+  },
+  {
+    "id": 4,
+    "name": "SALMON LOVER B",
+    "desc": "To be updated",
+    "price": "$XX.XX",
+    "spicy": false,
+    "veg": false,
+    "img": "https://i.imgur.com/1EPhu3n.png"
+  },
+  {
+    "id": 5,
+    "name": "EBITEN MAKI (8 pcs)",
+    "desc": "stuffed with shrimp tempura, avocado, crab meat and cucumber with masago on top of a torched combination of garlic butter, creamy sauce and house sauce",
+    "price": "$17.99",
+    "spicy": false,
+    "veg": false,
+    "img": "https://i.imgur.com/2bxGjPK.png"
+  },
+  {
+    "id": 6,
+    "name": "SALMON TATAKI",
+    "desc": "To be updated",
+    "price": "$XX.XX",
+    "spicy": false,
+    "veg": false,
+    "img": "https://i.imgur.com/ieq06K9.png"
+  },
+  {
+    "id": 7,
+    "name": "TIGER ROLL (8 pcs)",
+    "desc": "Shrimp tempura, asparagus, cucumber topped with salmon tempura and house sauce",
+    "price": "$14.99",
+    "spicy": false,
+    "veg": false,
+    "img": "https://i.imgur.com/79qlvZV.png"
+  },
+  {
+    "id": 8,
+    "name": "SUSHI(B)",
+    "desc": "14 pcs sushi & 6 pcs maki",
+    "price": "$19.99",
+    "spicy": false,
+    "veg": false,
+    "img": "https://i.imgur.com/RuScDMQ.png"
+  }
+]

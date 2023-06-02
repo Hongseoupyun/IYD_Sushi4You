@@ -46,6 +46,7 @@ export default function Home() {
       <Navbar
         selectedMenuItem={selectedMenuItem}
         handleMenuClick={handleMenuClick}
+        setSelectedMenuItem={setSelectedMenuItem}
       />
       <Mainpage />
       <Signature />

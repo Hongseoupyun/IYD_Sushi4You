@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
 import CircleIcon from "../assets/Circle.png";
 import Star from "../assets/Star_Beige.png";
 
 export default function Navbar(props) {
-  const { selectedMenuItem, handleMenuClick } = props;
+  const { selectedMenuItem, handleMenuClick, setSelectedMenuItem } = props;
+  // function to update selected menu item
+
+  useEffect(() => {
+    // function to handle scroll event
+    const handleScroll = () => {
+      if (window.pageYOffset === 0) {
+        // if scrolled to top
+        setSelectedMenuItem("Home");
+      }
+    };
+
+    // attach scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // cleanup function
+    return () => {
+      // remove scroll event listener
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // empty dependency array means this effect runs once on mount
 
   return (
     <Container>
@@ -88,7 +108,10 @@ const Menu = styled.div`
 
 const MenuItem = styled.button`
   font-size: 1.25rem; // start with 1rem and adjust as necessary
-  color: #05493c;
+  color: ${(props) =>
+    props.isSelected
+      ? "#f14e23"
+      : "#05493c"}; // change color based on whether it is selected or not
   font-weight: 600;
   cursor: pointer;
   background: transparent;
@@ -99,6 +122,7 @@ const MenuItem = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+
   &:hover {
     transform: scale(1.2);
   }

@@ -1,5 +1,7 @@
 const admin = require("firebase-admin");
 const serviceAccount = require("./sushi4UAdminSdk.json");
+const signatureMenus = require("./signatureData.json");
+// const menuItems = require("./menuData.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -7,11 +9,22 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
-// Suppose we have a "menuItems" array with our structured data
-let menuItems = [
- 
-];
+// let menuItems = [];
 
-menuItems.forEach((item) => {
-  db.collection("menu").doc().set(item);
+// menuItems.forEach((item) => {
+//   db.collection("menu")
+//     .doc()
+//     .set(item)
+//     .catch((error) => {
+//       console.error("Error adding document: ", error);
+//     });
+// });
+
+signatureMenus.forEach((item) => {
+  db.collection("signaturemenu")
+    .doc()
+    .set(item)
+    .catch((error) => {
+      console.error("Error adding document: ", error);
+    });
 });

@@ -1,17 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import testImg from "../assets/signature/SushiMaki-Tray_s___1_-removebg-preview.png";
 
 function MenuCard(props) {
-  const { name, description, price } = props;
+  const { name, description, price, img } = props;
   return (
     <Card>
-      <Image src={testImg} alt={name} />
+      <Image src={img} alt={name} />
       <Content>
         <Name>{name}</Name>
         <Description>{description}</Description>
+        <Price>{price}</Price>
       </Content>
-      <Price>{price}</Price>
     </Card>
   );
 }
@@ -21,7 +20,7 @@ export default MenuCard;
 const Card = styled.div`
   position: relative;
   width: 230px;
-  height: 370px;
+  height: 420px;
   border-radius: 15px;
   overflow: unset;
   box-shadow: 0 5px 7.5px rgba(0, 0, 0, 0.1);
@@ -35,12 +34,13 @@ const Card = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: 170px;
+  height: 200px;
   object-fit: contain;
 `;
 
 const Content = styled.div`
   padding: 13px;
+  font-size: 10px;
 `;
 
 const Name = styled.h2`
@@ -52,15 +52,15 @@ const Name = styled.h2`
 
 const Description = styled.p`
   color: #05493c;
-  font-size: 15px;
+  font-size: 13px;
   height: 120px;
-  overflow: auto;
   word-break: break-word; /* Break words properly */
+  overflow: unset;
 `;
 
 const Price = styled.div`
   position: absolute;
-  bottom: 15px;
+  bottom: 10px;
   left: -15px;
   z-index: 5; /* Make sure the price is above the card */
   background: #f14e23;
