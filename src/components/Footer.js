@@ -5,7 +5,7 @@ import Star from "../assets/Star_Beige.png";
 import { mobile } from "responsive";
 
 export default function Footer(props) {
-  const { handleMenuClick } = props;
+  const { handleMenuClick} = props;
 
   return (
     <Container>

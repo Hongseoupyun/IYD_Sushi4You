@@ -7,25 +7,22 @@ import Star from "../assets/Star_Beige.png";
 export default function Navbar(props) {
   const { selectedMenuItem, handleMenuClick, setSelectedMenuItem } = props;
   // function to update selected menu item
-
   useEffect(() => {
     // function to handle scroll event
     const handleScroll = () => {
-      if (window.pageYOffset === 0) {
-        // if scrolled to top
+      if (window.pageYOffset === 0 && selectedMenuItem !== "Menu") {
         setSelectedMenuItem("Home");
       }
     };
 
-    // attach scroll event listener
+    // add scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // cleanup function
+    // clean up the event listener on component unmount
     return () => {
-      // remove scroll event listener
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); // empty dependency array means this effect runs once on mount
+  }, [selectedMenuItem]);
 
   return (
     <Container>
