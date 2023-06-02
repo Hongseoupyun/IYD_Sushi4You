@@ -34,6 +34,7 @@ export default function Menu() {
   const handleMenuClick = (path) => {
     if (path === "Home") {
       navigate("/");
+      window.scrollTo({ top: 0, behavior: "smooth" });
     } else if (path === "Location") {
       window.location.href = "/#location";
     } else {
