@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Yam Lover Maki (10pcs)",
     "desc": "Yam tempura and avocado inside topped with yam tempura and shredded crunch potatoes.",
-    "price": "$XX.XX",
+    "price": "$17.99",
     "spicy": false,
     "veg": true,
     "img": "https://i.imgur.com/NsOiGNr.png"
@@ -30,7 +30,7 @@
     "id": 4,
     "name": "SALMON LOVER B",
     "desc": "To be updated",
-    "price": "$XX.XX",
+    "price": "$17.99",
     "spicy": false,
     "veg": false,
     "img": "https://i.imgur.com/1EPhu3n.png"
@@ -47,8 +47,8 @@
   {
     "id": 6,
     "name": "SALMON TATAKI",
-    "desc": "To be updated",
-    "price": "$XX.XX",
+    "desc": "Sliced and torched raw salmon wish special sauce",
+    "price": "$11.99",
     "spicy": false,
     "veg": false,
     "img": "https://i.imgur.com/ieq06K9.png"

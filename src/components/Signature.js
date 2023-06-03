@@ -24,15 +24,17 @@ export default function Signature() {
       <Heading>Signature Dishes</Heading>
       <MenuContainer>
         {menuData.length === 0 && <p>No menu items found...</p>}
-        {menuData.map((item, index) => (
-          <MenuCard
-            key={item.id || index} // Use index as a fallback key
-            name={item.name}
-            description={item.desc}
-            price={item.price}
-            img={item.img}
-          />
-        ))}
+        {menuData
+          .sort((a, b) => a.id - b.id) // Sort the menuData array based on ID in ascending order
+          .map((item, index) => (
+            <MenuCard
+              key={item.id || index} // Use index as a fallback key
+              name={item.name}
+              description={item.desc}
+              price={item.price}
+              img={item.img}
+            />
+          ))}
       </MenuContainer>
     </Container>
   );
