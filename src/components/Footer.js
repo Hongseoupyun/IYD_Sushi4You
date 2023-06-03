@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import { FaArrowCircleUp } from "react-icons/fa";
 import Icon from "../assets/Phone.png";
 import Star from "../assets/Star_Beige.png";
 import { mobile } from "responsive";
 
 export default function Footer(props) {
-  const { handleMenuClick} = props;
+  const { handleMenuClick } = props;
+
+  // Add state to handle the visibility of the button
+  const [visible, setVisible] = useState(false);
+
+  // Function to handle scrolling
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    setVisible(false);
+  };
+
+  // Function to handle button visibility
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setVisible(true);
+    } else if (scrolled <= 300) {
+      setVisible(false);
+    }
+  };
+
+  // Add scroll event listener to window
+  window.addEventListener("scroll", toggleVisible);
 
   return (
     <Container>
@@ -18,6 +44,13 @@ export default function Footer(props) {
           <MenuItem onClick={() => handleMenuClick("Location")}>
             Location
           </MenuItem>
+          <Circle />
+          <ScrollToTop>
+            <FaArrowCircleUp
+              onClick={scrollToTop}
+              style={{ display: visible ? "inline" : "none" }}
+            />
+          </ScrollToTop>
         </Menu>
       </Top>
       <Bottom>
@@ -91,6 +124,23 @@ const Circle = styled.div`
     width: 8px;
     height: 8px;
   `}
+`;
+
+const ScrollToTop = styled.div`
+  position: fixed;
+  right: 50px; // Control the horizontal position from right
+  bottom: 50px; // Control the vertical position from bottom
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  color: #f14e23;
+  font-size: 2.6em; // Increase the size of the icon
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+  }
 `;
 
 const Bottom = styled.div`

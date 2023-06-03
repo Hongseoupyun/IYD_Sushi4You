@@ -65,17 +65,23 @@ export default function Menu() {
         setSelectedMenuItem={setSelectedMenuItem}
       />
       <CategoryButtons>
-        <CategoryButton key={"all"} onClick={() => handleCategoryClick("All")}>
-          All
-        </CategoryButton>
-        {categories.map((category) => (
-          <CategoryButton
-            key={category}
-            onClick={() => handleCategoryClick(category)}
-          >
-            {category}
-          </CategoryButton>
-        ))}
+      <CategoryButton
+  key={"all"}
+  className={selectedCategory === "All" ? "selected" : ""}  // Add the 'selected' class when this category is selected
+  onClick={() => handleCategoryClick("All")}
+>
+  All
+</CategoryButton>
+{categories.map((category) => (
+  <CategoryButton
+    key={category}
+    className={selectedCategory === category ? "selected" : ""}  // Add the 'selected' class when this category is selected
+    onClick={() => handleCategoryClick(category)}
+  >
+    {category}
+  </CategoryButton>
+))}
+
       </CategoryButtons>
       <MenuContainer>
         {selectedCategory !== "All" ? (
@@ -132,7 +138,7 @@ const Container = styled.div`
 const CategoryButtons = styled.div`
   display: flex;
   justify-content: center;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
   padding-top: 20px;
   flex-wrap: wrap;
   height: 25vh;
@@ -143,8 +149,9 @@ const CategoryButtons = styled.div`
 
 const CategoryButton = styled.button`
   background-color: #99c0a3;
+  font-weight: 500; // Set the font-weight to semi-bold by default
   padding: 10px 20px;
-  border: none;
+  border: 2px solid transparent; // Add a transparent border to prevent layout shifts
   border-radius: 25px;
   height: 45px;
   font-size: 1.2em;
@@ -159,8 +166,18 @@ const CategoryButton = styled.button`
   &:hover {
     background-color: #f14e23;
     transform: translateY(-3px) scale(1.02);
-    transition: all 0.3s ease;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: white;
+    transition: all 0.3s ease-out;
+
+  }
+
+  &.selected {
+    background-color: #f14e23;
+    transform: translateY(-3px) scale(1.02);
+    color: white;
+    transition: all 0.3s ease-in;
+
+  
   }
 `;
 
@@ -204,7 +221,7 @@ const CategoryTitle = styled.h2`
   font-size: 2em;
   color: #333;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 `;
 const MenuItemsContainer = styled.div`
   display: flex;
@@ -224,6 +241,7 @@ const ItemDescription = styled.p`
   font-size: 1em;
   color: #666;
   text-align: left;
+  font-weight: semi-bold;
 `;
 
 const ItemPrice = styled.span`
