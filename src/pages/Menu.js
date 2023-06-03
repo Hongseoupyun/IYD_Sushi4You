@@ -38,7 +38,7 @@ export default function Menu() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else if (path === "Location") {
       window.location.href = "/#location";
-    } else {
+    } else if (path === "Menu") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
     setSelectedMenuItem(path);
@@ -58,7 +58,7 @@ export default function Menu() {
   };
 
   return (
-    <div>
+    <Container>
       <Navbar
         selectedMenuItem={selectedMenuItem}
         handleMenuClick={handleMenuClick}
@@ -78,37 +78,36 @@ export default function Menu() {
         ))}
       </CategoryButtons>
       <MenuContainer>
-  {selectedCategory !== "All" ? (
-    <CategoryBlock>
-      <CategoryTitle>{selectedCategory}</CategoryTitle>
-      <MenuItemsContainer>
-        {filteredMenuItems.map((item, index) => (
-          <MenuItem key={index} item={item} />
-        ))}
-      </MenuItemsContainer>
-    </CategoryBlock>
-  ) : (
-    categories.map((category) => (
-      <CategoryBlock>
-        <CategoryTitle>{category}</CategoryTitle>
-        <MenuItemsContainer>
-          {menuItems
-            .filter((item) => item.category === category)
-            .map((item, index) => (
-              <MenuItem key={index} item={item} />
-            ))}
-        </MenuItemsContainer>
-      </CategoryBlock>
-    ))
-  )}
-</MenuContainer>
-
+        {selectedCategory !== "All" ? (
+          <CategoryBlock>
+            <CategoryTitle>{selectedCategory}</CategoryTitle>
+            <MenuItemsContainer>
+              {filteredMenuItems.map((item, index) => (
+                <MenuItem key={index} item={item} />
+              ))}
+            </MenuItemsContainer>
+          </CategoryBlock>
+        ) : (
+          categories.map((category) => (
+            <CategoryBlock>
+              <CategoryTitle>{category}</CategoryTitle>
+              <MenuItemsContainer>
+                {menuItems
+                  .filter((item) => item.category === category)
+                  .map((item, index) => (
+                    <MenuItem key={index} item={item} />
+                  ))}
+              </MenuItemsContainer>
+            </CategoryBlock>
+          ))
+        )}
+      </MenuContainer>
 
       <Footer
         selectedMenuItem={selectedMenuItem}
         handleMenuClick={handleMenuClick}
       />
-    </div>
+    </Container>
   );
 }
 
@@ -126,15 +125,20 @@ const MenuItem = ({ item }) => {
   );
 };
 
+const Container = styled.div`
+  background-color: #f5f5f5;
+`;
+
 const CategoryButtons = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 25px;
-  margin-top: 20px;
+  padding-bottom: 25px;
+  padding-top: 20px;
   flex-wrap: wrap;
   height: 25vh;
   width: 100%;
   margin-bottom: 50px;
+  background-color: #fdfaf5;
 `;
 
 const CategoryButton = styled.button`
@@ -208,7 +212,6 @@ const MenuItemsContainer = styled.div`
   flex-wrap: wrap; // This ensures the menu items move to the next line if there's not enough space
   justify-content: space-between;
 `;
-
 
 const ItemName = styled.h2`
   font-size: 1.5em;

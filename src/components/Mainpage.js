@@ -10,6 +10,7 @@ export default function Mainpage() {
 
   const handleMenuClick = () => {
     navigate("/menu");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const handleUberClick = () => {
