@@ -378,7 +378,7 @@
     "veg": false
   },
   {
-    "category": "SPECIAL COURSES",
+    "category": "MAIN DISH",
     "code": "MD31",
     "name": "LOVE COURSE for 2 people",
     "price": "$49.99",
@@ -387,7 +387,7 @@
     "veg": false
   },
   {
-    "category": "SPECIAL COURSES",
+    "category": "MAIN DISH",
     "code": "MD32",
     "name": "FAMILY COURSE for 4 people",
     "price": "$89.99",
@@ -1519,5 +1519,109 @@
     "price": "$13.99",
     "spicy": true,
     "veg": false
+  },
+  {
+    "category": "CHEF’S SPECIAL",
+    "code": "C19",
+    "name": "SEARED SALMON ROLL",
+    "desc": "Seared salmon, tempura bit and spicy mayo topped salmon",
+    "price": "$13.99",
+    "spicy": true,
+    "veg": false
+  },
+  {
+    "category": "CHEF’S SPECIAL",
+    "code": "C20",
+    "name": "Tempura Lover Maki (10pcs)",
+    "desc": "Shrimp tempura, crab meat, cucumber, avocado, spring mix, tempura bits and mayo inside rolled with tempura bits.",
+    "price": "$17.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "CHEF’S SPECIAL",
+    "code": "C21",
+    "name": "Yam Lover Maki (10pcs)",
+    "desc": "Yam tempura and avocado inside topped with yam tempura and shredded crunch potatoes.",
+    "price": "$15.99",
+    "spicy": false,
+    "veg": true
+  },
+  {
+    "category": "CHEF’S SPECIAL",
+    "code": "C22",
+    "name": "Fish & Chips Maki (10pcs)",
+    "desc": "Breaded white fish, avocado and cucumber inside topped with tartar sauce.",
+    "price": "$14.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "CHEF’S SPECIAL",
+    "code": "C23",
+    "name": "Venezuela Maki (10pcs)",
+    "desc": "Deep fried roll, salmon, avocado, shrimp tempura, crab meat and cream cheese inside.",
+    "price": "$16.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "DRINKS",
+    "name": "D.Coke/Coke",
+    "desc": "",
+    "price": "$2.00"
+  },
+  {
+    "category": "DRINKS",
+    "name": "Sprite",
+    "desc": "",
+    "price": "$2.00"
+  },
+  {
+    "category": "DRINKS",
+    "name": "Ginger Ale",
+    "desc": "",
+    "price": "$2.00"
+  },
+  {
+    "category": "DRINKS",
+    "name": "Club Soda",
+    "desc": "",
+    "price": "$2.00"
+  },
+  {
+    "category": "DRINKS",
+    "name": "Iced Tea",
+    "desc": "",
+    "price": "$3.00"
+  },
+  {
+    "category": "DRINKS",
+    "name": "Perrier",
+    "desc": "",
+    "price": "$3.00"
+  },{
+    "category": "DRINKS",
+    "name": "Sake (S)",
+    "desc": "",
+    "price": "$6.99"
+  },
+  {
+    "category": "DRINKS",
+    "name": "Sake (M)",
+    "desc": "",
+    "price": "$12.99"
+  },
+  {
+    "category": "DRINKS",
+    "name": "Sake (L)",
+    "desc": "",
+    "price": "$29.99"
+  },
+  {
+    "category": "DRINKS",
+    "name": "Sapporo (L)",
+    "desc": "",
+    "price": "$9.99"
   }
 ]

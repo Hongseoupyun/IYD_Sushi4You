@@ -12,6 +12,7 @@ export default function Menu() {
   const [selectedMenuItem, setSelectedMenuItem] = useState("Menu");
   const [filteredMenuItems, setFilteredMenuItems] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -46,11 +47,13 @@ export default function Menu() {
   const handleCategoryClick = (category) => {
     if (category === "All") {
       setFilteredMenuItems(menuItems);
+      setSelectedCategory("All");
     } else {
       const filteredItems = menuItems.filter(
         (item) => item.category === category
       );
       setFilteredMenuItems(filteredItems);
+      setSelectedCategory(category);
     }
   };
 
@@ -62,6 +65,9 @@ export default function Menu() {
         setSelectedMenuItem={setSelectedMenuItem}
       />
       <CategoryButtons>
+        <CategoryButton key={"all"} onClick={() => handleCategoryClick("All")}>
+          All
+        </CategoryButton>
         {categories.map((category) => (
           <CategoryButton
             key={category}
@@ -72,10 +78,32 @@ export default function Menu() {
         ))}
       </CategoryButtons>
       <MenuContainer>
+  {selectedCategory !== "All" ? (
+    <CategoryBlock>
+      <CategoryTitle>{selectedCategory}</CategoryTitle>
+      <MenuItemsContainer>
         {filteredMenuItems.map((item, index) => (
           <MenuItem key={index} item={item} />
         ))}
-      </MenuContainer>
+      </MenuItemsContainer>
+    </CategoryBlock>
+  ) : (
+    categories.map((category) => (
+      <CategoryBlock>
+        <CategoryTitle>{category}</CategoryTitle>
+        <MenuItemsContainer>
+          {menuItems
+            .filter((item) => item.category === category)
+            .map((item, index) => (
+              <MenuItem key={index} item={item} />
+            ))}
+        </MenuItemsContainer>
+      </CategoryBlock>
+    ))
+  )}
+</MenuContainer>
+
+
       <Footer
         selectedMenuItem={selectedMenuItem}
         handleMenuClick={handleMenuClick}
@@ -87,7 +115,6 @@ export default function Menu() {
 const MenuItem = ({ item }) => {
   return (
     <MenuItemContainer>
-      <CategoryTitle>{item.category}</CategoryTitle>
       <ItemInfo>
         <ItemNameAndPrice>
           <ItemName>{item.name}</ItemName>
@@ -102,26 +129,35 @@ const MenuItem = ({ item }) => {
 const CategoryButtons = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  height: 25vh;
+  width: 100%;
+  margin-bottom: 50px;
 `;
 
 const CategoryButton = styled.button`
-  background: none;
+  background-color: #99c0a3;
+  padding: 10px 20px;
   border: none;
-  font-size: 1em;
-  color: #333;
-  margin-right: 10px;
+  border-radius: 25px;
+  height: 45px;
+  font-size: 1.2em;
+  color: black;
+  min-width: 100px;
+  margin: 5px 10px;
   cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(3px);
+  transition: all 0.3s ease-in;
 
   &:hover {
-    font-weight: bold;
+    background-color: #f14e23;
+    transform: translateY(-3px) scale(1.02);
+    transition: all 0.3s ease;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   }
-
-  ${(props) =>
-    props.active &&
-    `
-    font-weight: bold;
-  `}
 `;
 
 const MenuContainer = styled.div`
@@ -132,6 +168,12 @@ const MenuContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+`;
+const CategoryBlock = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
 `;
 
 const MenuItemContainer = styled.div`
@@ -160,11 +202,19 @@ const CategoryTitle = styled.h2`
   text-align: left;
   margin-bottom: 10px;
 `;
+const MenuItemsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; // This ensures the menu items move to the next line if there's not enough space
+  justify-content: space-between;
+`;
+
 
 const ItemName = styled.h2`
   font-size: 1.5em;
   color: #333;
   text-align: left;
+  margin-bottom: 10px;
 `;
 
 const ItemDescription = styled.p`
