@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import FoodImage from "../assets/Food_LandingPage.jpg";
 import Arrow_Menu from "../assets/Arrow_Menu.png";
 import Underlineimg from "../assets/Underline_Beige.png";
 import { useNavigate } from "react-router-dom";
+import { collection, getDocs } from "firebase/firestore";
+import db from "firebaseConfig";
 
 export default function Mainpage() {
   const navigate = useNavigate();
+  const [imageUrl, setImageUrl] = useState("");
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const imgRef = collection(db, "image");
+      const snapshot = await getDocs(imgRef);
+      const data = snapshot.docs.map((doc) => doc.data());
+      console.log("Firebase data:", data);
+      setImageUrl(data[0].img);
+    };
+
+    fetchData();
+  }, []);
 
   const handleMenuClick = () => {
     navigate("/menu");
@@ -23,7 +37,7 @@ export default function Mainpage() {
   return (
     <Container>
       <Left>
-        <Food src={FoodImage}></Food>
+        <Food src={imageUrl}></Food>
       </Left>
       <Right>
         <Address>
