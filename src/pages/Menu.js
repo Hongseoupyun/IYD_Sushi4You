@@ -13,6 +13,7 @@ export default function Menu() {
   const [filteredMenuItems, setFilteredMenuItems] = useState([]);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [loadingCategories, setLoadingCategories] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -27,6 +28,7 @@ export default function Menu() {
         new Set(data.map((item) => item.category))
       );
       setCategories(uniqueCategories);
+      setLoadingCategories(false);
     };
 
     fetchData();
@@ -65,23 +67,26 @@ export default function Menu() {
         setSelectedMenuItem={setSelectedMenuItem}
       />
       <CategoryButtons>
-      <CategoryButton
-  key={"all"}
-  className={selectedCategory === "All" ? "selected" : ""}  // Add the 'selected' class when this category is selected
-  onClick={() => handleCategoryClick("All")}
->
-  All
-</CategoryButton>
-{categories.map((category) => (
-  <CategoryButton
-    key={category}
-    className={selectedCategory === category ? "selected" : ""}  // Add the 'selected' class when this category is selected
-    onClick={() => handleCategoryClick(category)}
-  >
-    {category}
-  </CategoryButton>
-))}
-
+        {!loadingCategories && (
+          <>
+            <CategoryButton
+              key={"all"}
+              className={selectedCategory === "All" ? "selected" : ""} // Add the 'selected' class when this category is selected
+              onClick={() => handleCategoryClick("All")}
+            >
+              All
+            </CategoryButton>
+            {categories.map((category) => (
+              <CategoryButton
+                key={category}
+                className={selectedCategory === category ? "selected" : ""} // Add the 'selected' class when this category is selected
+                onClick={() => handleCategoryClick(category)}
+              >
+                {category}
+              </CategoryButton>
+            ))}
+          </>
+        )}
       </CategoryButtons>
       <MenuContainer>
         {selectedCategory !== "All" ? (
@@ -168,7 +173,6 @@ const CategoryButton = styled.button`
     transform: translateY(-3px) scale(1.02);
     color: white;
     transition: all 0.3s ease-out;
-
   }
 
   &.selected {
@@ -176,8 +180,6 @@ const CategoryButton = styled.button`
     transform: translateY(-3px) scale(1.02);
     color: white;
     transition: all 0.3s ease-in;
-
-  
   }
 `;
 

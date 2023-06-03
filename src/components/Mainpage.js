@@ -6,9 +6,13 @@ import { useNavigate } from "react-router-dom";
 import { collection, getDocs } from "firebase/firestore";
 import db from "firebaseConfig";
 
+// Import a loading spinner component
+import { Puff } from "react-loader-spinner";
+
 export default function Mainpage() {
   const navigate = useNavigate();
   const [imageUrl, setImageUrl] = useState("");
+  const [loading, setLoading] = useState(true); // Add this state
 
   useEffect(() => {
     const fetchData = async () => {
@@ -17,6 +21,7 @@ export default function Mainpage() {
       const data = snapshot.docs.map((doc) => doc.data());
       console.log("Firebase data:", data);
       setImageUrl(data[0].img);
+      setLoading(false); // Set loading to false when done fetching
     };
 
     fetchData();
@@ -37,7 +42,18 @@ export default function Mainpage() {
   return (
     <Container>
       <Left>
-        <Food src={imageUrl}></Food>
+        {loading ? (
+          <StyledPuffWrapper>
+            <Puff
+              color="#00BFFF"
+              height={100}
+              width={100}
+              timeout={3000} //3 secs
+            />
+          </StyledPuffWrapper>
+        ) : (
+          <Food src={imageUrl}></Food>
+        )}
       </Left>
       <Right>
         <Address>
@@ -70,6 +86,26 @@ const Container = styled.div`
   display: flex;
   padding-top: 15px;
 `;
+const StyledPuffWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  animation: fadein 2s infinite;
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+`;
+
 const Left = styled.div`
   height: 75%;
   width: 45%;
