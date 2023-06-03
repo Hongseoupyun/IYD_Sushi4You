@@ -43,7 +43,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150vh;
+  height: 160vh;
   background-color: #fbf1dd;
 `;
 

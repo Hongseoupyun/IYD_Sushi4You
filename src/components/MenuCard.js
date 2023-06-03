@@ -44,7 +44,7 @@ const Content = styled.div`
 `;
 
 const Name = styled.h2`
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #05493c;
@@ -52,7 +52,7 @@ const Name = styled.h2`
 
 const Description = styled.p`
   color: #05493c;
-  font-size: 13px;
+  font-size: 14.5px;
   height: 120px;
   word-break: break-word; /* Break words properly */
   overflow: unset;
@@ -69,7 +69,7 @@ const Price = styled.div`
   width: 50px; // set a fixed width
   border-radius: 50px; // set the border radius to 50% to get a circle
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 400;
   color: white;
   display: flex;
   justify-content: center; // center content horizontally
