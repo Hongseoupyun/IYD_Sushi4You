@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ArrowIcon from "../assets/Arrow_Beige.png";
+import ArrowIcon from "assets/Arrow_Beige.png";
 
 const Location = React.forwardRef((props, ref) => {
   return (

@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Navbar from "components/Navbar";
-import Mainpage from "components/Mainpage";
-import Signature from "components/Signature";
-import Location from "components/Location";
+import Mainpage from "components/Home/Mainpage";
+import Signature from "components/Home/Signature";
+import Location from "components/Home/Location";
 import Footer from "components/Footer";
 
 export default function Home() {

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import db from "firebaseConfig";
 import styled from "styled-components";
-import MenuCard from "components/MenuCard";
+import MenuCard from "components/Home/MenuCard";
 
 export default function Signature() {
   const [menuData, setMenuData] = useState([]);
