@@ -24,9 +24,9 @@ export default function Menu() {
       setMenuItems(data);
       setFilteredMenuItems(data);
 
-      const uniqueCategories = Array.from(
-        new Set(data.map((item) => item.category))
-      );
+      const categories = data.map((item) => item.category);
+      const uniqueCategories = [...new Set(categories)];
+
       setCategories(uniqueCategories);
       setLoadingCategories(false);
     };
