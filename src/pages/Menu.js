@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
+import MenuItem from "components/Menu/MenuItem";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { collection, getDocs } from "firebase/firestore";
@@ -100,7 +101,7 @@ export default function Menu() {
           </CategoryBlock>
         ) : (
           categories.map((category) => (
-            <CategoryBlock>
+            <CategoryBlock key={category}>
               <CategoryTitle>{category}</CategoryTitle>
               <MenuItemsContainer>
                 {menuItems
@@ -121,20 +122,6 @@ export default function Menu() {
     </Container>
   );
 }
-
-const MenuItem = ({ item }) => {
-  return (
-    <MenuItemContainer>
-      <ItemInfo>
-        <ItemNameAndPrice>
-          <ItemName>{item.name}</ItemName>
-          <ItemPrice>{item.price}</ItemPrice>
-        </ItemNameAndPrice>
-        <ItemDescription>{item.desc}</ItemDescription>
-      </ItemInfo>
-    </MenuItemContainer>
-  );
-};
 
 const Container = styled.div`
   background-color: #f5f5f5;
@@ -199,55 +186,16 @@ const CategoryBlock = styled.div`
   margin-bottom: 50px;
 `;
 
-const MenuItemContainer = styled.div`
-  width: calc(50% - 20px); // Adjust the width to your preference
-  margin-bottom: 40px; // Add margin to separate the items vertically
-`;
-
-const ItemInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: left;
-  margin: 20px 0;
-`;
-
-const ItemNameAndPrice = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-`;
-
 const CategoryTitle = styled.h2`
   font-size: 2em;
   color: #333;
   text-align: left;
   margin-bottom: 25px;
 `;
+
 const MenuItemsContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; // This ensures the menu items move to the next line if there's not enough space
   justify-content: space-between;
-`;
-
-const ItemName = styled.h2`
-  font-size: 1.5em;
-  color: #333;
-  text-align: left;
-  margin-bottom: 10px;
-`;
-
-const ItemDescription = styled.p`
-  font-size: 1em;
-  color: #666;
-  text-align: left;
-  font-weight: semi-bold;
-`;
-
-const ItemPrice = styled.span`
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #333;
 `;
