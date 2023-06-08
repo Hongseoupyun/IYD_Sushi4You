@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function MenuItem(props) {
   const { item } = props;
-  
+
   return (
     <MenuItemContainer>
       <ItemInfo>
@@ -19,7 +19,7 @@ function MenuItem(props) {
 
 const MenuItemContainer = styled.div`
   width: calc(50% - 20px); // Adjust the width to your preference
-  margin-bottom: 40px; // Add margin to separate the items vertically
+  margin-bottom: 10px; // Add margin to separate the items vertically
 `;
 
 const ItemInfo = styled.div`
@@ -34,6 +34,7 @@ const ItemInfo = styled.div`
 const ItemNameAndPrice = styled.div`
   display: flex;
   justify-content: space-between;
+  font-size: 0.95em;
   width: 100%;
 `;
 
@@ -41,6 +42,7 @@ const ItemName = styled.h2`
   font-size: 1.5em;
   color: #333;
   text-align: left;
+  font-weight: 600;
   margin-bottom: 10px;
 `;
 
@@ -53,7 +55,7 @@ const ItemDescription = styled.p`
 
 const ItemPrice = styled.span`
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 600;
   color: #333;
 `;
 export default MenuItem;

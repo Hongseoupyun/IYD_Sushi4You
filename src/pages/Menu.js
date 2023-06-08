@@ -51,12 +51,14 @@ export default function Menu() {
     if (category === "All") {
       setFilteredMenuItems(menuItems);
       setSelectedCategory("All");
+      window.scrollTo({ top: 650, behavior: "smooth" });
     } else {
       const filteredItems = menuItems.filter(
         (item) => item.category === category
       );
       setFilteredMenuItems(filteredItems);
       setSelectedCategory(category);
+      window.scrollTo({ top: 650, behavior: "smooth" });
     }
   };
 
@@ -174,7 +176,7 @@ const MenuContainer = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  padding: 50px 0;
+  padding: 90px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -184,13 +186,16 @@ const CategoryBlock = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+  padding: 0 30px;
 `;
 
 const CategoryTitle = styled.h2`
-  font-size: 2em;
+  font-size: 2.4em;
   color: #333;
   text-align: left;
   margin-bottom: 25px;
+  font-weight: bold;
+  margin-bottom: 70px;
 `;
 
 const MenuItemsContainer = styled.div`
