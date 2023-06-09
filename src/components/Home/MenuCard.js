@@ -19,8 +19,8 @@ export default MenuCard;
 
 const Card = styled.div`
   position: relative;
-  width: 230px;
-  height: 420px;
+  width: 220px;
+  height: 425px;
   border-radius: 15px;
   overflow: unset;
   box-shadow: 0 5px 7.5px rgba(0, 0, 0, 0.1);

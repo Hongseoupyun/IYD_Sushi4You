@@ -28,7 +28,7 @@ const ItemInfo = styled.div`
   justify-content: center;
   align-items: flex-start;
   text-align: left;
-  margin: 20px 0;
+  margin: 17px 0;
 `;
 
 const ItemNameAndPrice = styled.div`

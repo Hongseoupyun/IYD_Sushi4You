@@ -191,7 +191,6 @@ const CategoryBlock = styled.div`
 
 const CategoryTitle = styled.h2`
   font-size: 2.4em;
-  color: #333;
   text-align: left;
   margin-bottom: 25px;
   font-weight: bold;
