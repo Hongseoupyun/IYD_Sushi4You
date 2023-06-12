@@ -830,125 +830,125 @@
   },
   {
     "category": "CHEF’S SPECIAL",
-    "code": "C07",
+    "id": 93,
     "name": "BLACK DRAGON MAKI (8 pcs)",
     "desc": "BBQ eel, cucumber, avocado and fish egg roll topped with BBQ eel and house sauce",
-    "price": "$15.99",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "CHEF’S SPECIAL",
-    "code": "C08",
-    "name": "FRENCH KISS MAKI (8 pcs)",
-    "desc": "Deep fried shrimp, avocado, crab meat and cream cheese with smoked salmon on top",
-    "price": "$14.99",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "CHEF’S SPECIAL",
-    "code": "C09",
-    "name": "SNOW DRAGON (8 pcs)",
-    "desc": "Deep fried shrimp, avocado, cucumber and fish egg on top of torched white fish & onion",
-    "price": "$13.99",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "CHEF’S SPECIAL",
-    "code": "C10",
-    "name": "BULGOGI CHEESE ROLL (8 pcs)",
-    "desc": "Cooked sliced beef sirloin marinated with house sauce, lettuce and sliced cheese",
-    "price": "$12.99",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "CHEF’S SPECIAL",
-    "code": "C11",
-    "name": "CALAMARI ROLL (8 pcs)",
-    "desc": "Deep fried squid, cucumber, fish egg, avocado and crab meat",
-    "price": "$13.99",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "CHEF’S SPECIAL",
-    "code": "C12",
-    "name": "CHERRY ROLL (8 pcs)",
-    "desc": "Salmon, crab meat, avocado, cucumber wrapped in soy paper, topped with fresh tuna and spicy sauce",
-    "price": "$13.99",
-    "spicy": true,
-    "veg": false
-  },
-  {
-    "category": "CHEF’S SPECIAL",
-    "code": "C13",
-    "name": "YOUNG ROLL (8 pcs)",
-    "desc": "Spicy salmon, asparagus, cucumber, carrot and crunch topped with steamed black tiger shrimp and white fish tempura, avocado and 3 house sauces",
-    "price": "$15.99",
-    "spicy": true,
-    "veg": false
-  },
-  {
-    "category": "CHEF’S SPECIAL",
-    "code": "C14",
-    "name": "TIGER ROLL (8 pcs)",
-    "desc": "Shrimp tempura, asparagus, cucumber topped with salmon tempura and house sauce",
-    "price": "$14.99",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "CHEF’S SPECIAL",
-    "code": "C15",
-    "name": "SKYDOM MAKI (8 pcs)",
-    "desc": "Shrimp Tempura, asparagus, crab meat, cucumber, cream cheese and avocado with salmon on top",
-    "price": "$16.99",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "CHEF’S SPECIAL",
-    "code": "C16",
-    "name": "EBITEN MAKI (8 pcs)",
-    "desc": "Stuffed with shrimp tempura, avocado, crab meat and cucumber with masago on top of a torched combination of garlic butter, creamy sauce and house sauce",
     "price": "$17.99",
     "spicy": false,
     "veg": false
   },
   {
     "category": "CHEF’S SPECIAL",
-    "code": "C17",
-    "name": "UDON & SUSHI (4 pcs)",
-    "desc": "",
-    "price": "$13.99",
+    "id": 94,
+    "name": "FRENCH KISS MAKI (8 pcs)",
+    "desc": "Deep fried shrimp, avocado, crab meat and cream cheese with smoked salmon on top",
+    "price": "$16.99",
     "spicy": false,
     "veg": false
   },
   {
     "category": "CHEF’S SPECIAL",
-    "code": "C18",
-    "name": "UDON & CALIFORNIA",
-    "desc": "",
-    "price": "$13.99",
+    "id": 95,
+    "name": "SNOW DRAGON (8 pcs)",
+    "desc": "Deep fried shrimp, avocado, cucumber and fish egg on top of torched white fish & onion",
+    "price": "$16.99",
     "spicy": false,
     "veg": false
   },
   {
     "category": "CHEF’S SPECIAL",
-    "code": "C19",
-    "name": "SEARED SALMON ROLL",
-    "desc": "Seared samon, tempura bit and spicy mayo topped salmon",
-    "price": "$13.99",
+    "id": 96,
+    "name": "BULGOGI CHEESE ROLL (8 pcs)",
+    "desc": "Cooked sliced beef sirloin marinated with house sauce, lettuce and sliced cheese",
+    "price": "$15.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "CHEF’S SPECIAL",
+    "id": 97,
+    "name": "CALAMARI ROLL (8 pcs)",
+    "desc": "Deep fried squid, cucumber, fish egg, avocado and crab meat",
+    "price": "$15.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "CHEF’S SPECIAL",
+    "id": 98,
+    "name": "CHERRY ROLL (8 pcs)",
+    "desc": "Salmon, crab meat, avocado, cucumber wrapped in soy paper, topped with fresh tuna and spicy sauce",
+    "price": "$15.99",
     "spicy": true,
     "veg": false
   },
   {
     "category": "CHEF’S SPECIAL",
-    "code": "C20",
-    "name": "Tempura Lover Maki (10pcs)",
+    "id": 99,
+    "name": "YOUNG ROLL (8 pcs)",
+    "desc": "Spicy salmon, asparagus, cucumber, carrot and crunch topped with steamed black tiger shrimp and white fish tempura, avocado and 3 house sauces",
+    "price": "$17.99",
+    "spicy": true,
+    "veg": false
+  },
+  {
+    "category": "CHEF’S SPECIAL",
+    "id": 100,
+    "name": "TIGER ROLL (8 pcs)",
+    "desc": "Shrimp tempura, asparagus, cucumber topped with salmon tempura and house sauce",
+    "price": "$16.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "CHEF’S SPECIAL",
+    "id": 101,
+    "name": "SKYDOM MAKI (8 pcs)",
+    "desc": "Shrimp Tempura, asparagus, crab meat, cucumber, cream cheese and avocado with salmon on top",
+    "price": "$18.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "CHEF’S SPECIAL",
+    "id": 102,
+    "name": "EBITEN MAKI (8 pcs)",
+    "desc": "Stuffed with shrimp tempura, avocado, crab meat and cucumber with masago on top of a torched combination of garlic butter, creamy sauce and house sauce",
+    "price": "$19.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "CHEF’S SPECIAL",
+    "id": 103,
+    "name": "UDON & SUSHI (4 pcs)",
+    "desc": "",
+    "price": "$15.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "CHEF’S SPECIAL",
+    "id": 104,
+    "name": "UDON & CALIFORNIA",
+    "desc": "",
+    "price": "$15.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "CHEF’S SPECIAL",
+    "id": 105,
+    "name": "SEARED SALMON ROLL (8 pcs)",
+    "desc": "Seared samon, tempura bit and spicy mayo topped salmon",
+    "price": "$15.99",
+    "spicy": true,
+    "veg": false
+  },
+  {
+    "category": "CHEF’S SPECIAL",
+    "id": 106,
+    "name": "TEMPURA LOVER MAKI (10 pcs)",
     "desc": "Shrimp tempura, crab meat, cucumber, avocado, spring mix, tempura bits and mayo inside rolled with tempura bits.",
     "price": "$17.99",
     "spicy": false,
@@ -956,8 +956,8 @@
   },
   {
     "category": "CHEF’S SPECIAL",
-    "code": "C21",
-    "name": "Yam Lover Maki (10pcs)",
+    "id": 107,
+    "name": "YAM LOVER MAKI (10 pcs)",
     "desc": "Yam tempura and avocado inside topped with yam tempura and shredded crunch potatoes.",
     "price": "$15.99",
     "spicy": false,
@@ -965,8 +965,8 @@
   },
   {
     "category": "CHEF’S SPECIAL",
-    "code": "C22",
-    "name": "Fish & Chips Maki (10pcs)",
+    "id": 108,
+    "name": "FISH & CHIPS MAKI (10 pcs)",
     "desc": "Breaded white fish, avocado and cucumber inside topped with tartar sauce.",
     "price": "$14.99",
     "spicy": false,
@@ -974,8 +974,8 @@
   },
   {
     "category": "CHEF’S SPECIAL",
-    "code": "C23",
-    "name": "Venezuela Maki (10pcs)",
+    "id": 109,
+    "name": "VENEZUELA MAKI (10 pcs)",
     "desc": "Deep fried roll, salmon, avocado, shrimp tempura, crab meat and cream cheese inside.",
     "price": "$16.99",
     "spicy": false,
@@ -983,7 +983,7 @@
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "DS01",
+    "id": 110,
     "name": "CHICKEN TERIYAKI BENTO",
     "price": "$11.99",
     "desc": "served with miso soup, salad & rice",
