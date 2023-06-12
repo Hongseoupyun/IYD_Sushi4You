@@ -3,11 +3,12 @@ import styled from "styled-components";
 
 export default function CategoryButtons(props) {
   const {
-    categories,
     selectedCategory,
     handleCategoryClick,
     loadingCategories,
   } = props;
+
+  const categories = ["SOUP", "SALAD", "APPETIZERS", "SUSHI & SASHIMI A LA CARTE", "SIGNATURE MAKI (ROLL)", "MAKI (ROLL)", "CHEF'S SPECIAL", "LUNCH SPECIAL (BENTO BOX)", "MAIN DISH", "SASHIMI PARTY TRAY", "SUSHI & MAKI TRAY", "SUSHI, SASHIMI & MAKI COMBO TRAY", "MAKI TRAY", "ADD-ONS", "DRINKS"];
   return (
     <Container>
       {!loadingCategories && (

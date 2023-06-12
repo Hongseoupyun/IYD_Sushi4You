@@ -1477,9 +1477,17 @@
     "veg": false
   },
   {
+    "category": "ADD-ONS",
+    "id": 165,
+    "name": "SPICY MAYO",
+    "price": "$0.75",
+    "spicy": false,
+    "veg": false
+  },
+  {
     "category": "DRINKS",
     "subCategory": "ALCOHOL BEVERAGE",
-    "id": 165,
+    "id": 166,
     "name": "Sake (S)",
     "desc": "",
     "price": "$6.99"
@@ -1487,7 +1495,7 @@
   {
     "category": "DRINKS",
     "subCategory": "ALCOHOL BEVERAGE",
-    "id": 166,
+    "id": 167,
     "name": "Sake (M)",
     "desc": "",
     "price": "$12.99"
@@ -1495,7 +1503,7 @@
   {
     "category": "DRINKS",
     "subCategory": "ALCOHOL BEVERAGE",
-    "id": 167,
+    "id": 168,
     "name": "Sake (L)",
     "desc": "",
     "price": "$29.99"
@@ -1503,7 +1511,7 @@
   {
     "category": "DRINKS",
     "subCategory": "ALCOHOL BEVERAGE",
-    "id": 168,
+    "id": 169,
     "name": "Sapporo (L)",
     "desc": "",
     "price": "$9.99"
@@ -1511,7 +1519,7 @@
   {
     "category": "DRINKS",
     "subCategory": "SOFT DRINK",
-    "id": 169,
+    "id": 170,
     "name": "D.Coke/Coke",
     "desc": "",
     "price": "$2.00"
@@ -1519,7 +1527,7 @@
   {
     "category": "DRINKS",
     "subCategory": "SOFT DRINK",
-    "id": 170,
+    "id": 171,
     "name": "Sprite",
     "desc": "",
     "price": "$2.00"
@@ -1527,7 +1535,7 @@
   {
     "category": "DRINKS",
     "subCategory": "SOFT DRINK",
-    "id": 171,
+    "id": 172,
     "name": "Ginger Ale",
     "desc": "",
     "price": "$2.00"
@@ -1535,7 +1543,7 @@
   {
     "category": "DRINKS",
     "subCategory": "SOFT DRINK",
-    "id": 172,
+    "id": 173,
     "name": "Club Soda",
     "desc": "",
     "price": "$2.00"
@@ -1543,7 +1551,7 @@
   {
     "category": "DRINKS",
     "subCategory": "SOFT DRINK",
-    "id": 173,
+    "id": 174,
     "name": "Iced Tea",
     "desc": "",
     "price": "$3.00"
@@ -1551,7 +1559,7 @@
   {
     "category": "DRINKS",
     "subCategory": "SOFT DRINK",
-    "id": 174,
+    "id": 175,
     "name": "Perrier",
     "desc": "",
     "price": "$3.00"

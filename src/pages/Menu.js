@@ -21,8 +21,13 @@ export default function Menu() {
     const fetchData = async () => {
       const menuRef = collection(db, "menu");
       const snapshot = await getDocs(menuRef);
-      const data = snapshot.docs.map((doc) => doc.data());
+      const data = snapshot.docs.map((doc) => ({
+        ...doc.data(),
+        firebaseId: doc.id,
+      }));
+
       console.log("Firebase data:", data);
+      data.sort((a, b) => (a.id > b.id ? 1 : -1));
       setMenuItems(data);
       setFilteredMenuItems(data);
 
@@ -82,8 +87,8 @@ export default function Menu() {
           <CategoryBlock>
             <CategoryTitle>{selectedCategory}</CategoryTitle>
             <MenuItemsContainer>
-              {filteredMenuItems.map((item, index) => (
-                <MenuItem key={index} item={item} />
+              {filteredMenuItems.map((item) => (
+                <MenuItem key={item.id} item={item} />
               ))}
             </MenuItemsContainer>
           </CategoryBlock>
@@ -94,8 +99,8 @@ export default function Menu() {
               <MenuItemsContainer>
                 {menuItems
                   .filter((item) => item.category === category)
-                  .map((item, index) => (
-                    <MenuItem key={index} item={item} />
+                  .map((item) => (
+                    <MenuItem key={item.id} item={item} />
                   ))}
               </MenuItemsContainer>
             </CategoryBlock>
