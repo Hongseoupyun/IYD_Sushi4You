@@ -985,240 +985,186 @@
     "category": "LUNCH SPECIAL (Bento Box)",
     "id": 110,
     "name": "CHICKEN TERIYAKI BENTO",
-    "price": "$11.99",
+    "price": "$13.99",
     "desc": "served with miso soup, salad & rice",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "DS02",
+    "id": 111,
     "name": "SALMON TERIYAKI BENTO",
-    "price": "$11.99",
+    "price": "$13.99",
     "desc": "served with miso soup, salad & rice",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "DS03",
+    "id": 112,
     "name": "BEEF TERIYAKI BENTO",
-    "price": "$11.99",
+    "price": "$13.99",
     "desc": "served with miso soup, salad & rice",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "DS04",
+    "id": 113,
     "name": "TEMPURA BENTO",
-    "price": "$11.99",
+    "price": "$13.99",
     "desc": "served with miso soup, salad & rice",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "DS05",
+    "id": 114,
     "name": "BULGOGI BENTO",
-    "price": "$11.99",
+    "price": "$13.99",
     "desc": "served with miso soup, salad & rice",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "LS01",
+    "id": 115,
     "name": "DYNAMITE BENTO (roll, 6 pcs)",
-    "price": "$15.99",
+    "price": "$18.99",
     "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "LS02",
+    "id": 116,
     "name": "SPICY SALMON BENTO (roll, 6 pcs)",
-    "price": "$15.99",
+    "price": "$18.99",
     "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "LS03",
+    "id": 117,
     "name": "SPICY TUNA BENTO (roll, 6 pcs)",
-    "price": "$15.99",
+    "price": "$18.99",
     "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "LS04",
+    "id": 118,
     "name": "SPICY LOVER BENTO (roll, 5 pcs)",
-    "price": "$15.99",
+    "price": "$18.99",
     "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "LS05",
+    "id": 119,
     "name": "SALMON LOVER BENTO (roll, 5 pcs)",
-    "price": "$15.99",
+    "price": "$18.99",
     "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "LS06",
+    "id": 120,
     "name": "RAINBOW BENTO (roll, 5 pcs)",
-    "price": "$15.99",
+    "price": "$18.99",
     "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "LS07",
+    "id": 121,
     "name": "PHILADELPHIA BENTO (roll, 5 pcs)",
-    "price": "$15.99",
+    "price": "$18.99",
     "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "LS08",
+    "id": 122,
     "name": "GREEN DRAGON BENTO (roll, 5 pcs)",
-    "price": "$15.99",
+    "price": "$18.99",
     "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "LS09",
+    "id": 123,
     "name": "RED DRAGON BENTO (roll, 5 pcs)",
-    "price": "$15.99",
+    "price": "$18.99",
     "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "LS10",
+    "id": 124,
     "name": "GOLDEN DRAGON BENTO (roll, 5 pcs)",
-    "price": "$15.99",
+    "price": "$18.99",
     "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "LS11",
+    "id": 125,
     "name": "YAM BENTO (roll, 6 pcs)",
-    "price": "$14.99",
+    "price": "$17.99",
     "desc": "served with miso soup, salad, 5 pcs assorted vegetable tempura, 6 pcs Avo&Cu roll and 1 spring roll",
     "spicy": false,
     "veg": false
   },
   {
     "category": "LUNCH SPECIAL (Bento Box)",
-    "code": "LS12",
+    "id": 126,
     "name": "SWEET POTATO BENTO (roll, 5 pcs)",
-    "price": "$14.99",
+    "price": "$17.99",
     "desc": "served with miso soup, salad, 5 pcs assorted vegetable tempura, 6 pcs Avo&Cu roll and 1 spring roll",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD01",
+    "id": 127,
     "name": "SUSHI(A)",
-    "price": "$14.99",
+    "price": "$16.99",
     "desc": "8 pcs sushi & 6 pcs maki",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD02",
+    "id": 128,
     "name": "SUSHI(B)",
-    "price": "$19.99",
+    "price": "$22.99",
     "desc": "14 pcs sushi & 6 pcs maki",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD03",
+    "id": 129,
     "name": "SASHIMI BENTO",
-    "price": "$14.99",
+    "price": "$16.99",
     "desc": "9 pcs sashimi & 3 pcs California",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD04",
+    "id": 130,
     "name": "UNAGI DONBURI",
-    "price": "$18.99",
-    "desc": "",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "MAIN DISH",
-    "code": "MD05",
-    "name": "CHIRASHI",
-    "price": "$18.99",
-    "desc": "Assorted raw fish, crab meat, cooked shrimp and fish egg",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "MAIN DISH",
-    "code": "MD07",
-    "name": "MAKI SET",
-    "price": "$16.99",
-    "desc": "California roll, salmon roll & shrimp tempura roll",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "MAIN DISH",
-    "code": "MD08",
-    "name": "SUSHI & TEMPURA",
-    "price": "$17.99",
-    "desc": "",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "MAIN DISH",
-    "code": "MD09",
-    "name": "CALIFORNIA ROLL & TEMPURA",
-    "price": "$16.99",
-    "desc": "",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "MAIN DISH",
-    "code": "MD10",
-    "name": "SASHIMI & TEMPURA",
-    "price": "$18.99",
-    "desc": "",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "MAIN DISH",
-    "code": "MD11",
-    "name": "SUSHI & SASHIMI DINNER",
     "price": "$21.99",
     "desc": "",
     "spicy": false,
@@ -1226,97 +1172,151 @@
   },
   {
     "category": "MAIN DISH",
-    "code": "MD12",
-    "name": "BBQ KALBI BOX",
+    "id": 131,
+    "name": "CHIRASHI",
+    "price": "$21.99",
+    "desc": "Assorted raw fish, crab meat, cooked shrimp and fish egg",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "id": 132,
+    "name": "MAKI SET",
     "price": "$19.99",
+    "desc": "California roll, salmon roll & shrimp tempura roll",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "id": 133,
+    "name": "SUSHI & TEMPURA",
+    "price": "$20.99",
+    "desc": "",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "id": 134,
+    "name": "CALIFORNIA ROLL & TEMPURA",
+    "price": "$19.99",
+    "desc": "",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "id": 135,
+    "name": "SASHIMI & TEMPURA",
+    "price": "$21.99",
+    "desc": "",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "id": 136,
+    "name": "SUSHI & SASHIMI DINNER",
+    "price": "$24.99",
+    "desc": "",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAIN DISH",
+    "id": 137,
+    "name": "BBQ KALBI BOX",
+    "price": "$23.99",
     "desc": "BBQ beef short ribs marinated with special Korean sauce and 3 pcs California roll",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD13",
+    "id": 138,
     "name": "BULGOGI & TEMPURA BOX",
-    "price": "$17.99",
+    "price": "$20.99",
     "desc": "Sliced beef sirloin marinated, 3 pcs California roll and tempura (2 pcs shrimp & 3 pcs vegetable)",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD14",
+    "id": 139,
     "name": "TERIYAKI & TEMPURA BOX",
-    "price": "$17.99",
+    "price": "$20.99",
     "desc": "Your choice of chicken/beef/salmon, 3 pcs California roll and tempura (2 pcs shrimp & 3 pcs vegetable)",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD15",
+    "id": 140,
     "name": "TERIYAKI & SASHIMI BOX",
-    "price": "$19.99",
+    "price": "$21.99",
     "desc": "Your choice of chicken/beef/salmon, 9 pcs sashimi and 3 pcs California roll",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD16",
+    "id": 141,
     "name": "SASHIMI, SUSHI & TEMPURA BOX",
-    "price": "$19.99",
+    "price": "$21.99",
     "desc": "6 pcs sashimi, 5 pcs sushi and 4 pcs shrimp tempura",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD17",
+    "id": 142,
     "name": "CALIFORNIA MAKI SET",
-    "price": "$14.99",
+    "price": "$16.99",
     "desc": "12 pcs California roll",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD18",
+    "id": 143,
     "name": "VEGETARIAN MAKI SET",
-    "price": "$12.99",
+    "price": "$14.99",
     "desc": "6 pcs Yam Tempura roll, 6 pcs Avocado roll",
     "spicy": false,
     "veg": true
   },
   {
     "category": "MAIN DISH",
-    "code": "MD19",
+    "id": 144,
     "name": "SPICY MAKI SET",
-    "price": "$15.99",
+    "price": "$17.99",
     "desc": "6 pcs Spicy Salmon roll, 6 pcs Spicy Tuna roll",
     "spicy": true,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD20",
+    "id": 145,
     "name": "SUSHI MORIWASE",
-    "price": "$19.99",
+    "price": "$22.99",
     "desc": "15 pcs of assorted fresh fish",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD21",
+    "id": 146,
     "name": "SASHIMI & SUSHI",
-    "price": "$18.99",
+    "price": "$21.99",
     "desc": "10 pcs sashimi, 4 pcs sushi with rice",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD22",
+    "id": 147,
     "name": "SASHIMI MORIWASE",
     "price": "$22.99",
     "desc": "20 pcs of assorted fresh fish with rice",
@@ -1325,216 +1325,235 @@
   },
   {
     "category": "MAIN DISH",
-    "code": "MD23",
+    "id": 148,
     "name": "MIXED FISH POKE",
-    "price": "$15.99",
+    "price": "$17.99",
     "desc": "",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD24",
+    "id": 149,
     "name": "SALMON POKE",
-    "price": "$17.99",
+    "price": "$19.99",
     "desc": "",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD25",
+    "id": 150,
     "name": "SALMON COMBO A",
-    "price": "$16.99",
+    "price": "$19.99",
     "desc": "",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD26",
+    "id": 151,
     "name": "SALMON COMBO B",
-    "price": "$17.99",
-    "desc": "",
+    "price": "$20.99",
+    "desc": "Salmon sashimi, salmon sushi and spicy salmon maki served with one soup and one salad",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD31",
+    "id": 152,
     "name": "LOVE COURSE for 2 people",
-    "price": "$49.99",
+    "price": "$57.99",
     "desc": "2 miso soup, 2 salad (green or wakame), 4 pcs shrimp tempura, 9 pcs sashimi, 8 pcs sushi, 6 pcs maki, 1 Teriyaki (chicken/beef/salmon) & 2 steamed rice",
     "spicy": false,
     "veg": false
   },
   {
     "category": "MAIN DISH",
-    "code": "MD32",
+    "id": 153,
     "name": "FAMILY COURSE for 4 people",
-    "price": "$89.99",
+    "price": "$99.99",
     "desc": "4 miso soup, 4 salad (green or wakame), 8 pcs shrimp tempura, 16 pcs sashimi, 12 pcs sushi, 12 pcs maki, 2 Teriyaki (chicken/beef/salmon) & 4 steamed rice",
     "spicy": false,
     "veg": false
   },
   {
     "category": "SASHIMI PARTY TRAY",
-    "code": "SPT01",
-    "name": "SMALL SASHIMI PARTY TRAY",
+    "id": 154,
+    "name": "SMALL",
     "desc": "30 pcs",
-    "price": "$33.99",
+    "price": "$44.99",
     "spicy": false,
     "veg": false
   },
   {
     "category": "SASHIMI PARTY TRAY",
-    "code": "SPT02",
-    "name": "MEDIUM SASHIMI PARTY TRAY",
+    "id": 155,
+    "name": "MEDIUM",
     "desc": "50 pcs",
+    "price": "$74.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SASHIMI PARTY TRAY",
+    "id": 156,
+    "name": "LARGE",
+    "desc": "70 pcs",
+    "price": "$94.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "SUSHI & MAKI TRAY",
+    "id": 157,
+    "name": "SMALL",
+    "desc": "18 pcs sushi & 22 pcs maki",
     "price": "$54.99",
     "spicy": false,
     "veg": false
   },
   {
-    "category": "SASHIMI PARTY TRAY",
-    "code": "SPT03",
-    "name": "LARGE SASHIMI PARTY TRAY",
-    "desc": "70 pcs",
-    "price": "$76.99",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "MAKI TRAY",
-    "code": "MT01",
-    "name": "SMALL MAKI TRAY",
-    "desc": "52 pcs",
-    "price": "$55.99",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "MAKI TRAY",
-    "code": "MT02",
-    "name": "MEDIUM MAKI TRAY",
-    "desc": "72 pcs",
-    "price": "$75.99",
-    "spicy": false,
-    "veg": false
-  },
-  {
     "category": "SUSHI & MAKI TRAY",
-    "code": "SMT01",
-    "name": "SMALL SUSHI & MAKI TRAY",
-    "desc": "18 pcs sushi & 22 pcs maki",
-    "price": "$46.99",
-    "spicy": false,
-    "veg": false
-  },
-  {
-    "category": "SUSHI & MAKI TRAY",
-    "code": "SMT02",
-    "name": "MEDIUM SUSHI & MAKI TRAY",
+    "id": 158,
+    "name": "MEDIUM",
     "desc": "24 pcs sushi & 34 pcs maki",
-    "price": "$68.99",
+    "price": "$79.99",
     "spicy": false,
     "veg": false
   },
   {
     "category": "SUSHI & MAKI TRAY",
-    "code": "SMT03",
-    "name": "LARGE SUSHI & MAKI TRAY",
+    "id": 159,
+    "name": "LARGE",
     "desc": "30 pcs sushi & 45 pcs maki",
-    "price": "$85.99",
+    "price": "$98.99",
     "spicy": false,
     "veg": false
   },
   {
-    "category": "SUSHI, SASHIMI & MAKI COMBO",
-    "code": "SSMC01",
-    "name": "SMALL SUSHI, SASHIMI & MAKI COMBO",
+    "category": "SUSHI, SASHIMI & MAKI COMBO TRAY",
+    "id": 160,
+    "name": "SMALL",
     "desc": "9 pcs sushi, 9 pcs sashimi & 22 pcs maki",
-    "price": "$52.99",
+    "price": "$59.99",
     "spicy": false,
     "veg": false
   },
   {
-    "category": "SUSHI, SASHIMI & MAKI COMBO",
-    "code": "SSMC02",
-    "name": "MEDIUM SUSHI, SASHIMI & MAKI COMBO",
+    "category": "SUSHI, SASHIMI & MAKI COMBO TRAY",
+    "id": 161,
+    "name": "MEDIUM",
     "desc": "12 pcs sushi, 12 pcs sashimi & 34 pcs maki",
-    "price": "$73.99",
+    "price": "$84.99",
     "spicy": false,
     "veg": false
   },
   {
-    "category": "SUSHI, SASHIMI & MAKI COMBO",
-    "code": "SSMC03",
-    "name": "LARGE SUSHI, SASHIMI & MAKI COMBO",
+    "category": "SUSHI, SASHIMI & MAKI COMBO TRAY",
+    "id": 162,
+    "name": "LARGE",
     "desc": "24 pcs sushi, 24 pcs sashimi & 39 pcs maki",
-    "price": "$93.99",
+    "price": "$104.99",
     "spicy": false,
     "veg": false
   },
-  
   {
-    "category": "DRINKS",
-    "name": "D.Coke/Coke",
-    "desc": "",
-    "price": "$2.00"
+    "category": "MAKI TRAY",
+    "id": 163,
+    "name": "SMALL",
+    "desc": "52 pcs",
+    "price": "$64.99",
+    "spicy": false,
+    "veg": false
+  },
+  {
+    "category": "MAKI TRAY",
+    "id": 164,
+    "name": "MEDIUM",
+    "desc": "72 pcs",
+    "price": "$87.99",
+    "spicy": false,
+    "veg": false
   },
   {
     "category": "DRINKS",
-    "name": "Sprite",
-    "desc": "",
-    "price": "$2.00"
-  },
-  {
-    "category": "DRINKS",
-    "name": "Ginger Ale",
-    "desc": "",
-    "price": "$2.00"
-  },
-  {
-    "category": "DRINKS",
-    "name": "Club Soda",
-    "desc": "",
-    "price": "$2.00"
-  },
-  {
-    "category": "DRINKS",
-    "name": "Iced Tea",
-    "desc": "",
-    "price": "$3.00"
-  },
-  {
-    "category": "DRINKS",
-    "name": "Perrier",
-    "desc": "",
-    "price": "$3.00"
-  },
-  {
-    "category": "DRINKS",
+    "subCategory": "ALCOHOL BEVERAGE",
+    "id": 165,
     "name": "Sake (S)",
     "desc": "",
     "price": "$6.99"
   },
   {
     "category": "DRINKS",
+    "subCategory": "ALCOHOL BEVERAGE",
+    "id": 166,
     "name": "Sake (M)",
     "desc": "",
     "price": "$12.99"
   },
   {
     "category": "DRINKS",
+    "subCategory": "ALCOHOL BEVERAGE",
+    "id": 167,
     "name": "Sake (L)",
     "desc": "",
     "price": "$29.99"
   },
   {
     "category": "DRINKS",
+    "subCategory": "ALCOHOL BEVERAGE",
+    "id": 168,
     "name": "Sapporo (L)",
     "desc": "",
     "price": "$9.99"
+  },
+  {
+    "category": "DRINKS",
+    "subCategory": "SOFT DRINK",
+    "id": 169,
+    "name": "D.Coke/Coke",
+    "desc": "",
+    "price": "$2.00"
+  },
+  {
+    "category": "DRINKS",
+    "subCategory": "SOFT DRINK",
+    "id": 170,
+    "name": "Sprite",
+    "desc": "",
+    "price": "$2.00"
+  },
+  {
+    "category": "DRINKS",
+    "subCategory": "SOFT DRINK",
+    "id": 171,
+    "name": "Ginger Ale",
+    "desc": "",
+    "price": "$2.00"
+  },
+  {
+    "category": "DRINKS",
+    "subCategory": "SOFT DRINK",
+    "id": 172,
+    "name": "Club Soda",
+    "desc": "",
+    "price": "$2.00"
+  },
+  {
+    "category": "DRINKS",
+    "subCategory": "SOFT DRINK",
+    "id": 173,
+    "name": "Iced Tea",
+    "desc": "",
+    "price": "$3.00"
+  },
+  {
+    "category": "DRINKS",
+    "subCategory": "SOFT DRINK",
+    "id": 174,
+    "name": "Perrier",
+    "desc": "",
+    "price": "$3.00"
   }
 ]
