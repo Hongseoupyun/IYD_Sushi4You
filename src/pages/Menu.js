@@ -33,6 +33,7 @@ export default function Menu() {
 
       const categories = data.map((item) => item.category);
       const uniqueCategories = [...new Set(categories)];
+      console.log("Unique categories:", uniqueCategories)
 
       setCategories(uniqueCategories);
       setLoadingCategories(false);
@@ -64,6 +65,8 @@ export default function Menu() {
       );
       setFilteredMenuItems(filteredItems);
       setSelectedCategory(category);
+      console.log("category:", category)
+      console.log("filteredItems:", filteredItems)
       window.scrollTo({ top: 650, behavior: "smooth" });
     }
   };
@@ -86,6 +89,9 @@ export default function Menu() {
         {selectedCategory !== "All" ? (
           <CategoryBlock>
             <CategoryTitle>{selectedCategory}</CategoryTitle>
+            <Subtitle>
+              <i>Extra Charge for Substitions</i>
+            </Subtitle>
             <MenuItemsContainer>
               {filteredMenuItems.map((item) => (
                 <MenuItem key={item.id} item={item} />
@@ -96,6 +102,9 @@ export default function Menu() {
           categories.map((category) => (
             <CategoryBlock key={category}>
               <CategoryTitle>{category}</CategoryTitle>
+              <Subtitle>
+                <i>Extra Charge for Substitions</i>
+              </Subtitle>
               <MenuItemsContainer>
                 {menuItems
                   .filter((item) => item.category === category)
@@ -137,12 +146,18 @@ const CategoryBlock = styled.div`
   padding: 0 30px;
 `;
 
+const Subtitle = styled.div`
+  font-size: 1em;
+  text-align: left;
+  font-weight: semi-bold;
+  margin-bottom: 70px;
+`;
+
 const CategoryTitle = styled.h2`
   font-size: 2.4em;
   text-align: left;
   margin-bottom: 25px;
   font-weight: bold;
-  margin-bottom: 70px;
 `;
 
 const MenuItemsContainer = styled.div`
