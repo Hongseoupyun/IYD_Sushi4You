@@ -140,6 +140,13 @@ const Food = styled.img`
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   object-fit: cover;
+  ${media.tablet`
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;`}
+  ${media.mobile`
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  `}
 `;
 
 const Right = styled.div`
