@@ -1,10 +1,24 @@
 import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
-import MenuItem from "components/Menu/MenuItem";
 import CategoryButtons from "components/Menu/CategoryButtons";
+import SushiSashimiALaCarte from "components/Menu/SushiSashimiALaCarte";
+import Soup from "components/Menu/Soup";
+import Salad from "components/Menu/Salad";
+import Appetizers from "components/Menu/Appetizers";
+import SignatureMakiRoll from "components/Menu/SignatureMakiRoll";
+import MakiRoll from "components/Menu/MakiRoll";
+import ChefSpecial from "components/Menu/ChefSpecial";
+import LunchSpecial from "components/Menu/LunchSpecial";
+import MainDish from "components/Menu/MainDish";
+import SashimiPartyTray from "components/Menu/SashimiPartyTray";
+import SushiMakiTray from "components/Menu/SushiMakiTray";
+import SushiSashimiMakiComboTray from "components/Menu/SushiSashimiMakiComboTray";
+import MakiTray from "components/Menu/MakiTray";
+import AddOns from "components/Menu/AddOns";
+import Drinks from "components/Menu/Drinks";
 import { useNavigate } from "react-router-dom";
-import styled from "styled-components";
 import { collection, getDocs } from "firebase/firestore";
 import db from "firebaseConfig";
 
@@ -33,8 +47,6 @@ export default function Menu() {
 
       const categories = data.map((item) => item.category);
       const uniqueCategories = [...new Set(categories)];
-      console.log("Unique categories:", uniqueCategories)
-
       setCategories(uniqueCategories);
       setLoadingCategories(false);
     };
@@ -65,10 +77,26 @@ export default function Menu() {
       );
       setFilteredMenuItems(filteredItems);
       setSelectedCategory(category);
-      console.log("category:", category)
-      console.log("filteredItems:", filteredItems)
       window.scrollTo({ top: 650, behavior: "smooth" });
     }
+  };
+
+  const categoryComponents = {
+    SOUP: Soup,
+    SALAD: Salad,
+    APPETIZERS: Appetizers,
+    "SUSHI & SASHIMI A LA CARTE": SushiSashimiALaCarte,
+    "SIGNATURE MAKI(ROLL)": SignatureMakiRoll,
+    "MAKI(ROLL)": MakiRoll,
+    "CHEF’S SPECIAL": ChefSpecial,
+    "LUNCH SPECIAL (Bento Box)": LunchSpecial,
+    "MAIN DISH": MainDish,
+    "SASHIMI PARTY TRAY": SashimiPartyTray,
+    "SUSHI & MAKI TRAY": SushiMakiTray,
+    "SUSHI, SASHIMI & MAKI COMBO TRAY": SushiSashimiMakiComboTray,
+    "MAKI TRAY": MakiTray,
+    "ADD-ONS": AddOns,
+    DRINKS: Drinks,
   };
 
   return (
@@ -86,35 +114,44 @@ export default function Menu() {
         handleCategoryClick={handleCategoryClick}
       />
       <MenuContainer>
-        {selectedCategory !== "All" ? (
-          <CategoryBlock>
-            <CategoryTitle>{selectedCategory}</CategoryTitle>
-            <Subtitle>
-              <i>Extra Charge for Substitions</i>
-            </Subtitle>
-            <MenuItemsContainer>
-              {filteredMenuItems.map((item) => (
-                <MenuItem key={item.id} item={item} />
-              ))}
-            </MenuItemsContainer>
-          </CategoryBlock>
-        ) : (
-          categories.map((category) => (
-            <CategoryBlock key={category}>
-              <CategoryTitle>{category}</CategoryTitle>
-              <Subtitle>
-                <i>Extra Charge for Substitions</i>
-              </Subtitle>
-              <MenuItemsContainer>
-                {menuItems
-                  .filter((item) => item.category === category)
-                  .map((item) => (
-                    <MenuItem key={item.id} item={item} />
-                  ))}
-              </MenuItemsContainer>
-            </CategoryBlock>
-          ))
-        )}
+        {selectedCategory === "All"
+          ? Object.entries(categoryComponents).map(
+              ([category, ComponentToRender]) => (
+                <CategoryBlock key={category}>
+                  <CategoryTitle>{category}</CategoryTitle>
+                  <Subtitle>
+                    <i>Extra Charge for Substitutions</i>
+                  </Subtitle>
+                  <MenuItemsContainer>
+                    <ComponentToRender
+                      items={menuItems.filter(
+                        (item) => item.category === category
+                      )}
+                    />
+                  </MenuItemsContainer>
+                </CategoryBlock>
+              )
+            )
+          : (() => {
+              const ComponentToRender = categoryComponents[selectedCategory];
+              return ComponentToRender ? (
+                <CategoryBlock>
+                  <CategoryTitle>{selectedCategory}</CategoryTitle>
+                  <Subtitle>
+                    {selectedCategory === "LUNCH SPECIAL (Bento Box)" && (
+                      <Additional>Available until 3:00 p.m</Additional>
+                    )}
+                    {selectedCategory === "MAIN DISH" && (
+                      <Additional> Served with miso soup & salad</Additional>
+                    )}
+                    <i>Extra Charge for Substitutions</i>
+                  </Subtitle>
+                  <MenuItemsContainer>
+                    <ComponentToRender items={filteredMenuItems} />
+                  </MenuItemsContainer>
+                </CategoryBlock>
+              ) : null;
+            })()}
       </MenuContainer>
 
       <Footer
@@ -153,10 +190,16 @@ const Subtitle = styled.div`
   margin-bottom: 70px;
 `;
 
+const Additional = styled.div`
+  font-size: 1em;
+  text-align: left;
+  font-weight: semi-bold;
+`;
+
 const CategoryTitle = styled.h2`
   font-size: 2.4em;
   text-align: left;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-weight: bold;
 `;
 
