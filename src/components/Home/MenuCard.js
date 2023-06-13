@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import media from "responsive";
 
 function MenuCard(props) {
   const { name, description, price, img } = props;
@@ -30,17 +31,47 @@ const Card = styled.div`
   &:hover {
     transform: scale(1.05);
   }
+
+  ${media.tablet`
+    width: 180px;
+    height: 385px;
+    margin: 15px;
+  `}
+
+  ${media.mobile`
+    width: 150px;
+    height: 345px;
+    margin: 10px;
+  `}
 `;
 
 const Image = styled.img`
   width: 100%;
   height: 200px;
   object-fit: contain;
+
+  ${media.tablet`
+    height: 180px;
+  `}
+
+  ${media.mobile`
+    height: 150px;
+  `}
 `;
 
 const Content = styled.div`
   padding: 13px;
   font-size: 10px;
+
+  ${media.tablet`
+    padding: 10px;
+    font-size: 9px;
+  `}
+
+  ${media.mobile`
+    padding: 8px;
+    font-size: 8px;
+  `}
 `;
 
 const Name = styled.h2`
@@ -48,6 +79,16 @@ const Name = styled.h2`
   font-weight: bold;
   margin-bottom: 10px;
   color: #05493c;
+
+  ${media.tablet`
+    font-size: 16px;
+    margin-bottom: 8px;
+  `}
+
+  ${media.mobile`
+    font-size: 14px;
+    margin-bottom: 6px;
+  `}
 `;
 
 const Description = styled.p`
@@ -56,6 +97,16 @@ const Description = styled.p`
   height: 120px;
   word-break: break-word; /* Break words properly */
   overflow: unset;
+
+  ${media.tablet`
+    font-size: 11.5px;
+    height: 110px;
+  `}
+
+  ${media.mobile`
+    font-size: 11px;
+    height: 100px;
+  `}
 `;
 
 const Price = styled.div`
@@ -75,4 +126,20 @@ const Price = styled.div`
   justify-content: center; // center content horizontally
   align-items: center; // center content vertically
   text-align: center;
+
+  ${media.tablet`
+    bottom: 8px;
+    left: -13px;
+    height: 23px;
+    width: 48px;
+    font-size: 14px;
+  `}
+
+  ${media.mobile`
+    bottom: 6px;
+    left: -11px;
+    height: 21px;
+    width: 46px;
+    font-size: 13px;
+  `}
 `;

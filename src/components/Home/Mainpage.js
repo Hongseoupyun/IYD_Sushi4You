@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import media from "responsive";
 import Arrow_Menu from "assets/Arrow_Menu.png";
 import Underlineimg from "assets/Underline_Beige.png";
 import { useNavigate } from "react-router-dom";
@@ -85,7 +86,19 @@ const Container = styled.div`
   height: 120vh;
   display: flex;
   padding-top: 15px;
+
+  ${media.tablet`
+    flex-direction: row;
+    align-items: start;
+  `}
+
+  ${media.mobile`
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+  `}
 `;
+
 const StyledPuffWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -109,7 +122,18 @@ const StyledPuffWrapper = styled.div`
 const Left = styled.div`
   height: 75%;
   width: 45%;
+
+  ${media.tablet`
+    width: 45%;
+    height: 75%;
+  `}
+
+  ${media.mobile`
+    width: 100%;
+    height: 50%;
+  `}
 `;
+
 const Food = styled.img`
   height: 100%;
   width: 100%;
@@ -125,15 +149,37 @@ const Right = styled.div`
   justify-content: space-evenly;
   margin-left: 50px;
   width: 45%;
+
+  ${media.tablet`
+    width: 45%;
+    margin-left: 50px;
+    height: 75%;
+  `}
+
+  ${media.mobile`
+    width: 90%;
+    margin-left: 0;
+    height: 50%;
+  `}
 `;
 
 const Address = styled.div`
   font-weight: bold;
   display: flex;
   flex-direction: column;
-  font-size: 2.6rem; // updated font size
+  font-size: 2.6rem;
   color: #05493c;
-  letter-spacing: 6px; // adjust as necessary
+  letter-spacing: 6px;
+
+  ${media.tablet`
+    font-size: 2.3rem;
+    letter-spacing: 4px;
+  `}
+
+  ${media.mobile`
+    font-size: 2rem;
+    letter-spacing: 3px;
+  `}
 `;
 
 const Underline = styled.img``;
@@ -143,9 +189,18 @@ const Paragraph = styled.p`
   line-height: 1.2;
 `;
 const Hour = styled.div`
-  font-size: 2.7rem; // updated font size
+  font-size: 2.7rem;
   color: #f14e23;
+
+  ${media.tablet`
+    font-size: 2.3rem;
+  `}
+
+  ${media.mobile`
+    font-size: 2rem;
+  `}
 `;
+
 const BoldParagraph = styled.p`
   margin: 0; // removes default margin from paragraphs
   font-weight: 600; // Bold font
@@ -158,8 +213,12 @@ const RegularParagraph = styled.p`
 
 const Wrapper = styled.div`
   display: flex;
-  align-items: center; // aligns items vertically
+  align-items: center;
   justify-content: flex-start;
+
+  ${media.mobile`
+    justify-content: space-around;
+  `}
 `;
 
 const MenuText = styled.div`
@@ -211,13 +270,27 @@ const Menu = styled.div`
     transform: scale(0.9);
     font-weight: 600;
   }
+
+  ${media.tablet`
+    width: 34%;
+    height: 40px;
+    font-size: 1.3rem;
+  `}
+
+  ${media.mobile`
+    width: 40%;
+    height: 35px;
+    font-size: 1.2rem;
+  `}
 `;
+
 
 const UberButton = styled(Menu)`
   font-size: 1.25rem;
   margin-left: 20px;
   border-color: #eb1c23;
   color: #eb1c23;
+
   &:hover {
     ${MenuText} {
       color: white;
@@ -227,10 +300,28 @@ const UberButton = styled(Menu)`
   &::before {
     background-color: #eb1c23;
   }
+
+  ${media.tablet`
+    font-size: 1rem;
+  `}
+
+  ${media.mobile`
+    font-size: 1.1rem;
+  `}
 `;
 
 const Arrow = styled.img`
   margin-left: 10px;
   height: 30px;
   width: 13%;
+
+  ${media.tablet`
+    height: 25px;
+    width: 12%;
+  `}
+
+  ${media.mobile`
+    height: 20px;
+    width: 11%;
+  `}
 `;

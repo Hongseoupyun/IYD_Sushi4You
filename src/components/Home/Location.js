@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import media from "responsive";
 import ArrowIcon from "assets/Arrow_Beige.png";
 
 const Location = React.forwardRef((props, ref) => {
@@ -30,6 +31,7 @@ const Location = React.forwardRef((props, ref) => {
 });
 
 export default Location;
+
 const Container = styled.div`
   position: relative;
   display: flex;
@@ -37,13 +39,29 @@ const Container = styled.div`
   background-color: #fdfaf5;
   height: 100vh;
   width: 100%;
+  ${media.tablet`
+  `}
+  ${media.mobile`
+  height: 80vh;`}
 `;
 
 const StyledIframe = styled.iframe`
   width: 75%;
   height: 80%;
-  z-index: 1; /* Make sure the iframe stays behind the LocationInfo */
+  z-index: 1;
   margin-left: 35px;
+
+  ${media.tablet`
+    width: 70%;
+    height: 65%;
+    margin-left: 35px;
+  `}
+
+  ${media.mobile`
+    width: 70%;
+    height: 65%;
+    margin-left: 35px;
+  `}
 `;
 
 const LocationInfo = styled.div`
@@ -53,12 +71,24 @@ const LocationInfo = styled.div`
   justify-content: center;
   background-color: #fdfaf5;
   position: absolute;
-  right: 40px; /* Position this to the right side of the parent */
+  right: 40px;
   border: 3px solid #f14e23;
   border-radius: 180px;
   height: 65%;
   width: 25%;
-  z-index: 2; /* Makes sure this component is above the iframe */
+  z-index: 2;
+
+  ${media.tablet`
+    right: 40px;
+    width: 25%;
+    height: 55%;
+  `}
+
+  ${media.mobile`
+    right: 40px;
+    width: 27%;
+    height: 50%;
+  `}
 `;
 
 const Wrapper = styled.div`
@@ -70,28 +100,52 @@ const Wrapper = styled.div`
 `;
 
 const Heading = styled.h1`
-  font-size: 2.5rem; // updated font size
+  font-size: 2.5rem;
   color: #05493c;
   font-weight: 600;
   text-align: center;
+
+  ${media.tablet`
+    font-size: 1.8rem;
+  `}
+
+  ${media.mobile`
+    font-size: 1.4rem;
+  `}
 `;
 
 const Arrow = styled.img`
-  width: 130px; // updated size
+  width: 130px;
   height: auto;
+
+  ${media.tablet`
+    width: 100px;
+  `}
+
+  ${media.mobile`
+    width: 80px;
+  `}
 `;
 
 const Text = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px; // adds space between paragraphs
-  font-size: 1.7rem; // updated font size
+  gap: 8px;
+  font-size: 1.7rem;
   color: #05493c;
   text-align: center;
   font-weight: 400;
+
+  ${media.tablet`
+    font-size: 1.4rem;
+  `}
+
+  ${media.mobile`
+    font-size: 1.0rem;
+  `}
 `;
 
 const Paragraph = styled.p`
-  margin: 0; // removes default margin from paragraphs
+  margin: 0;
 `;

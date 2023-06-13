@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import db from "firebaseConfig";
 import styled from "styled-components";
+import media from "responsive";
 import MenuCard from "components/Home/MenuCard";
 
 export default function Signature() {
@@ -47,7 +48,16 @@ const Container = styled.div`
   align-items: center;
   height: 160vh;
   background-color: #fbf1dd;
+
+  ${media.tablet`
+    height: 220vh;
+  `}
+
+  ${media.mobile`
+    height: 195vh;
+  `}
 `;
+
 
 const Heading = styled.h1`
   font-weight: bold;
@@ -56,6 +66,18 @@ const Heading = styled.h1`
   text-align: center;
   margin-bottom: 20px;
   margin-top: 50px;
+
+  ${media.tablet`
+    font-size: 2.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  `}
+
+  ${media.mobile`
+    font-size: 2rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  `}
 `;
 
 const MenuContainer = styled.div`
@@ -63,4 +85,12 @@ const MenuContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+
+  ${media.tablet`
+    width: 95%;
+  `}
+
+  ${media.mobile`
+    width: 100%;
+  `}
 `;

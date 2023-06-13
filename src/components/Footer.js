@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import media from "responsive";
 import { FaArrowCircleUp } from "react-icons/fa";
 import Icon from "../assets/Phone.png";
 import Star from "../assets/Star_Beige.png";
-import { mobile } from "responsive";
 
 export default function Footer(props) {
   const { handleMenuClick } = props;
@@ -71,9 +71,12 @@ const Container = styled.div`
   justify-content: space-evenly;
   padding-bottom: 2rem;
 
-  ${mobile`
-    padding-bottom: 1rem;
-  `}
+  ${media.tablet`
+    padding-bottom: 1.5rem;
+    `}
+  ${media.mobile`
+      padding-bottom: 1rem;
+    `}
 `;
 
 const Top = styled.div`
@@ -87,7 +90,10 @@ const Menu = styled.div`
   width: 25%;
   align-items: center;
 
-  ${mobile`
+  ${media.tablet`
+    width: 40%;
+  `}
+  ${media.mobile`
     width: 50%;
   `}
 `;
@@ -108,7 +114,10 @@ const MenuItem = styled.button`
     transform: scale(1.2);
   }
 
-  ${mobile`
+  ${media.tablet`
+    font-size: 1rem;
+  `}
+  ${media.mobile`
     font-size: 0.8rem;
   `}
 `;
@@ -119,7 +128,12 @@ const Circle = styled.div`
   border-radius: 50%;
   background-color: #d0dcd0;
 
-  ${mobile`
+  ${media.tablet`
+    width: 10px;
+    height: 10px;
+  `}
+
+  ${media.mobile`
     width: 8px;
     height: 8px;
   `}
@@ -147,6 +161,18 @@ const Bottom = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  ${media.tablet`
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  `}
+
+  ${media.mobile`
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  `}
 `;
 
 const Phone = styled.div`
@@ -156,8 +182,15 @@ const Phone = styled.div`
   justify-content: center;
   width: 25%;
 
-  ${mobile`
-    width: 50%;
+  ${media.tablet`
+    width: 30%;
+    justify-content: space-around;
+  `}
+
+  ${media.mobile`
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
   `}
 `;
 
@@ -166,7 +199,11 @@ const PhoneNumber = styled.a`
   font-size: 1.7rem;
   text-decoration: none;
 
-  ${mobile`
+  ${media.tablet`
+    font-size: 1.5rem;
+  `}
+
+  ${media.mobile`
     font-size: 1.2rem;
   `}
 `;
@@ -176,7 +213,11 @@ const PhoneIcon = styled.img`
   height: auto;
   margin-right: 10px;
 
-  ${mobile`
+  ${media.tablet`
+    width: 2.5rem;
+  `}
+
+  ${media.mobile`
     width: 2rem;
   `}
 `;
@@ -188,9 +229,15 @@ const StarDeco1 = styled.img`
   height: 3rem;
   z-index: 0;
 
-  ${mobile`
-    right: 150px;
-    width: 3rem;
-    height: 3rem;
-`}
+  ${media.tablet`
+    right: 200px;
+    width: 2.5rem;
+    height: 2.5rem;
+  `}
+
+  ${media.mobile`
+    right: 100px;
+    width: 1.5rem;
+    height: 1.5rem;
+  `}
 `;
