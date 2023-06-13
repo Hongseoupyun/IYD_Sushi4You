@@ -986,7 +986,7 @@
     "id": 110,
     "name": "CHICKEN TERIYAKI BENTO",
     "price": "$13.99",
-    "desc": "served with miso soup, salad & rice",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -995,7 +995,7 @@
     "id": 111,
     "name": "SALMON TERIYAKI BENTO",
     "price": "$13.99",
-    "desc": "served with miso soup, salad & rice",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1004,7 +1004,7 @@
     "id": 112,
     "name": "BEEF TERIYAKI BENTO",
     "price": "$13.99",
-    "desc": "served with miso soup, salad & rice",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1013,7 +1013,7 @@
     "id": 113,
     "name": "TEMPURA BENTO",
     "price": "$13.99",
-    "desc": "served with miso soup, salad & rice",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1022,7 +1022,7 @@
     "id": 114,
     "name": "BULGOGI BENTO",
     "price": "$13.99",
-    "desc": "served with miso soup, salad & rice",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1031,7 +1031,7 @@
     "id": 115,
     "name": "DYNAMITE BENTO (roll, 6 pcs)",
     "price": "$18.99",
-    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1040,7 +1040,7 @@
     "id": 116,
     "name": "SPICY SALMON BENTO (roll, 6 pcs)",
     "price": "$18.99",
-    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1049,7 +1049,7 @@
     "id": 117,
     "name": "SPICY TUNA BENTO (roll, 6 pcs)",
     "price": "$18.99",
-    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1058,7 +1058,7 @@
     "id": 118,
     "name": "SPICY LOVER BENTO (roll, 5 pcs)",
     "price": "$18.99",
-    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1067,7 +1067,7 @@
     "id": 119,
     "name": "SALMON LOVER BENTO (roll, 5 pcs)",
     "price": "$18.99",
-    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1076,7 +1076,7 @@
     "id": 120,
     "name": "RAINBOW BENTO (roll, 5 pcs)",
     "price": "$18.99",
-    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1085,7 +1085,7 @@
     "id": 121,
     "name": "PHILADELPHIA BENTO (roll, 5 pcs)",
     "price": "$18.99",
-    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1094,7 +1094,7 @@
     "id": 122,
     "name": "GREEN DRAGON BENTO (roll, 5 pcs)",
     "price": "$18.99",
-    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1103,7 +1103,7 @@
     "id": 123,
     "name": "RED DRAGON BENTO (roll, 5 pcs)",
     "price": "$18.99",
-    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1112,7 +1112,7 @@
     "id": 124,
     "name": "GOLDEN DRAGON BENTO (roll, 5 pcs)",
     "price": "$18.99",
-    "desc": "served with miso soup, salad, 4 pcs assorted tempura, 6 pcs California roll and 1 gyoza",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1121,7 +1121,7 @@
     "id": 125,
     "name": "YAM BENTO (roll, 6 pcs)",
     "price": "$17.99",
-    "desc": "served with miso soup, salad, 5 pcs assorted vegetable tempura, 6 pcs Avo&Cu roll and 1 spring roll",
+    "desc": "",
     "spicy": false,
     "veg": false
   },
@@ -1130,7 +1130,7 @@
     "id": 126,
     "name": "SWEET POTATO BENTO (roll, 5 pcs)",
     "price": "$17.99",
-    "desc": "served with miso soup, salad, 5 pcs assorted vegetable tempura, 6 pcs Avo&Cu roll and 1 spring roll",
+    "desc": "",
     "spicy": false,
     "veg": false
   },

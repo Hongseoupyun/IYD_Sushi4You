@@ -22,7 +22,7 @@ export default function LunchSpecial(props) {
       </ItemGroup>
       <Menus>
         {items
-          .filter((item) => item.price === "$13.99")
+          .filter((item) => item.price === "$18.99")
           .map((item) => (
             <MenuItemNoPrice key={item.id} item={item} />
           ))}
@@ -33,7 +33,7 @@ export default function LunchSpecial(props) {
       </ItemGroup>
       <Menus>
         {items
-          .filter((item) => item.price === "$13.99")
+          .filter((item) => item.price === "$17.99")
           .map((item) => (
             <MenuItemNoPrice key={item.id} item={item} />
           ))}

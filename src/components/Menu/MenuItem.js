@@ -8,7 +8,11 @@ function MenuItem(props) {
     <MenuItemContainer>
       <ItemInfo>
         <ItemNameAndPrice>
-          <ItemName>{item.name}</ItemName>
+          <ItemName>
+            {item.name}
+            {item.veg && ' 🥦'}
+            {item.spicy && ' 🌶️'}
+          </ItemName>
           <ItemPrice>{item.price}</ItemPrice>
         </ItemNameAndPrice>
         <ItemDescription>{item.desc}</ItemDescription>

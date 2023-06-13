@@ -7,7 +7,11 @@ export default function MenuItemNoPrice(props) {
   return (
     <MenuItemContainer>
       <ItemInfo>
-        <ItemName>{item.name}</ItemName>
+        <ItemName>
+          {item.name}
+          {item.veg && ' 🥦'}
+          {item.spicy && ' 🌶️'}
+        </ItemName>
         <ItemDescription>{item.desc}</ItemDescription>
       </ItemInfo>
     </MenuItemContainer>
