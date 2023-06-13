@@ -187,13 +187,16 @@ const Subtitle = styled.div`
   font-size: 1em;
   text-align: left;
   font-weight: semi-bold;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
+  padding-bottom: 15px;
 `;
 
 const Additional = styled.div`
   font-size: 1em;
   text-align: left;
   font-weight: semi-bold;
+  margin-bottom: 10px;
+  padding-top: 10px;
 `;
 
 const CategoryTitle = styled.h2`
