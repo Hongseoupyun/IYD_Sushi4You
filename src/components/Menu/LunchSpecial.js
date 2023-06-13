@@ -6,7 +6,7 @@ export default function LunchSpecial(props) {
   const { items = [] } = props; // Default to an empty array if items is undefined
 
   return (
-    <>
+    <Container>
       <ItemGroup>Served with miso soup, salad & rice $13.99</ItemGroup>
       {items
         .filter((item) => item.price === "$13.99")
@@ -32,9 +32,9 @@ export default function LunchSpecial(props) {
         .map((item) => (
           <MenuItemNoPrice key={item.id} item={item} />
         ))}
-    </>
+    </Container>
   );
 }
 
-
+const Container = styled.div``;
 const ItemGroup = styled.div``; // Don't forget to style this component

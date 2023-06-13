@@ -229,7 +229,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 26,
     "name": "SAKE Salmon",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$4.99",
     "spicy": false,
     "veg": false
@@ -238,7 +238,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 27,
     "name": "TAKO Octopus",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$4.99",
     "spicy": false,
     "veg": false
@@ -247,7 +247,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 28,
     "name": "TAI Red Snapper",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$4.99",
     "spicy": false,
     "veg": false
@@ -256,7 +256,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 29,
     "name": "MASAGO Flying Fish Egg",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$4.99",
     "spicy": false,
     "veg": false
@@ -265,7 +265,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 30,
     "name": "EBI Shrimp",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$4.99",
     "spicy": false,
     "veg": false
@@ -274,7 +274,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 31,
     "name": "TAMAGO Egg",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$4.99",
     "spicy": false,
     "veg": true
@@ -283,7 +283,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 32,
     "name": "KANI Crab Meat",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$4.99",
     "spicy": false,
     "veg": false
@@ -293,7 +293,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 33,
     "name": "MAGURO Tuna",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$5.99",
     "spicy": false,
     "veg": false
@@ -302,7 +302,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 34,
     "name": "IKA Squid",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$5.99",
     "spicy": false,
     "veg": false
@@ -311,7 +311,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 35,
     "name": "HAMACHI Yellow Tail",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$4.99",
     "spicy": false,
     "veg": false
@@ -320,7 +320,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 36,
     "name": "UNAGI B.B.Q. Eel",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$5.99",
     "spicy": false,
     "veg": false
@@ -329,7 +329,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 37,
     "name": "KAIBASHIRA Scallop",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$5.99",
     "spicy": false,
     "veg": false
@@ -339,7 +339,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 38,
     "name": "HOKKIGAI Surf Clam",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$5.99",
     "spicy": false,
     "veg": false
@@ -348,7 +348,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 39,
     "name": "AMAEBI Sweet Shrimp",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$5.99",
     "spicy": false,
     "veg": false
@@ -357,7 +357,7 @@
     "category": "SUSHI & SASHIMI A LA CARTE",
     "id": 40,
     "name": "SABA Mackerel",
-    "desc": "1 order 2pcs",
+    "desc": "",
     "price": "$5.99",
     "spicy": false,
     "veg": false

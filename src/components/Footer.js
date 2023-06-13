@@ -44,7 +44,6 @@ export default function Footer(props) {
           <MenuItem onClick={() => handleMenuClick("Location")}>
             Location
           </MenuItem>
-          <Circle />
           <ScrollToTop>
             <FaArrowCircleUp
               onClick={scrollToTop}
