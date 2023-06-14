@@ -89,7 +89,9 @@ const Container = styled.div`
 
   ${media.tablet`
     flex-direction: row;
+    height: 55vh;
     align-items: start;
+    align-items: center;
   `}
 
   ${media.mobile`
@@ -142,7 +144,9 @@ const Food = styled.img`
   object-fit: cover;
   ${media.tablet`
     border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;`}
+    border-bottom-right-radius: 0px;
+    `}
+
   ${media.mobile`
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;

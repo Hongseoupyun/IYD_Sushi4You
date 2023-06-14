@@ -50,7 +50,7 @@ const Container = styled.div`
   background-color: #fbf1dd;
 
   ${media.tablet`
-    height: 220vh;
+    height: 1000px;
   `}
 
   ${media.mobile`

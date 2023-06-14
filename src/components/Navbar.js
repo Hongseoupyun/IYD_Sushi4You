@@ -195,6 +195,8 @@ const StarDeco1 = styled.img`
   ${media.tablet`
     top: 250px;
     right: 150px;
+    width: 2.5rem;
+  height: 2.5rem;
   `}
 
   ${media.mobile`

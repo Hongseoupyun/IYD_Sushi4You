@@ -94,7 +94,7 @@ const Menu = styled.div`
     width: 40%;
   `}
   ${media.mobile`
-    width: 50%;
+    width: 80%;
   `}
 `;
 
@@ -118,7 +118,7 @@ const MenuItem = styled.button`
     font-size: 1rem;
   `}
   ${media.mobile`
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   `}
 `;
 
@@ -134,8 +134,8 @@ const Circle = styled.div`
   `}
 
   ${media.mobile`
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
   `}
 `;
 
