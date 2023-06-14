@@ -27,7 +27,7 @@ const Card = styled.div`
   box-shadow: 0 5px 7.5px rgba(0, 0, 0, 0.1);
   margin: 20px;
   background-color: #fdfaf5;
-  transition: transform 0.2s ease-in-out; /* Added transition for smooth animation */
+  transition: transform 0.2s ease-in-out;
   &:hover {
     transform: scale(1.05);
   }
@@ -39,9 +39,9 @@ const Card = styled.div`
   `}
 
   ${media.mobile`
-    width: 150px;
-    height: 345px;
-    margin: 10px;
+    width: 130px;
+    height: 285px;
+    margin: 8px;
   `}
 `;
 
@@ -55,7 +55,7 @@ const Image = styled.img`
   `}
 
   ${media.mobile`
-    height: 150px;
+    height: 130px;
   `}
 `;
 
@@ -69,8 +69,8 @@ const Content = styled.div`
   `}
 
   ${media.mobile`
-    padding: 8px;
-    font-size: 8px;
+    padding: 6px;
+    font-size: 7px;
   `}
 `;
 
@@ -86,8 +86,8 @@ const Name = styled.h2`
   `}
 
   ${media.mobile`
-    font-size: 14px;
-    margin-bottom: 6px;
+    font-size: 12px;
+    margin-bottom: 5px;
   `}
 `;
 
@@ -95,7 +95,7 @@ const Description = styled.p`
   color: #05493c;
   font-size: 14.5px;
   height: 120px;
-  word-break: break-word; /* Break words properly */
+  word-break: break-word;
   overflow: unset;
 
   ${media.tablet`
@@ -104,8 +104,8 @@ const Description = styled.p`
   `}
 
   ${media.mobile`
-    font-size: 11px;
-    height: 100px;
+    font-size: 8.5px;
+    height: 90px;
   `}
 `;
 
@@ -113,18 +113,18 @@ const Price = styled.div`
   position: absolute;
   bottom: 10px;
   left: -15px;
-  z-index: 5; /* Make sure the price is above the card */
+  z-index: 5;
   background: #f14e23;
   padding: 5px 10px;
-  height: 25px; // set a fixed height
-  width: 50px; // set a fixed width
-  border-radius: 50px; // set the border radius to 50% to get a circle
+  height: 25px;
+  width: 50px;
+  border-radius: 50px;
   font-size: 15px;
   font-weight: 400;
   color: white;
   display: flex;
-  justify-content: center; // center content horizontally
-  align-items: center; // center content vertically
+  justify-content: center;
+  align-items: center;
   text-align: center;
 
   ${media.tablet`
@@ -138,8 +138,8 @@ const Price = styled.div`
   ${media.mobile`
     bottom: 6px;
     left: -11px;
-    height: 21px;
-    width: 46px;
-    font-size: 13px;
+    height: 20px;
+    width: 42px;
+    font-size: 12px;
   `}
 `;

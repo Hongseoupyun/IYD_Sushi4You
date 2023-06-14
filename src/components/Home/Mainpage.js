@@ -146,6 +146,8 @@ const Food = styled.img`
   ${media.mobile`
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    object-fit: revert;
+    height: 95%;
   `}
 `;
 
@@ -313,7 +315,7 @@ const UberButton = styled(Menu)`
   `}
 
   ${media.mobile`
-    font-size: 1.1rem;
+    font-size: 0.85rem;
   `}
 `;
 

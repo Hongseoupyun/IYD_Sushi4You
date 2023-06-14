@@ -67,15 +67,15 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #fdfaf5;
-  height: 25vh;
+  height: 20vh;
   justify-content: space-evenly;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 
   ${media.tablet`
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
     `}
   ${media.mobile`
-      padding-bottom: 1rem;
+      padding-bottom: 0.6rem;
     `}
 `;
 
@@ -118,7 +118,7 @@ const MenuItem = styled.button`
     font-size: 1rem;
   `}
   ${media.mobile`
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   `}
 `;
 
@@ -129,26 +129,26 @@ const Circle = styled.div`
   background-color: #d0dcd0;
 
   ${media.tablet`
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
   `}
 
   ${media.mobile`
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
   `}
 `;
 
 const ScrollToTop = styled.div`
   position: fixed;
-  right: 50px; // Control the horizontal position from right
-  bottom: 50px; // Control the vertical position from bottom
+  right: 40px; // Control the horizontal position from right
+  bottom: 40px; // Control the vertical position from bottom
   align-items: center;
   justify-content: center;
   z-index: 1000;
   cursor: pointer;
   color: #f14e23;
-  font-size: 2.6em; // Increase the size of the icon
+  font-size: 2.3em; // Increase the size of the icon
   transition: transform 0.3s;
   &:hover {
     transform: scale(1.2);
@@ -190,54 +190,54 @@ const Phone = styled.div`
   ${media.mobile`
     width: 100%;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0.8rem;
   `}
 `;
 
 const PhoneNumber = styled.a`
   color: #05493c;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   text-decoration: none;
 
   ${media.tablet`
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   `}
 
   ${media.mobile`
-    font-size: 1.2rem;
+    font-size: 1rem;
   `}
 `;
 
 const PhoneIcon = styled.img`
-  width: 3rem;
+  width: 2.5rem;
   height: auto;
-  margin-right: 10px;
+  margin-right: 8px;
 
   ${media.tablet`
-    width: 2.5rem;
+    width: 2rem;
   `}
 
   ${media.mobile`
-    width: 2rem;
+    width: 1.5rem;
   `}
 `;
 
 const StarDeco1 = styled.img`
   position: absolute;
-  right: 300px;
-  width: 3rem;
-  height: 3rem;
+  right: 250px;
+  width: 2.5rem;
+  height: 2.5rem;
   z-index: 0;
 
   ${media.tablet`
-    right: 200px;
-    width: 2.5rem;
-    height: 2.5rem;
+    right: 150px;
+    width: 2rem;
+    height: 2rem;
   `}
 
   ${media.mobile`
-    right: 100px;
-    width: 1.5rem;
-    height: 1.5rem;
+    right: 80px;
+    width: 1.2rem;
+    height: 1.2rem;
   `}
 `;

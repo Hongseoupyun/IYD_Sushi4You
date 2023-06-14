@@ -54,7 +54,7 @@ const Container = styled.div`
   `}
 
   ${media.mobile`
-    height: 195vh;
+    height: 1300px;
   `}
 `;
 
@@ -74,8 +74,8 @@ const Heading = styled.h1`
   `}
 
   ${media.mobile`
-    font-size: 2rem;
-    margin-top: 25px;
+    font-size: 1.7rem;
+    margin-top: 20px;
     margin-bottom: 10px;
   `}
 `;

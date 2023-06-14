@@ -99,7 +99,7 @@ const LogoWrapper = styled.div`
 
   ${media.mobile`
     svg {
-      width: 70vw; 
+      width: 60vw; 
     }
   `}
 `;
@@ -156,17 +156,21 @@ const MenuItem = styled.button`
   `}
 
   ${media.mobile`
-    font-size: 1rem;
+    font-size: 0.85rem;
   `}
 `;
 
 const SelectedIcon = styled.img`
   position: absolute;
-  top: -5px;
+  top: -1px;
   width: 6rem;
   height: 2rem;
   font-weight: 600;
   z-index: 5;
+  ${media.mobile`
+    width: 4rem;
+    height: 1.5rem;
+  `}
 `;
 
 const Circle = styled.div`
@@ -174,6 +178,10 @@ const Circle = styled.div`
   height: 10px;
   border-radius: 50%;
   background-color: #d0dcd0;
+  ${media.mobile`
+    width: 7px;
+    height: 7px;
+  `}
 `;
 
 const StarDeco1 = styled.img`
@@ -190,9 +198,9 @@ const StarDeco1 = styled.img`
   `}
 
   ${media.mobile`
-    top: 190px;
-    right: 100px;
-    width: 2rem;
-  height: 2rem;
+    top: 140px;
+    right: 65px;
+    width: 1.5rem;
+  height: 1.5rem;
   `}
 `;
