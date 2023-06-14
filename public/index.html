@@ -15,6 +15,22 @@
 
     <title>Sushi 4 U</title>
   </head>
+  <script>
+    function setBorder() {
+      const rootDiv = document.getElementById('root');
+      if (window.innerWidth <= 768) {
+        rootDiv.style.border = "15px solid #99c0a3"; // mobile view
+      } else if (window.innerWidth <= 1024) {
+        rootDiv.style.border = "25px solid #99c0a3"; // tablet view
+      } else {
+        rootDiv.style.border = "30px solid #99c0a3"; // desktop view
+      }
+    }
+  
+    window.onload = setBorder;
+    window.onresize = setBorder;
+  </script>
+  
 
   <body>
     <div id="root" style="border: 30px solid #99c0a3"></div>
