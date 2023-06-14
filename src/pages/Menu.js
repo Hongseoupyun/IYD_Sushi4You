@@ -1,8 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
 import CategoryButtons from "components/Menu/CategoryButtons";
+import { useMenuData } from "hooks/useMenuData";
+import { useMenuClick } from "hooks/useMenuClick";
+import { useCategoryClick } from "hooks/useCategoryClick";
+
+// import components for each category
 import SushiSashimiALaCarte from "components/Menu/SushiSashimiALaCarte";
 import Soup from "components/Menu/Soup";
 import Salad from "components/Menu/Salad";
@@ -18,68 +23,17 @@ import SushiSashimiMakiComboTray from "components/Menu/SushiSashimiMakiComboTray
 import MakiTray from "components/Menu/MakiTray";
 import AddOns from "components/Menu/AddOns";
 import Drinks from "components/Menu/Drinks";
-import { useNavigate } from "react-router-dom";
-import { collection, getDocs } from "firebase/firestore";
-import db from "firebaseConfig";
 
 export default function Menu() {
-  const navigate = useNavigate();
-  const [menuItems, setMenuItems] = useState([]);
-  const [selectedMenuItem, setSelectedMenuItem] = useState("Menu");
-  const [filteredMenuItems, setFilteredMenuItems] = useState([]);
-  const [categories, setCategories] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState("All");
-  const [loadingCategories, setLoadingCategories] = useState(true);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const menuRef = collection(db, "menu");
-      const snapshot = await getDocs(menuRef);
-      const data = snapshot.docs.map((doc) => ({
-        ...doc.data(),
-        firebaseId: doc.id,
-      }));
-
-      console.log("Firebase data:", data);
-      data.sort((a, b) => (a.id > b.id ? 1 : -1));
-      setMenuItems(data);
-      setFilteredMenuItems(data);
-
-      const categories = data.map((item) => item.category);
-      const uniqueCategories = [...new Set(categories)];
-      setCategories(uniqueCategories);
-      setLoadingCategories(false);
-    };
-
-    fetchData();
-  }, []);
-
-  const handleMenuClick = (path) => {
-    if (path === "Home") {
-      navigate("/");
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else if (path === "Location") {
-      window.location.href = "/#location";
-    } else if (path === "Menu") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-    setSelectedMenuItem(path);
-  };
-
-  const handleCategoryClick = (category) => {
-    if (category === "All") {
-      setFilteredMenuItems(menuItems);
-      setSelectedCategory("All");
-      window.scrollTo({ top: 650, behavior: "smooth" });
-    } else {
-      const filteredItems = menuItems.filter(
-        (item) => item.category === category
-      );
-      setFilteredMenuItems(filteredItems);
-      setSelectedCategory(category);
-      window.scrollTo({ top: 650, behavior: "smooth" });
-    }
-  };
+  const { menuItems, categories, loadingCategories } = useMenuData();
+  const { selectedMenuItem, handleMenuClick, setSelectedMenuItem } =
+    useMenuClick();
+  const {
+    selectedCategory,
+    handleCategoryClick,
+    setSelectedCategory,
+    filteredMenuItems,
+  } = useCategoryClick(menuItems);
 
   const categoryComponents = {
     SOUP: Soup,
