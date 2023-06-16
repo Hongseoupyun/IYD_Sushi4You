@@ -21,7 +21,7 @@
     "category": "SOUP",
     "id": 3,
     "code": "SP03",
-    "name": "GYO ZA SOUP",
+    "name": "GYOZA SOUP",
     "desc": "Dumplings, egg & vegetables",
     "price": "$5.99",
     "spicy": false,
@@ -142,7 +142,7 @@
     "desc": "Deep fried tofu 4 pcs with bonito fish flake and tempura sauce",
     "price": "$6.99",
     "spicy": false,
-    "veg": true
+    "veg": false
   },
   {
     "category": "APPETIZERS",
@@ -277,7 +277,7 @@
     "desc": "",
     "price": "$4.99",
     "spicy": false,
-    "veg": true
+    "veg": false
   },
   {
     "category": "SUSHI & SASHIMI A LA CARTE",
@@ -311,7 +311,7 @@
     "id": 35,
     "name": "HAMACHI Yellow Tail",
     "desc": "",
-    "price": "$4.99",
+    "price": "$5.99",
     "spicy": false,
     "veg": false
   },
@@ -420,7 +420,7 @@
     "name": "WESTEND MAKI",
     "desc": "Shrimp tempura, crab and cream cheese topped crab",
     "price": "$7.99",
-    "spicy": false,
+    "spicy": true,
     "veg": false
   },
   {
@@ -796,7 +796,7 @@
     "category": "CHEF’S SPECIAL",
     "id": 89,
     "name": "SALMON TATAKI SASHIMI (10 pcs)",
-    "desc": "Sliced and torched raw salmon wish special sauce",
+    "desc": "Sliced and torched raw salmon with special sauce",
     "price": "$13.99",
     "spicy": false,
     "veg": false
@@ -959,7 +959,7 @@
     "id": 107,
     "name": "YAM LOVER MAKI (10 pcs)",
     "desc": "Yam tempura and avocado inside topped with yam tempura and shredded crunch potatoes.",
-    "price": "$15.99",
+    "price": "$17.99",
     "spicy": false,
     "veg": true
   },
@@ -968,7 +968,7 @@
     "id": 108,
     "name": "FISH & CHIPS MAKI (10 pcs)",
     "desc": "Breaded white fish, avocado and cucumber inside topped with tartar sauce.",
-    "price": "$14.99",
+    "price": "$17.99",
     "spicy": false,
     "veg": false
   },
@@ -977,7 +977,7 @@
     "id": 109,
     "name": "VENEZUELA MAKI (10 pcs)",
     "desc": "Deep fried roll, salmon, avocado, shrimp tempura, crab meat and cream cheese inside.",
-    "price": "$16.99",
+    "price": "$17.99",
     "spicy": false,
     "veg": false
   },

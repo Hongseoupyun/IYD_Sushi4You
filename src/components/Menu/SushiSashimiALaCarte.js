@@ -19,7 +19,7 @@ export default function SushiSashimiALaCarte(props) {
       <ItemGroup>1 ORDER 2PCS - $5.99</ItemGroup>
       <Menus>
         {items
-          .filter((item) => item.price === "$4.99")
+          .filter((item) => item.price === "$5.99")
           .map((item) => (
             <MenuItemNoPrice key={item.id} item={item} />
           ))}

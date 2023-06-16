@@ -92,13 +92,13 @@ export default function Menu() {
                 <CategoryBlock>
                   <CategoryTitle>{selectedCategory}</CategoryTitle>
                   <Subtitle>
-                    {selectedCategory === "LUNCH SPECIAL (Bento Box)" && (
-                      <Additional>Available until 3:00 p.m</Additional>
-                    )}
+                    <i>Extra Charge for Substitutions</i>
                     {selectedCategory === "MAIN DISH" && (
                       <Additional> Served with miso soup & salad</Additional>
                     )}
-                    <i>Extra Charge for Substitutions</i>
+                    {selectedCategory === "LUNCH SPECIAL (Bento Box)" && (
+                      <Additional>Available until 3:00 p.m</Additional>
+                    )}
                   </Subtitle>
                   <MenuItemsContainer>
                     <ComponentToRender items={filteredMenuItems} />

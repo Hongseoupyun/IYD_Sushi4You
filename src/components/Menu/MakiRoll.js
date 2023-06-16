@@ -17,7 +17,7 @@ export default function MakiRoll(props) {
       <ItemGroup>1 ORDER 6 PCS $6.99</ItemGroup>
       <Menus>
         {items
-          .filter((item) => item.price === "$5.99")
+          .filter((item) => item.price === "$6.99")
           .map((item) => (
             <MenuItemNoPrice key={item.id} item={item} />
           ))}
@@ -25,7 +25,7 @@ export default function MakiRoll(props) {
       <ItemGroup>1 ORDER 6 PCS $7.99</ItemGroup>
       <Menus>
         {items
-          .filter((item) => item.price === "$5.99")
+          .filter((item) => item.price === "$7.99")
           .map((item) => (
             <MenuItemNoPrice key={item.id} item={item} />
           ))}

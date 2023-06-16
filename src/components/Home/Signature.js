@@ -50,7 +50,7 @@ const Container = styled.div`
   background-color: #fbf1dd;
 
   ${media.tablet`
-    height: 1000px;
+    height: 85vh;
   `}
 
   ${media.mobile`
@@ -68,15 +68,15 @@ const Heading = styled.h1`
   margin-top: 50px;
 
   ${media.tablet`
-    font-size: 2.5rem;
-    margin-top: 30px;
+    font-size: 2.7rem;
+    margin-top: 60px;
     margin-bottom: 15px;
   `}
 
   ${media.mobile`
     font-size: 1.7rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   `}
 `;
 

@@ -39,8 +39,8 @@ const Card = styled.div`
   `}
 
   ${media.mobile`
-    width: 130px;
-    height: 285px;
+    width: 150px;
+    height: 279px;
     margin: 8px;
   `}
 `;
@@ -104,7 +104,7 @@ const Description = styled.p`
   `}
 
   ${media.mobile`
-    font-size: 8.5px;
+    font-size: 9px;
     height: 90px;
   `}
 `;

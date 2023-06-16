@@ -58,8 +58,8 @@ const StyledIframe = styled.iframe`
   `}
 
   ${media.mobile`
-    width: 75%;
-    height: 70%;
+    width: 78%;
+    height: 85%;
     margin-left: 20px;
   `}
 `;
