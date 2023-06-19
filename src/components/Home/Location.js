@@ -39,10 +39,20 @@ const Container = styled.div`
   background-color: #fdfaf5;
   height: 100vh;
   width: 100%;
+
+  ${media.tabletLandscape`
+    height: 100vh;
+  `}
+
   ${media.tablet`
   `}
+
+  ${media.tabletPortrait`
+    height: 80vh;
+  `}
+
   ${media.mobile`
-  height: 70vh;`}
+  height: 60vh;`}
 `;
 
 const StyledIframe = styled.iframe`
@@ -51,16 +61,28 @@ const StyledIframe = styled.iframe`
   z-index: 1;
   margin-left: 35px;
 
+  ${media.tabletLandscape`
+    width: 75%;
+    height: 80%;
+    margin-left: 35px;
+  `}
+
   ${media.tablet`
-    width: 70%;
-    height: 65%;
+    width: 75%;
+    height: 80%;
+    margin-left: 25px;
+  `}
+
+  ${media.tabletPortrait`
+    width: 80%;
+    height: 80%;
     margin-left: 25px;
   `}
 
   ${media.mobile`
-    width: 78%;
-    height: 85%;
-    margin-left: 20px;
+    width: 80%;
+    height: 70%;
+    margin-left: 10px;
   `}
 `;
 
@@ -78,16 +100,28 @@ const LocationInfo = styled.div`
   width: 25%;
   z-index: 2;
 
+  ${media.tabletLandscape`
+    right: 50px;
+    width: 25%;
+    height: 65%;
+
+  `}
   ${media.tablet`
     right: 30px;
     width: 23%;
     height: 55%;
   `}
 
+  ${media.tabletPortrait`
+    right: 20px;
+    width: 25%;
+    height: 65%;
+  `}
+
   ${media.mobile`
     right: 5px;
     width: 35%;
-    height: 40%;
+    height: 42%;
   `}
 `;
 
@@ -105,8 +139,16 @@ const Heading = styled.h1`
   font-weight: 600;
   text-align: center;
 
+  ${media.tabletLandscape`
+    font-size: 2.2rem;
+  `}
+
   ${media.tablet`
     font-size: 1.6rem;
+  `}
+
+  ${media.tabletPortrait`
+    font-size: 1.4rem;
   `}
 
   ${media.mobile`
@@ -118,8 +160,16 @@ const Arrow = styled.img`
   width: 130px;
   height: auto;
 
+  ${media.tabletLandscape`
+    width: 110px;
+  `}
+
   ${media.tablet`
     width: 90px;
+  `}
+
+  ${media.tabletPortrait`
+    width: 70px;
   `}
 
   ${media.mobile`
@@ -137,8 +187,17 @@ const Text = styled.div`
   text-align: center;
   font-weight: 400;
 
+  ${media.tabletLandscape`
+    font-size: 1.5rem;
+  `}
+
   ${media.tablet`
     font-size: 1.3rem;
+  `}
+
+ 
+  ${media.tabletPortrait`
+    font-size: 1.1rem;
   `}
 
   ${media.mobile`
