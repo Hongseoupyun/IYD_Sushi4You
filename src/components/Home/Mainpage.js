@@ -87,14 +87,28 @@ const Container = styled.div`
   display: flex;
   padding-top: 15px;
 
-  ${media.tablet`
+  ${media.tabletL`
     flex-direction: row;
-    height: 55vh;
-    align-items: start;
+    height: 50vh;
     align-items: center;
   `}
-
-  ${media.mobile`
+  ${media.tablet`
+    height: 50vh;
+    align-items: center;
+  `}
+  ${media.mobileL`
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    height: 90vh;
+  `}
+  ${media.mobileM`
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    height: 100vh;
+  `}
+  ${media.mobileS`
     flex-direction: column;
     align-items: center;
     padding-bottom: 15px;
@@ -126,12 +140,23 @@ const Left = styled.div`
   height: 75%;
   width: 45%;
 
-  ${media.tablet`
+  ${media.tabletL`
     width: 45%;
-    height: 75%;
+    height: 100%;
   `}
-
-  ${media.mobile`
+  ${media.tablet`
+    width: 40%;
+    height: 100%;
+  `}
+  ${media.mobileL`
+    width: 100%;
+    height: 50%;
+  `}
+  ${media.mobileM`
+    width: 100%;
+    height: 50%;
+  `}
+  ${media.mobileS`
     width: 100%;
     height: 50%;
   `}
@@ -143,16 +168,39 @@ const Food = styled.img`
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   object-fit: cover;
+
+  ${media.tabletL`
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    object-fit: fill;
+    width: 116%;
+  `}
   ${media.tablet`
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    `}
-
-  ${media.mobile`
+    object-fit: fill;
+    width: 127%;
+  `}
+  ${media.mobileL`
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     object-fit: revert;
     height: 95%;
+    width: 100%;
+  `}
+  ${media.mobileM`
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    object-fit: revert;
+    height: 95%;
+    width: 100%;
+  `}
+  ${media.mobileS`
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    object-fit: revert;
+    height: 95%;
+    width: 100%;
   `}
 `;
 
@@ -164,13 +212,27 @@ const Right = styled.div`
   margin-left: 50px;
   width: 45%;
 
+  ${media.tabletL`
+    width: 45%;
+    margin-left: 70px;
+    height: 100%;
+  `}
   ${media.tablet`
     width: 45%;
-    margin-left: 50px;
-    height: 75%;
+    margin-left: 95px;
+    height: 100%;
   `}
-
-  ${media.mobile`
+  ${media.mobileL`
+    width: 90%;
+    margin-left: 0;
+    height: 50%;
+  `}
+  ${media.mobileM`
+    width: 90%;
+    margin-left: 0;
+    height: 50%;
+  `}
+  ${media.mobileS`
     width: 90%;
     margin-left: 0;
     height: 50%;
@@ -185,14 +247,29 @@ const Address = styled.div`
   color: #05493c;
   letter-spacing: 6px;
 
-  ${media.tablet`
-    font-size: 2.3rem;
-    letter-spacing: 4px;
+  ${media.tabletL`
+    font-size: 2.4rem;
+    letter-spacing: 3px;
   `}
 
-  ${media.mobile`
-    font-size: 2rem;
+  ${media.tablet`
+    font-size: 2.3rem;
     letter-spacing: 3px;
+  `}
+
+  ${media.mobileL`
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+  `}
+
+  ${media.mobileM`
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  `}
+
+  ${media.mobileS`
+    font-size: 1.3rem;
+    letter-spacing: 2px;
   `}
 `;
 
@@ -202,18 +279,32 @@ const Paragraph = styled.p`
   margin: 0; // removes default margin from paragraphs
   line-height: 1.2;
 `;
+
 const Hour = styled.div`
   font-size: 2.7rem;
   color: #f14e23;
 
-  ${media.tablet`
-    font-size: 2.3rem;
+  ${media.tabletL`
+    font-size: 2.1rem;
   `}
 
-  ${media.mobile`
-    font-size: 2rem;
+  ${media.tablet`
+    font-size: 1.9rem;
+  `}
+
+  ${media.mobileL`
+    font-size: 1.7rem;
+  `}
+
+  ${media.mobileM`
+    font-size: 1.5rem;
+  `}
+
+  ${media.mobileS`
+    font-size: 1.3rem;
   `}
 `;
+
 
 const BoldParagraph = styled.p`
   margin: 0; // removes default margin from paragraphs
@@ -230,7 +321,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  ${media.mobile`
+  ${media.mobileL`
     justify-content: space-around;
   `}
 `;
@@ -285,19 +376,26 @@ const Menu = styled.div`
     font-weight: 600;
   }
 
-  ${media.tablet`
-    width: 34%;
-    height: 40px;
-    font-size: 1.3rem;
-  `}
-
-  ${media.mobile`
+  ${media.tabletL`
     width: 40%;
-    height: 35px;
     font-size: 1.2rem;
   `}
-`;
 
+  ${media.tablet`
+    width: 45%;
+    font-size: 1.1rem;
+  `}
+
+  ${media.mobileL`
+    width: 50%;
+    font-size: 1rem;
+  `}
+
+  ${media.mobileM`
+    width: 55%;
+    font-size: 0.9rem;
+  `}
+`;
 
 const UberButton = styled(Menu)`
   font-size: 1.25rem;
@@ -315,11 +413,15 @@ const UberButton = styled(Menu)`
     background-color: #eb1c23;
   }
 
-  ${media.tablet`
+  ${media.tabletL`
     font-size: 1rem;
   `}
 
-  ${media.mobile`
+  ${media.tablet`
+    font-size: 0.9rem;
+  `}
+
+  ${media.mobileL`
     font-size: 0.85rem;
   `}
 `;
@@ -329,13 +431,18 @@ const Arrow = styled.img`
   height: 30px;
   width: 13%;
 
-  ${media.tablet`
+  ${media.tabletL`
     height: 25px;
     width: 12%;
   `}
 
-  ${media.mobile`
-    height: 20px;
+  ${media.tablet`
+    height: 23px;
     width: 11%;
+  `}
+
+  ${media.mobileL`
+    height: 20px;
+    width: 10%;
   `}
 `;

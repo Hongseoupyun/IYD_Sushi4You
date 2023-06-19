@@ -6,7 +6,6 @@ const sizes = {
   mobileL: 425, // devices less than 425px
   tablet: 768, // devices less than 768px
   mobile:800,
-
   tabletL: 1024, // devices less than 1024px
 };
 

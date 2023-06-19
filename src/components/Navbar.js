@@ -71,7 +71,7 @@ const Container = styled.nav`
   flex-direction: column;
   background-color: #fdfaf5;
 
-  ${media.tablet`
+  ${media.tabletL`
     align-items: center;
   `}
 `;
@@ -91,13 +91,13 @@ const LogoWrapper = styled.div`
     height: auto;
   }
 
-  ${media.tablet`
+  ${media.tabletL`
     svg {
-      width: 50vw; 
+      width: 40vw; 
     }
   `}
 
-  ${media.mobile`
+  ${media.mobileL`
     svg {
       width: 60vw; 
     }
@@ -112,10 +112,15 @@ const Bottom = styled.div`
   width: 100%;
   margin-bottom: 50px;
 
-  ${media.tablet`
+  ${media.tabletL`
     flex-direction: column;
     margin-bottom: 40px;
   `}
+
+  ${media.mobileL`
+    margin-bottom: 20px;
+  `}
+
 `;
 
 const Menu = styled.div`
@@ -124,11 +129,11 @@ const Menu = styled.div`
   width: 30%;
   align-items: center;
 
-  ${media.tablet`
-    width: 50%;
+  ${media.tabletL`
+    width: 45%;
   `}
 
-  ${media.mobile`
+  ${media.mobileL`
     width: 80%;
   `}
 `;
@@ -151,12 +156,16 @@ const MenuItem = styled.button`
     transform: scale(1.2);
   }
 
-  ${media.tablet`
-    font-size: 1.0625rem;
+  ${media.tabletL`
+    font-size: 1.1rem;
   `}
 
-  ${media.mobile`
+  ${media.mobileL`
     font-size: 0.85rem;
+  `}
+
+  ${media.mobileS`
+    font-size: 0.70rem;
   `}
 `;
 
@@ -167,9 +176,19 @@ const SelectedIcon = styled.img`
   height: 2rem;
   font-weight: 600;
   z-index: 5;
-  ${media.mobile`
+  ${media.tabletL`
+    width: 5rem;
+    height: 1.75rem;
+  `}
+
+  ${media.mobileL`
     width: 4rem;
     height: 1.5rem;
+  `}
+
+  ${media.mobileS`
+    width: 3rem;
+    height: 1.25rem;
   `}
 `;
 
@@ -178,9 +197,18 @@ const Circle = styled.div`
   height: 10px;
   border-radius: 50%;
   background-color: #d0dcd0;
-  ${media.mobile`
+  ${media.tabletL`
+    width: 9px;
+    height: 9px;
+  `}
+  ${media.mobileL`
     width: 7px;
     height: 7px;
+  `}
+  ${media.mobileS`
+    width: 6px;
+    height: 6px;
+
   `}
 `;
 
@@ -192,17 +220,24 @@ const StarDeco1 = styled.img`
   height: 3.5rem;
   z-index: 0;
 
-  ${media.tablet`
-    top: 250px;
-    right: 150px;
-    width: 2.5rem;
-  height: 2.5rem;
+  ${media.tabletL`
+    top: 225px;
+    right: 160px;
+    width: 3rem;
+    height: 3rem;
   `}
 
-  ${media.mobile`
+  ${media.mobileL`
     top: 140px;
     right: 65px;
     width: 1.5rem;
-  height: 1.5rem;
+    height: 1.5rem;
+  `}
+
+  ${media.mobileS`
+  top: 124px;
+    right: 41px;
+    width: 1rem;
+    height: 1rem;
   `}
 `;
