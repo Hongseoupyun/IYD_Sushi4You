@@ -156,10 +156,6 @@ const Left = styled.div`
     width: 100%;
     height: 50%;
   `}
-  ${media.mobileS`
-    width: 100%;
-    height: 50%;
-  `}
 `;
 
 const Food = styled.img`
@@ -217,6 +213,7 @@ const Right = styled.div`
     margin-left: 70px;
     height: 100%;
   `}
+
   ${media.tablet`
     width: 45%;
     margin-left: 95px;
@@ -304,7 +301,6 @@ const Hour = styled.div`
     font-size: 1.3rem;
   `}
 `;
-
 
 const BoldParagraph = styled.p`
   margin: 0; // removes default margin from paragraphs
@@ -395,6 +391,11 @@ const Menu = styled.div`
     width: 55%;
     font-size: 0.9rem;
   `}
+
+  ${media.galaxyFold`
+    width: 20%;
+    margin-left: 0;
+  `}
 `;
 
 const UberButton = styled(Menu)`
@@ -444,5 +445,9 @@ const Arrow = styled.img`
   ${media.mobileL`
     height: 20px;
     width: 10%;
+  `}
+
+  ${media.galaxyFold`
+    display: none;
   `}
 `;
