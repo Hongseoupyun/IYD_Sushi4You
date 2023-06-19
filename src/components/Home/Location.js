@@ -74,7 +74,7 @@ const StyledIframe = styled.iframe`
   `}
   ${media.mobileL`
     width: 80%;
-    height: 65%;
+    height: 75%;
     margin-left: 15px;
   `}
   ${media.mobileM`
