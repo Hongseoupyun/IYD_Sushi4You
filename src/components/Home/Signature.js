@@ -49,15 +49,25 @@ const Container = styled.div`
   height: 160vh;
   background-color: #fbf1dd;
 
-  ${media.tablet`
-    height: 85vh;
+  ${media.tabletL`
+    height: 175vh;
   `}
 
-  ${media.mobile`
-    height: 1300px;
+  ${media.tablet`
+    height: 72vh;
+  `}
+
+  ${media.mobileL`
+    height: 1305px;
+  `}
+
+  ${media.mobileM`
+    height: 1300px;`}
+
+  ${media.galaxyFold`
+    height: 2470px;
   `}
 `;
-
 
 const Heading = styled.h1`
   font-weight: bold;
@@ -78,6 +88,9 @@ const Heading = styled.h1`
     margin-top: 30px;
     margin-bottom: 20px;
   `}
+
+  ${media.galaxyFold`
+    font-size: 1.5rem;`}
 `;
 
 const MenuContainer = styled.div`
