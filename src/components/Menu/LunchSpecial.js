@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import media from "responsive";
 import MenuItemNoPrice from "components/Menu/MenuItemNoPrice";
 
 export default function LunchSpecial(props) {
@@ -50,11 +51,19 @@ const ItemGroup = styled.div`
   font-size: 1.6em;
   color: #333;
   text-align: left;
-  width: auto;
   display: inline-block;
   font-weight: 600;
   border-radius: 10px;
   padding: 10px 15px;
+
+  ${media.mobileL`
+    font-size: 1em;
+    padding: 8px 12px;
+  `}
+  ${media.galaxyFold`
+    font-size: 0.9em;
+    padding: 5px 10px;
+  `}
 `;
 
 const Menus = styled.div`
@@ -65,4 +74,9 @@ const Menus = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  ${media.mobileL`
+    padding-top:25px;
+    padding-bottom: 0px;
+  `}
 `;

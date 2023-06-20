@@ -1,35 +1,27 @@
 import React from "react";
 import styled from "styled-components";
+import media from "responsive";
 import MenuItemNoPrice from "components/Menu/MenuItemNoPrice";
 export default function MakiRoll(props) {
   const { items = [] } = props; // Default to an empty array if items is undefined
 
+  const uniquePrices = [...new Set(items.map((item) => item.price))].sort(
+    (a, b) => a - b
+  );
   return (
     <Container>
-      <ItemGroup>1 ORDER 6 PCS $5.99</ItemGroup>
-      <Menus>
-        {items
-          .filter((item) => item.price === "$5.99")
-          .map((item) => (
-            <MenuItemNoPrice key={item.id} item={item} />
-          ))}
-      </Menus>
-      <ItemGroup>1 ORDER 6 PCS $6.99</ItemGroup>
-      <Menus>
-        {items
-          .filter((item) => item.price === "$6.99")
-          .map((item) => (
-            <MenuItemNoPrice key={item.id} item={item} />
-          ))}
-      </Menus>
-      <ItemGroup>1 ORDER 6 PCS $7.99</ItemGroup>
-      <Menus>
-        {items
-          .filter((item) => item.price === "$7.99")
-          .map((item) => (
-            <MenuItemNoPrice key={item.id} item={item} />
-          ))}
-      </Menus>
+      {uniquePrices.map((price) => (
+        <React.Fragment key={price}>
+          <ItemGroup>1 ORDER 6 PCS {price}</ItemGroup>
+          <Menus>
+            {items
+              .filter((item) => item.price === price)
+              .map((item) => (
+                <MenuItemNoPrice key={item.id} item={item} />
+              ))}
+          </Menus>
+        </React.Fragment>
+      ))}
     </Container>
   );
 }
@@ -46,6 +38,15 @@ const ItemGroup = styled.div`
   font-weight: 600;
   border-radius: 10px;
   padding: 10px 15px;
+
+  ${media.mobileL`
+    font-size: 1.2em;
+    padding: 5px 10px;
+  `}
+  ${media.galaxyFold`
+    font-size: 1em;
+    padding: 5px 10px;
+  `}
 `;
 
 const Menus = styled.div`
@@ -56,4 +57,9 @@ const Menus = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  ${media.mobileL`
+    padding-top  : 10px;
+    padding-bottom: 0px;
+  `}
 `;

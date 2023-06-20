@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import media from "responsive";
 import MenuItem from "./MenuItem";
 
 export default function Drinks(props) {
@@ -56,6 +57,16 @@ const ItemGroup = styled.div`
   font-weight: 600;
   border-radius: 10px;
   padding: 10px 15px;
+
+  ${media.mobileL`
+    font-size: 1.2em;
+    padding: 5px 10px;
+    margin-top: 20px;
+  `}
+
+  ${media.galaxyFold`
+    font-size: 1em;
+  `}
 `;
 
 const Menus = styled.div`
@@ -66,4 +77,13 @@ const Menus = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  ${media.mobileL`
+    padding-top: 20px;
+    padding-bottom: 0px;
+  `}
+  ${media.galaxyFold`
+    padding-top: 10px;
+    padding-bottom: 0px;
+  `}
 `;

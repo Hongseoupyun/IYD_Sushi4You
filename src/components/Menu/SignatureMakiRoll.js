@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import media from "responsive";
 import MenuItemNoPrice from "components/Menu/MenuItemNoPrice";
 export default function SignatureMakiRoll(props) {
   const { items = [] } = props; // Default to an empty array if items is undefined
@@ -31,6 +32,20 @@ const ItemGroup = styled.div`
   font-weight: 600;
   border-radius: 10px;
   padding: 10px 15px;
+
+  ${media.mobileL`
+    font-size: 1.2em;
+    padding: 5px 10px;
+    width: auto;
+    margin-top: 20px;
+  `}
+
+  ${media.galaxyFold`
+    font-size: 1em;
+    padding: 5px 10px;
+    width: auto;
+    margin-top: 20px;
+  `}
 `;
 
 const Menus = styled.div`
@@ -41,4 +56,10 @@ const Menus = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  ${media.mobileL`
+   padding-top  : 10px;
+   padding-bottom: 0px;
+  `}
+  
 `;

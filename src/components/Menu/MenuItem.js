@@ -33,6 +33,7 @@ const MenuItemContainer = styled.div`
   ${media.mobileL`
     width: 100%;
   `}
+
 `;
 
 const ItemInfo = styled.div`
@@ -45,6 +46,10 @@ const ItemInfo = styled.div`
 
   ${media.mobileL`
     margin: 12px 0;
+  `}
+
+  ${media.galaxyFold`
+    margin: 9px 0;
   `}
 `;
 
@@ -63,8 +68,11 @@ const ItemName = styled.h2`
   margin-bottom: 10px;
 
   ${media.mobileL`
-    font-size: 1.3em;
+    font-size: 1em;
     margin-bottom: 7px;
+  `}
+  ${media.galaxyFold`
+    font-size: 0.85em;
   `}
 `;
 
@@ -73,9 +81,14 @@ const ItemDescription = styled.p`
   color: #666;
   text-align: left;
   font-weight: semi-bold;
+
   ${media.mobileL`
-    font-size: 0.9em;
+    font-size: 0.7em;
   `}
+  ${media.galaxyFold`
+    font-size: 0.65em;
+  `}
+
 `;
 
 const ItemPrice = styled.span`
@@ -84,7 +97,10 @@ const ItemPrice = styled.span`
   color: #333;
 
   ${media.mobileL`
-    font-size: 1.3em;
+    font-size: 1.2em;
+  `}
+  ${media.galaxyFold`
+    font-size: 0.8em;
   `}
 `;
 

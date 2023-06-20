@@ -60,24 +60,13 @@ const Container = styled.div`
   margin-bottom: 50px;
   background-color: #fdfaf5;
 
-  ${media.tabletL`
-    height: auto;
-    padding-bottom: 20px;
-    padding-top: 10px;
-  `}
-
-  ${media.mobile`
-    padding-bottom: 20px;
-    padding-top: 10px;
-    height: auto;
-  `}
-
   ${media.mobileL`
     padding-bottom: 20px;
     padding-top: 10px;
     height: auto;
     margin-bottom: 5px;
   `}
+  
 `;
 
 const CategoryButton = styled.button`
@@ -110,33 +99,17 @@ const CategoryButton = styled.button`
     transition: all 0.3s ease-in;
   }
 
-  ${media.tabletL`
-    margin: 5px;
-    padding: 8px 16px;
-    font-size: 0.9em;
-  `}
-
-  ${media.mobile`
-    margin: 5px;
-    padding: 8px 16px;
-    font-size: 0.9em;
-  `}
-
   ${media.mobileL`
     margin: 5px;
     padding: 8px 16px;
     font-size: 0.9em;
+    height: 40px;
   `}
 
-  ${media.mobileM`
+  ${media.galaxyFold`
     margin: 5px;
-    padding: 8px 16px;
-    font-size: 0.9em;
-  `}
-
-  ${media.mobileS`
-    margin: 5px;
-    padding: 8px 16px;
-    font-size: 0.9em;
+    padding: 5px 10px;
+    font-size: 0.7em;
+    height: 30px;
   `}
 `;

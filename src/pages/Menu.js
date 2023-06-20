@@ -131,15 +131,25 @@ const MenuContainer = styled.div`
   justify-content: space-between;
 
   ${media.tabletL`
-    padding: 20px 0;
+    padding: 20px 1px;
     `}
 
   ${media.tablet`
-    padding: 10px 0;
+
+    padding-top: 10px;
+    padding-bottom: 0px;
     `}
 
     ${media.mobileL`
-    padding: 20px 0;
+   
+    padding-top: 10px;
+    padding-bottom: 0px;
+  
+  `}
+
+  ${media.galaxyFold`
+    padding-top: 10px;
+    padding-bottom: 0px;
   `}
 `;
 
@@ -184,7 +194,11 @@ const CategoryTitle = styled.h2`
   font-weight: bold;
 
   ${media.mobileL`
-    font-size: 1.6em;
+    font-size: 1.4em;
+  `}
+
+  ${media.galaxyFold`
+    font-size: 1em;
   `}
 `;
 
