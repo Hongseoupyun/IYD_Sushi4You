@@ -1,14 +1,28 @@
 import React from "react";
 import styled from "styled-components";
+import media from "responsive";
 
 export default function CategoryButtons(props) {
-  const {
-    selectedCategory,
-    handleCategoryClick,
-    loadingCategories,
-  } = props;
+  const { selectedCategory, handleCategoryClick, loadingCategories } = props;
 
-  const categories = ["SOUP", "SALAD", "APPETIZERS", "SUSHI & SASHIMI A LA CARTE", "SIGNATURE MAKI(ROLL)", "MAKI(ROLL)", "CHEF’S SPECIAL", "LUNCH SPECIAL (Bento Box)", "MAIN DISH", "SASHIMI PARTY TRAY", "SUSHI & MAKI TRAY", "SUSHI, SASHIMI & MAKI COMBO TRAY", "MAKI TRAY", "ADD-ONS", "DRINKS"];
+  const categories = [
+    "SOUP",
+    "SALAD",
+    "APPETIZERS",
+    "SUSHI & SASHIMI A LA CARTE",
+    "SIGNATURE MAKI(ROLL)",
+    "MAKI(ROLL)",
+    "CHEF’S SPECIAL",
+    "LUNCH SPECIAL (Bento Box)",
+    "MAIN DISH",
+    "SASHIMI PARTY TRAY",
+    "SUSHI & MAKI TRAY",
+    "SUSHI, SASHIMI & MAKI COMBO TRAY",
+    "MAKI TRAY",
+    "ADD-ONS",
+    "DRINKS",
+  ];
+
   return (
     <Container>
       {!loadingCategories && (
@@ -45,13 +59,32 @@ const Container = styled.div`
   width: 100%;
   margin-bottom: 50px;
   background-color: #fdfaf5;
+
+  ${media.tabletL`
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  `}
+
+  ${media.mobile`
+    padding-bottom: 20px;
+    padding-top: 10px;
+    height: auto;
+  `}
+
+  ${media.mobileL`
+    padding-bottom: 20px;
+    padding-top: 10px;
+    height: auto;
+    margin-bottom: 5px;
+  `}
 `;
 
 const CategoryButton = styled.button`
   background-color: #99c0a3;
-  font-weight: 500; // Set the font-weight to semi-bold by default
+  font-weight: 500;
   padding: 10px 20px;
-  border: 2px solid transparent; // Add a transparent border to prevent layout shifts
+  border: 2px solid transparent;
   border-radius: 25px;
   height: 45px;
   font-size: 1.2em;
@@ -76,4 +109,34 @@ const CategoryButton = styled.button`
     color: white;
     transition: all 0.3s ease-in;
   }
+
+  ${media.tabletL`
+    margin: 5px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+  `}
+
+  ${media.mobile`
+    margin: 5px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+  `}
+
+  ${media.mobileL`
+    margin: 5px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+  `}
+
+  ${media.mobileM`
+    margin: 5px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+  `}
+
+  ${media.mobileS`
+    margin: 5px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+  `}
 `;

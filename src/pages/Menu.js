@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
+import media from "responsive";
 import CategoryButtons from "components/Menu/CategoryButtons";
 import { useMenuData } from "hooks/useMenuData";
 import { useMenuClick } from "hooks/useMenuClick";
@@ -128,13 +129,31 @@ const MenuContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  ${media.tabletL`
+    padding: 20px 0;
+    `}
+
+  ${media.tablet`
+    padding: 10px 0;
+    `}
+
+    ${media.mobileL`
+    padding: 20px 0;
+  `}
 `;
+
 const CategoryBlock = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
   padding: 0 30px;
+
+  ${media.mobileL`
+    padding: 0 10px;
+    margin-bottom: 30px;
+  `}
 `;
 
 const Subtitle = styled.div`
@@ -143,6 +162,11 @@ const Subtitle = styled.div`
   font-weight: semi-bold;
   margin-bottom: 50px;
   padding-bottom: 15px;
+  ${media.mobileL`
+  padding-bottom: 0px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+  `}
 `;
 
 const Additional = styled.div`
@@ -158,6 +182,10 @@ const CategoryTitle = styled.h2`
   text-align: left;
   margin-bottom: 10px;
   font-weight: bold;
+
+  ${media.mobileL`
+    font-size: 1.6em;
+  `}
 `;
 
 const MenuItemsContainer = styled.div`

@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 
-const sizes = {
+export const sizes = {
   galaxyFold: 280,
   mobileS: 320, // devices less than 320px
   mobileM: 375, // devices less than 375px

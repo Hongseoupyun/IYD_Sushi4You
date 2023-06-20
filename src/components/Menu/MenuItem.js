@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import media from "responsive";
 
 function MenuItem(props) {
   const { item } = props;
@@ -10,8 +11,8 @@ function MenuItem(props) {
         <ItemNameAndPrice>
           <ItemName>
             {item.name}
-            {item.veg && ' 🥦'}
-            {item.spicy && ' 🌶️'}
+            {item.veg && " 🥦"}
+            {item.spicy && " 🌶️"}
           </ItemName>
           <ItemPrice>{item.price}</ItemPrice>
         </ItemNameAndPrice>
@@ -22,8 +23,16 @@ function MenuItem(props) {
 }
 
 const MenuItemContainer = styled.div`
-  width: calc(50% - 20px); // Adjust the width to your preference
-  margin-bottom: 10px; // Add margin to separate the items vertically
+  width: calc(50% - 20px);
+  margin-bottom: 10px;
+
+  ${media.tablet`
+    width: calc(50% - 10px);
+  `}
+
+  ${media.mobileL`
+    width: 100%;
+  `}
 `;
 
 const ItemInfo = styled.div`
@@ -33,6 +42,10 @@ const ItemInfo = styled.div`
   align-items: flex-start;
   text-align: left;
   margin: 17px 0;
+
+  ${media.mobileL`
+    margin: 12px 0;
+  `}
 `;
 
 const ItemNameAndPrice = styled.div`
@@ -48,6 +61,11 @@ const ItemName = styled.h2`
   text-align: left;
   font-weight: 600;
   margin-bottom: 10px;
+
+  ${media.mobileL`
+    font-size: 1.3em;
+    margin-bottom: 7px;
+  `}
 `;
 
 const ItemDescription = styled.p`
@@ -55,11 +73,19 @@ const ItemDescription = styled.p`
   color: #666;
   text-align: left;
   font-weight: semi-bold;
+  ${media.mobileL`
+    font-size: 0.9em;
+  `}
 `;
 
 const ItemPrice = styled.span`
   font-size: 1.5em;
   font-weight: 600;
   color: #333;
+
+  ${media.mobileL`
+    font-size: 1.3em;
+  `}
 `;
+
 export default MenuItem;
