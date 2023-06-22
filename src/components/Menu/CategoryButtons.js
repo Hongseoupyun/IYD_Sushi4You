@@ -52,11 +52,9 @@ export default function CategoryButtons(props) {
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
-  padding-top: 20px;
+  padding-bottom: 55px;
+  padding-top: 10px;
   flex-wrap: wrap;
-  height: 25vh;
-  width: 100%;
   margin-bottom: 50px;
   background-color: #fdfaf5;
 
@@ -66,6 +64,11 @@ const Container = styled.div`
     padding-top: 10px;
     height: auto;
     margin-bottom: 5px;
+  `}
+
+  ${media.tablet`
+    padding: 20px;
+    margin-bottom: 30px;
   `}
   
 `;
@@ -108,9 +111,9 @@ const CategoryButton = styled.button`
   `}
 
   ${media.galaxyFold`
-    margin: 5px;
+    margin: 2px;
     padding: 5px 10px;
-    font-size: 0.7em;
+    font-size: 0.5em;
     height: 30px;
   `}
 `;

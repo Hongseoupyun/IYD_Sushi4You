@@ -83,36 +83,24 @@ export default function Mainpage() {
 
 const Container = styled.div`
   background-color: #fdfaf5;
-  height: 120vh;
   display: flex;
   padding-top: 15px;
+  padding-bottom: 60px;
 
   ${media.tabletL`
     flex-direction: row;
-    height: 50vh;
+    
     align-items: center;
   `}
   ${media.tablet`
-    height: 50vh;
+
     align-items: center;
   `}
   ${media.mobileL`
     flex-direction: column;
     align-items: center;
-    padding-bottom: 15px;
-    height: 90vh;
-  `}
-  ${media.mobileM`
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 15px;
-    height: 100vh;
-  `}
-  ${media.mobileS`
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 15px;
-    height: 100vh;
+    padding-bottom: 30px;
+  
   `}
 `;
 
@@ -203,7 +191,6 @@ const Food = styled.img`
 const Right = styled.div`
   display: flex;
   flex-direction: column;
-  height: 75%;
   justify-content: space-evenly;
   margin-left: 50px;
   width: 45%;
@@ -222,17 +209,17 @@ const Right = styled.div`
   ${media.mobileL`
     width: 90%;
     margin-left: 0;
-    height: 50%;
+   
   `}
   ${media.mobileM`
     width: 90%;
     margin-left: 0;
-    height: 50%;
+  
   `}
   ${media.mobileS`
     width: 90%;
     margin-left: 0;
-    height: 50%;
+  
   `}
 `;
 
@@ -245,12 +232,17 @@ const Address = styled.div`
   letter-spacing: 6px;
 
   ${media.tabletL`
-    font-size: 2.4rem;
+    font-size: 2.22rem;
     letter-spacing: 3px;
   `}
 
   ${media.tablet`
-    font-size: 2.3rem;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+  `}
+
+  ${media.mobile`
+    font-size: 2.1rem;
     letter-spacing: 3px;
   `}
 
@@ -282,8 +274,13 @@ const Hour = styled.div`
   color: #f14e23;
 
   ${media.tabletL`
-    font-size: 2.1rem;
+    font-size: 2rem;
   `}
+
+  ${media.mobile`
+    font-size: 1.92rem;
+  `}
+
 
   ${media.tablet`
     font-size: 1.9rem;

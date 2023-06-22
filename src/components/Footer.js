@@ -90,10 +90,19 @@ const Menu = styled.div`
   width: 25%;
   align-items: center;
 
-  ${media.tablet`
-    width: 40%;
+  ${media.tabletL`
+    width: 45%;
   `}
+
   ${media.mobile`
+    width: 50%;
+  `}
+
+  ${media.tablet`
+    width: 45%;
+  `}
+
+  ${media.mobileL`
     width: 80%;
   `}
 `;

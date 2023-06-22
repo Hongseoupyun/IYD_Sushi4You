@@ -117,19 +117,36 @@ const Bottom = styled.div`
     margin-bottom: 40px;
   `}
 
+  ${media.mobile`
+    flex-direction: column;
+    margin-bottom: 40px;
+  `}
+
+  ${media.tablet`
+    flex-direction: column;
+    margin-bottom: 40px;
+  `}
+
   ${media.mobileL`
     margin-bottom: 20px;
   `}
-
 `;
 
 const Menu = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 30vw;
   align-items: center;
 
   ${media.tabletL`
+    width: 45%;
+  `}
+
+  ${media.mobile`
+    width: 50%;
+  `}
+
+  ${media.tablet`
     width: 45%;
   `}
 
@@ -158,6 +175,14 @@ const MenuItem = styled.button`
 
   ${media.tabletL`
     font-size: 1.1rem;
+  `}
+
+  ${media.mobile`
+    font-size: 1rem;
+  `}
+
+  ${media.tablet`
+    font-size: 0.95rem;
   `}
 
   ${media.mobileL`
@@ -223,8 +248,23 @@ const StarDeco1 = styled.img`
   ${media.tabletL`
     top: 225px;
     right: 160px;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  `}
+
+  ${media.mobile`
+    top: 175px;
+    right: 100px;
+    width: 2rem;
+    height: 2rem;
+
+  `}
+
+  ${media.tablet`
+    top: 150px;
+    right: 100px;
+    width: 1.6rem;
+    height: 1.6rem;
   `}
 
   ${media.mobileL`
