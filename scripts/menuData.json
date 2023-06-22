@@ -708,7 +708,7 @@
     "name": "DYNAMITE MAKI",
     "desc": "",
     "price": "$6.99",
-    "spicy": true,
+    "spicy": false,
     "veg": false
   },
   {
@@ -1318,7 +1318,7 @@
     "category": "MAIN DISH",
     "id": 147,
     "name": "SASHIMI MORIWASE",
-    "price": "$22.99",
+    "price": "$25.99",
     "desc": "20 pcs of assorted fresh fish with rice",
     "spicy": false,
     "veg": false

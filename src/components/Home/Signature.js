@@ -42,31 +42,21 @@ export default function Signature() {
 }
 
 const Container = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 160vh;
+  width: 100%;
+  padding: 50px 0;
   background-color: #fbf1dd;
+`;
 
-  ${media.tabletL`
-    height: 175vh;
-  `}
-
-  ${media.tablet`
-    height: 72vh;
-  `}
-
-  ${media.mobileL`
-    height: 1305px;
-  `}
-
-  ${media.mobileM`
-    height: 1300px;`}
-
-  ${media.galaxyFold`
-    height: 2470px;
-  `}
+const MenuContainer = styled.div`
+  width: 100%;
+  max-width: 1200px;  // Limit the maximum width to avoid stretching on large screens
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 10px;   // Add some horizontal padding to avoid content sticking to the sides
 `;
 
 const Heading = styled.h1`
@@ -75,35 +65,24 @@ const Heading = styled.h1`
   font-size: 3rem;
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 50px;
 
-  ${media.tablet`
+  ${media.tabletL`
     font-size: 2.7rem;
-    margin-top: 60px;
     margin-bottom: 15px;
   `}
 
-  ${media.mobile`
-    font-size: 1.7rem;
-    margin-top: 30px;
-    margin-bottom: 20px;
+  ${media.tablet`
+    font-size: 2.2rem;
   `}
+
+  ${media.mobileL`
+    font-size: 1.7rem;
+  `}
+
+  ${media.mobileM`
+    font-size: 1.5rem;`}
 
   ${media.galaxyFold`
-    font-size: 1.5rem;`}
-`;
-
-const MenuContainer = styled.div`
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-
-  ${media.tablet`
-    width: 95%;
-  `}
-
-  ${media.mobile`
-    width: 100%;
+    font-size: 1.3rem;
   `}
 `;

@@ -60,7 +60,8 @@ const Container = styled.div`
   margin-bottom: 50px;
   background-color: #fdfaf5;
 
-  ${media.mobileL`
+
+  ${media.mobile`
     padding-bottom: 20px;
     padding-top: 10px;
     height: auto;
