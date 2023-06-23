@@ -106,7 +106,7 @@ const CategoryButton = styled.button`
   ${media.mobileL`
     margin: 5px;
     padding: 8px 16px;
-    font-size: 0.9em;
+    font-size: 0.77em;
     height: 40px;
   `}
 

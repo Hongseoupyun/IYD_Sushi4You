@@ -59,6 +59,16 @@ export default function Footer(props) {
         </Phone>
       </Bottom>
       <StarDeco1 src={Star} />
+      <DeveloperInfo>
+        © 2023 Sushi4U | Developed by{" "}
+        <a
+          href="https://inyourdaylight.com/en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          In Your Daylight
+        </a>
+      </DeveloperInfo>
     </Container>
   );
 }
@@ -248,5 +258,23 @@ const StarDeco1 = styled.img`
     right: 80px;
     width: 1.2rem;
     height: 1.2rem;
+  `}
+`;
+
+const DeveloperInfo = styled.p`
+  font-size: 0.75rem;
+  color: #05493c;
+  text-align: center;
+  height: auto;
+  a {
+    color: #05493c;
+    text-decoration: none;
+  }
+
+  ${media.tablet`
+    font-size: 0.65rem;
+  `}
+  ${media.mobile`
+    font-size: 0.55rem;
   `}
 `;
