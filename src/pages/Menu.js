@@ -76,6 +76,12 @@ export default function Menu() {
                   <CategoryTitle>{category}</CategoryTitle>
                   <Subtitle>
                     <i>Extra Charge for Substitutions</i>
+                    {category === "MAIN DISH" && (
+                      <Additional> Served with miso soup & salad</Additional>
+                    )}
+                    {category === "LUNCH SPECIAL (Bento Box)" && (
+                      <Additional>Available until 3:00 p.m</Additional>
+                    )}
                   </Subtitle>
                   <MenuItemsContainer>
                     <ComponentToRender
