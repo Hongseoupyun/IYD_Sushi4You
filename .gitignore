@@ -14,6 +14,7 @@
 node_modules/
 firebaseConfig.js
 sushi4uAdminSdk.json
+/.firebase
 
 # testing
 /coverage

@@ -28,7 +28,7 @@ import Drinks from "components/Menu/Drinks";
 export default function Menu() {
   const { menuItems, categories, loadingCategories } = useMenuData();
   const { selectedMenuItem, handleMenuClick, setSelectedMenuItem } =
-    useMenuClick();
+  useMenuClick();
   const {
     selectedCategory,
     handleCategoryClick,
